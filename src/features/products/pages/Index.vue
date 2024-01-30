@@ -26,14 +26,21 @@
     ></a>
   </div>
   <Navbar />
+  <div class="futter">
+    <Futter />
+  </div>
 </template>
 
 <script setup lang="ts">
 import LangSwitcher from "../components/langSwitcher.vue";
 import Navbar from "./navbar.vue";
+import Futter from "../../../components/footer.vue";
 </script>
 
 <style scoped>
+.futter{
+  margin: 130px 0px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;

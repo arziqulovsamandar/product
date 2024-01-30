@@ -1,16 +1,6 @@
 <template>
   <div class="navbar">
-    <div style="display: flex; margin: 10px">
-      <img
-        src="https://cdn.pixabay.com/photo/2016/10/27/13/14/muffin-1774967_1280.png"
-        alt=""
-        class="img1"
-      />
-      <div>
-        <h1 class="navbar-h1">Nest</h1>
-        <h1 class="navbar-span">MART & GROCERY</h1>
-      </div>
-    </div>
+    <AppLogo />
     <div style="margin: 20px">
       <input
         type="text"
@@ -19,8 +9,8 @@
       />
       <button class="nanbar-button">Search</button>
     </div>
-    <div class="became-vendor">
-      <h1 style="color: yellowgreen">Became Vendor</h1>
+    <div class="became-vendor1">
+      <span style="color: yellowgreen">Became Vendor</span>
       <img
         class="right"
         src="../../../assets/img/icons8-right-50.png"
@@ -63,7 +53,9 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppLogo from "../../../components/app/app-logo.vue";
+</script>
 <style scoped>
 .navbar {
   display: flex;
@@ -100,7 +92,7 @@
   border-radius: 5px;
   margin: 0px -105px;
 }
-.became-vendor {
+.became-vendor1 {
   display: flex;
   padding: 5px;
   margin: 25px;
