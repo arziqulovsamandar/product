@@ -5,7 +5,13 @@ import productsRoutes from "../features/products/router";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [...productsRoutes],
+  routes: [
+    ...productsRoutes,
+    {
+      path: '/:pathMatch(.*)*',
+      component: () => import('../views/NotFound.vue')
+    }
+  ]
 });
 
 export default router;
