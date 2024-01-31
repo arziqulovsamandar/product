@@ -253,6 +253,12 @@ import AppLogo from "../components/app/app-logo.vue";
 </script>
 
 <style scoped>
+.app-text-lg{
+  color: #253d4e;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
 .site-map {
   border-y: 1px solid #09d18b;
 }
