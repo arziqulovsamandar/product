@@ -9,25 +9,25 @@
           <ul class="contact-us">
             <li>
               <span :i-carbon-location-filled="true"></span>
-              <p class="font-medium">Address: </p>
+              <p class="font-medium">Address:</p>
               <p class="text-blue-200">9999 UMB House Road</p>
             </li>
 
             <li>
               <span :i-bx-support="true"></span>
-              <p class="font-medium">Call Us: </p>
+              <p class="font-medium">Call Us:</p>
               <p class="text-blue-200">+01 (3050) 001</p>
             </li>
 
             <li>
               <span :i-carbon-email="true"></span>
-              <p class="font-medium">Email: </p>
+              <p class="font-medium">Email:</p>
               <p class="text-blue-200">umbstore@gmail.com</p>
             </li>
 
             <li>
               <span :i-carbon-time="true"></span>
-              <p class="font-medium">Hours: </p>
+              <p class="font-medium">Hours:</p>
               <p class="text-blue-200">8:00 AM - 12:00 PM and 4/7</p>
             </li>
           </ul>
@@ -38,7 +38,9 @@
 
           <ul class="footer-list">
             <li><router-link to="/about">About Us</router-link></li>
-            <li><router-link to="/delivery">Delivery Information</router-link></li>
+            <li>
+              <router-link to="/delivery">Delivery Information</router-link>
+            </li>
             <li><router-link to="/privacy">Privacy Policy</router-link></li>
             <li><router-link to="/terms">Terms & Conditions</router-link></li>
             <li><router-link to="/contact">Contact Us</router-link></li>
@@ -56,8 +58,12 @@
             <li><router-link to="/wishlist">My Wishlist</router-link></li>
             <li><router-link to="/track-order">Track My Order</router-link></li>
             <li><router-link to="/help-ticket">Help Ticket</router-link></li>
-            <li><router-link to="/shipping-details">Shipping Details</router-link></li>
-            <li><router-link to="/compare-products">Compare Products</router-link></li>
+            <li>
+              <router-link to="/shipping-details">Shipping Details</router-link>
+            </li>
+            <li>
+              <router-link to="/compare-products">Compare Products</router-link>
+            </li>
           </ul>
         </div>
 
@@ -65,12 +71,24 @@
           <p class="app-text-lg">Corporate</p>
 
           <ul class="footer-list">
-            <li><router-link to="/become-vendor">Become a Vendor</router-link></li>
-            <li><router-link to="/affiliate-program">Affiliate Program</router-link></li>
-            <li><router-link to="/farm-business">Farm Business</router-link></li>
+            <li>
+              <router-link to="/become-vendor">Become a Vendor</router-link>
+            </li>
+            <li>
+              <router-link to="/affiliate-program"
+                >Affiliate Program</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/farm-business">Farm Business</router-link>
+            </li>
             <li><router-link to="/farm-careers">Farm Careers</router-link></li>
-            <li><router-link to="/our-suppliers">Our Suppliers</router-link></li>
-            <li><router-link to="/accessibility">Accessibility</router-link></li>
+            <li>
+              <router-link to="/our-suppliers">Our Suppliers</router-link>
+            </li>
+            <li>
+              <router-link to="/accessibility">Accessibility</router-link>
+            </li>
             <li><router-link to="/promotions">Promotions</router-link></li>
           </ul>
         </div>
@@ -79,12 +97,28 @@
           <p class="app-text-lg">Popular</p>
 
           <ul class="footer-list">
-            <li><router-link to="/milk-flavoured-milk">Milk & Flavoured Milk</router-link></li>
-            <li><router-link to="/butter-margarine">Butter and Margarine</router-link></li>
-            <li><router-link to="/eggs-substitutes">Eggs Substitutes</router-link></li>
+            <li>
+              <router-link to="/milk-flavoured-milk"
+                >Milk & Flavoured Milk</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/butter-margarine"
+                >Butter and Margarine</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/eggs-substitutes">Eggs Substitutes</router-link>
+            </li>
             <li><router-link to="/marmalades">Marmalades</router-link></li>
-            <li><router-link to="/sour-cream-dips">Sour Cream and Dips</router-link></li>
-            <li><router-link to="/tea-kombucha">Tea & Kombucha</router-link></li>
+            <li>
+              <router-link to="/sour-cream-dips"
+                >Sour Cream and Dips</router-link
+              >
+            </li>
+            <li>
+              <router-link to="/tea-kombucha">Tea & Kombucha</router-link>
+            </li>
             <li><router-link to="/cheese">Cheese</router-link></li>
           </ul>
         </div>
@@ -97,13 +131,27 @@
             <div class="app-stores">
               <ul class="mt-4 flex gap-4 text-xl">
                 <li class="stores-icon">
-                  <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../assets/icons/google-play.jpg" alt="Google Icon" />
+                  <a
+                    href="https://google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="../assets/icons/google-play.jpg"
+                      alt="Google Icon"
+                    />
                   </a>
                 </li>
                 <li class="stores-icon">
-                  <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
-                    <img src="../assets/icons/app-store.jpg" alt="Apple Icon" />
+                  <a
+                    href="https://apple.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="../assets/icons/app-store.jpg"
+                      alt="Apple Icon"
+                    />
                   </a>
                 </li>
               </ul>
@@ -111,8 +159,15 @@
 
             <p class="text-blue-200">Secured Payment Gateways</p>
             <li class="stores-icon">
-              <a href="https://www.google.com/search?q=money+transfer+options" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/icons/payment-method.png" alt="Payment Icon" />
+              <a
+                href="https://www.google.com/search?q=money+transfer+options"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="../assets/icons/payment-method.png"
+                  alt="Payment Icon"
+                />
               </a>
             </li>
           </ul>
@@ -122,7 +177,10 @@
 
     <!-- Rights & Social Links -->
     <section class="rights-social border-t-2 border-green-500 pt-2 mt-4">
-      <div class="wrapper" style="justify-content: space-between; align-items: center">
+      <div
+        class="wrapper"
+        style="justify-content: space-between; align-items: center"
+      >
         <p class="font-medium">© 2024, All rights reserved</p>
 
         <div class="flex gap-4 mt-4">
@@ -140,25 +198,45 @@
 
         <ul class="mt-4 flex gap-4 text-xl">
           <li class="social-icon">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <!-- Facebook icon -->
             </a>
           </li>
 
           <li class="social-icon">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin"
+            >
               <!-- Linkedin icon -->
             </a>
           </li>
 
           <li class="social-icon">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <!-- Instagram icon -->
             </a>
           </li>
 
           <li class="social-icon">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <!-- Twitter icon -->
             </a>
           </li>
@@ -168,11 +246,9 @@
   </footer>
 </template>
 
-
 <script setup lang="ts">
 import AppLogo from "../components/app/app-logo.vue";
 </script>
-
 
 <style scoped>
 .site-map {
