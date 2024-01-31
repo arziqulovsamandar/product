@@ -31,7 +31,7 @@
   <h2 class="deals-of">Deals of the day</h2>
   <Product />
   <productCard />
-  <div class="futter">
+  <div>
     <Futter />
   </div>
 </template>
