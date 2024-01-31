@@ -1,13 +1,18 @@
 <template>
   <div class="navbar">
-    <AppLogo />
-    <div style="margin: 20px">
-      <input
-        type="text"
-        placeholder="Search for products..."
-        class="input-navbar"
-      />
-      <button class="nanbar-button">Search</button>
+    <div class="input-navbar1">
+      <AppLogo />
+      <div
+        style="margin: 20px"
+        class="search-input1"
+      >
+        <input
+          type="text"
+          placeholder="Search for products..."
+          class="input-navbar"
+        />
+        <button class="nanbar-button">Search</button>
+      </div>
     </div>
     <div class="became-vendor1">
       <span style="color: yellowgreen">Became Vendor</span>
@@ -17,22 +22,28 @@
         alt=""
       />
     </div>
-    <div style="display: flex;">
-      <div style="margin: 20px; display: flex">
-        <img
-          src="../assets/img/icons8-compare-git-50.png"
-          alt=""
-          class="compare-img"
-        />
-        <h1 class="compare">Compare</h1>
-      </div>
-      <div style="margin: 20px; display: flex">
-        <img
-          src="../assets/img/icons8-heart-26.png"
-          alt=""
-          class="compare-img"
-        />
-        <h1 class="compare">Wishlist</h1>
+    <div style="display: flex">
+      <div class="campare-wishlist">
+        <div
+          style="margin: 20px; display: flex"
+        >
+          <img
+            src="../assets/img/icons8-compare-git-50.png"
+            alt=""
+            class="compare-img"
+          />
+          <h1 class="compare">Compare</h1>
+        </div>
+        <div
+          style="margin: 20px; display: flex"
+        >
+          <img
+            src="../assets/img/icons8-heart-26.png"
+            alt=""
+            class="compare-img"
+          />
+          <h1 class="compare">Wishlist</h1>
+        </div>
       </div>
       <div style="margin: 20px; display: flex">
         <img
@@ -48,7 +59,11 @@
           alt=""
           class="compare-img"
         />
-        <a href="/login" class="compare">Account</a>
+        <a
+          href="/login"
+          class="compare account"
+          >Account</a
+        >
       </div>
     </div>
   </div>
@@ -57,8 +72,16 @@
 import AppLogo from "./app/app-logo.vue";
 </script>
 <style scoped>
+.campare-wishlist{
+  display: flex;
+}
+.input-navbar1 {
+  width: auto;
+  display: flex;
+}
 .navbar {
   display: flex;
+  justify-content: space-between;
 }
 .navbar-h1 {
   font-size: 36px;
@@ -97,7 +120,7 @@ import AppLogo from "./app/app-logo.vue";
   padding: 5px;
   margin: 25px;
   border: 2px solid yellowgreen;
-  width: 180px;
+  width: 15%;
   gap: 10px;
   height: 40px;
   border-radius: 5px;
@@ -111,5 +134,51 @@ import AppLogo from "./app/app-logo.vue";
   margin: 15px;
   width: 30px;
   height: 30px;
+}
+.account{
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  .became-vendor1 {
+    display: none;
+  }
+  .input-navbar1 {
+    flex-direction: column;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .input-navbar {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1405px) {
+  .input-navbar {
+    width: 300px;
+  }
+  .became-vendor1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .search-input1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  .campare-wishlist {
+    display: none;
+  }
+  .compare-img{
+    width: 20px;
+    height: 20px;
+  }
+  .compare{
+    font-size: 16px;
+  }
+  .account{
+    font-weight: 700;
+    margin: 14px 0px;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div class="navbar1">
     <div>
       <a href="">About Us</a>
       <span> | </span>
@@ -25,7 +25,9 @@
       ><span> | </span><lang-switcher /><span> | </span> INR <span> </span
     ></a>
   </div>
-  <Navbar />
+  <div>
+    <Navbar />
+  </div>
   <h2 class="deals-of">Deals of the day</h2>
   <Product />
   <div class="futter">
@@ -49,13 +51,13 @@ import Product from "./products.vue";
 .futter {
   margin: 130px 0px;
 }
-.navbar {
+.navbar1 {
   display: flex;
   justify-content: space-between;
   border: 1px solid rgb(227, 192, 192);
   padding: 10px;
 }
-.navbar a {
+.navbar1 a {
   color: rgb(77, 92, 90);
   font-size: 13px;
 }
@@ -78,7 +80,13 @@ import Product from "./products.vue";
   display: flex;
   gap: 5px;
 }
-.navbar a :hover {
+.navbar1 a :hover {
   color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar1 {
+    display: none;
+  }
 }
 </style>
