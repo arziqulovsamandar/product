@@ -26,7 +26,11 @@
     ></a>
   </div>
   <Navbar />
-  <Input placeholder="Your email address" button="Subscribe"/>
+  <Input
+    placeholder="Your email address"
+    button="Subscribe"
+  />
+  <h2 class="deals-of">Deals of the day</h2>
   <Product />
   <div class="futter">
     <Futter />
@@ -42,6 +46,11 @@ import Product from "./products.vue";
 </script>
 
 <style scoped>
+.deals-of {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
 .futter {
   margin: 130px 0px;
 }
