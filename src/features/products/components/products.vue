@@ -76,28 +76,11 @@
   margin: 0px 0px;
 }
 .button1:hover {
-  transform: scale(1.04) translateY(-5px);
+  transform: translateY(-5px); /* yoki kerakli qimirlash miqdori */
+  transition: transform 0.3s ease;
 }
-.button1:hover .image,
-.button1:hover .shadow {
-  background-size: 103%;
-}
-.button1:hover .shadow {
-  transform: scale(0.85) translateY(40px);
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
-}
-
 .product-card-table:hover {
-  transform: scale(1.04) translateY(-3px);
-}
-.product-card-table:hover .image,
-.product-card-table:hover .shadow {
-  background-size: 102%;
-}
-.product-card-table:hover .shadow {
-  transform: scale(0.85) translateY(30px);
-  -webkit-filter: blur(30px);
-  filter: blur(30px);
+  transform: translateY(-5px); /* yoki kerakli qimirlash miqdori */
+  transition: transform 0.3s ease;
 }
 </style>

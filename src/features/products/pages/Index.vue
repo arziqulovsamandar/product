@@ -30,6 +30,7 @@
   </div>
   <h2 class="deals-of">Deals of the day</h2>
   <Product />
+  <productCard />
   <div class="futter">
     <Futter />
   </div>
@@ -39,7 +40,8 @@
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import Navbar from "../../../components/navbar.vue";
 import Futter from "../../../components/footer.vue";
-import Product from "./products.vue";
+import Product from "../components/products.vue";
+import productCard from "../components/productCard.vue";
 </script>
 
 <style scoped>
