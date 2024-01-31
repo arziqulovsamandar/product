@@ -24,9 +24,7 @@
     </div>
     <div style="display: flex">
       <div class="campare-wishlist">
-        <div
-          style="margin: 20px; display: flex"
-        >
+        <div style="margin: 20px; display: flex">
           <img
             src="../assets/img/icons8-compare-git-50.png"
             alt=""
@@ -34,9 +32,7 @@
           />
           <h1 class="compare">Compare</h1>
         </div>
-        <div
-          style="margin: 20px; display: flex"
-        >
+        <div style="margin: 20px; display: flex">
           <img
             src="../assets/img/icons8-heart-26.png"
             alt=""
@@ -72,7 +68,7 @@
 import AppLogo from "./app/app-logo.vue";
 </script>
 <style scoped>
-.campare-wishlist{
+.campare-wishlist {
   display: flex;
 }
 .input-navbar1 {
@@ -135,7 +131,7 @@ import AppLogo from "./app/app-logo.vue";
   width: 30px;
   height: 30px;
 }
-.account{
+.account {
   font-weight: 700;
 }
 @media screen and (max-width: 1200px) {
@@ -169,14 +165,14 @@ import AppLogo from "./app/app-logo.vue";
   .campare-wishlist {
     display: none;
   }
-  .compare-img{
+  .compare-img {
     width: 20px;
     height: 20px;
   }
-  .compare{
+  .compare {
     font-size: 16px;
   }
-  .account{
+  .account {
     font-weight: 700;
     margin: 14px 0px;
   }
