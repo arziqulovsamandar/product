@@ -50,9 +50,6 @@ import productCard from "../components/productCard.vue";
   display: flex;
   justify-content: center;
 }
-.futter {
-  margin: 130px 0px;
-}
 .navbar1 {
   display: flex;
   justify-content: space-between;

@@ -137,7 +137,7 @@
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="../assets/icons/google-play.jpg"
+                      src="../assets/img/google-play.jpg"
                       alt="Google Icon"
                     />
                   </a>
@@ -149,7 +149,7 @@
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="../assets/icons/app-store.jpg"
+                      src="../assets/img/app-store.jpg"
                       alt="Apple Icon"
                     />
                   </a>
@@ -165,7 +165,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="../assets/icons/payment-method.png"
+                  src="../assets/img/payment-method.png"
                   alt="Payment Icon"
                 />
               </a>
@@ -176,10 +176,12 @@
     </section>
 
     <!-- Rights & Social Links -->
-    <section class="rights-social border-t-2 border-green-500 pt-2 mt-4">
+    <section class="rights-social border-t-2 border-green-500 pt-2 mt-4"
+             style="justify-content: space-between"
+    >
       <div
         class="wrapper"
-        style="justify-content: space-between; align-items: center"
+        style="justify-content: space-between; align-items: center; gap: 23rem"
       >
         <p class="font-medium">© 2024, All rights reserved</p>
 
@@ -311,7 +313,7 @@ import AppLogo from "../components/app/app-logo.vue";
     align-items: center;
     border-radius: 9999px;
     background-color: #34d399;
-    padding: 0.5rem;
+    padding: 0.3rem;
     transition: opacity 0.3s;
 
     &:hover {
