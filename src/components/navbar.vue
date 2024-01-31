@@ -13,14 +13,14 @@
       <span style="color: yellowgreen">Became Vendor</span>
       <img
         class="right"
-        src="../../../assets/img/icons8-right-50.png"
+        src="../assets/img/icons8-right-50.png"
         alt=""
       />
     </div>
     <div style="display: flex;">
       <div style="margin: 20px; display: flex">
         <img
-          src="../../../assets/img/icons8-compare-git-50.png"
+          src="../assets/img/icons8-compare-git-50.png"
           alt=""
           class="compare-img"
         />
@@ -28,7 +28,7 @@
       </div>
       <div style="margin: 20px; display: flex">
         <img
-          src="../../../assets/img/icons8-heart-26.png"
+          src="../assets/img/icons8-heart-26.png"
           alt=""
           class="compare-img"
         />
@@ -36,7 +36,7 @@
       </div>
       <div style="margin: 20px; display: flex">
         <img
-          src="../../../assets/img/icons8-cart-24.png"
+          src="../assets/img/icons8-cart-24.png"
           alt=""
           class="compare-img"
         />
@@ -44,7 +44,7 @@
       </div>
       <div style="margin: 20px; display: flex">
         <img
-          src="../../../assets/img/icons8-user-30.png"
+          src="../assets/img/icons8-user-30.png"
           alt=""
           class="compare-img"
         />
@@ -54,7 +54,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import AppLogo from "../../../components/app/app-logo.vue";
+import AppLogo from "./app/app-logo.vue";
 </script>
 <style scoped>
 .navbar {

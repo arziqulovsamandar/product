@@ -32,8 +32,8 @@
 </template>
 
 <script setup lang="ts">
-import LangSwitcher from "../components/langSwitcher.vue";
-import Navbar from "./navbar.vue";
+import LangSwitcher from "../../../components/langSwitcher.vue";
+import Navbar from "../../../components/navbar.vue";
 import Futter from "../../../components/footer.vue";
 </script>
 
