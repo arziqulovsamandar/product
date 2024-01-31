@@ -176,6 +176,8 @@
     </section>
 
     <!-- Rights & Social Links -->
+    <section class="rights-social border-t-2 border-green-100 pt-2 mt-4"
+             style="justify-content: space-between"
     <section
       class="rights-social border-t-2 border-green-500 pt-2 mt-4"
     >
@@ -265,37 +267,6 @@ import AppLogo from "../components/app/app-logo.vue";
 </script>
 
 <style scoped>
-.tel-tel-all{
-  display: flex;
-}
-.futter-icons-all{
-  display: flex;
-}
-.inons-all{
-  margin: 5px;
-  width: 30px;
-  height: 30px;
-}
-.social-icon{
-  background-color: yellowgreen;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-}
-.h6as{
-  color: black;
-  font-size: 14px;
-  margin: -5px 0px;
-}
-.img-tel{
-  margin: 5px;
-  width: 40px;
-  height: 40px;
-}
-.wrapper1 {
-  display: flex;
-  justify-content: space-between;
-}
 .site-map {
   border-y: 1px solid #09d18b;
 }
