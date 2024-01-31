@@ -176,87 +176,125 @@
     </section>
 
     <!-- Rights & Social Links -->
-    <section class="rights-social border-t-2 border-green-100 pt-2 mt-4"
-             style="justify-content: space-between"
     <section
-      class="rights-social border-t-2 border-green-500 pt-2 mt-4"
+      class="rights-social border-t-2 border-green-100 pt-2 mt-4"
+      style="justify-content: space-between"
     >
       <div class="wrapper1">
-        <p class="font-medium">
-          © 2022,Nest - WordPress Ecommerce Template<br />
-          All rights reserved
-        </p>
+        <div>
+          <p class="font-medium">
+            © 2022,Nest - WordPress Ecommerce Template<br />
+            All rights reserved
+          </p>
+        </div>
 
         <div class="futter-icons-all">
           <div class="tel-tel-all">
-            <img class="img-tel" src="../assets/img/telephone-call.png" alt="">
-            <p class="flex font-medium text-green-500 text-2xl">
-              <a href="tel:+01001001">1900646666</a>
-              <br /><h6 class="h6as">Work Hours: 8:00 - 22:00</h6>
-            </p>
+            <img
+              class="img-tel"
+              src="../assets/img/telephone-call.png"
+              alt=""
+            />
+
+            <div>
+              <a
+                href="tel:+01001001"
+                style="color: yellowgreen"
+                >1900646666</a
+              >
+              <br />
+              <h6 class="h6as">Work Hours: 8:00 - 22:00</h6>
+            </div>
           </div>
           <div class="tel-tel-all">
-            <img class="img-tel" src="../assets/img/telephone-call.png" alt="">
-            <p class="flex font-medium text-green-500 text-2xl">
-              <a href="tel:+01001001">1900648888</a>
-              <br /><h6 class="h6as">24/7 Support Center</h6>
-            </p>
+            <img
+              class="img-tel"
+              src="../assets/img/telephone-call.png"
+              alt=""
+            />
+
+            <div>
+              <a
+                href="tel:+01001001"
+                style="color: yellowgreen"
+                >1900648888</a
+              >
+              <br />
+              <h6 class="h6as">24/7 Support Center</h6>
+            </div>
           </div>
         </div>
 
         <div>
           <div class="flex gap-4 mt-5 mx-5">
-          <h4>Follow us</h4>
-          <div class="social-icon">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-            <img class="inons-all" src="../assets/img/facebook.png" alt="">
-              <!-- Facebook icon -->
-            </a>
-          </div>
+            <h4>Follow us</h4>
+            <div class="social-icon">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="inons-all"
+                  src="../assets/img/facebook.png"
+                  alt=""
+                />
+                <!-- Facebook icon -->
+              </a>
+            </div>
 
-          <div class="social-icon">
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Linkedin"
-            >
-              <!-- Linkedin icon -->
-              <img class="inons-all" src="../assets/img/linkedin.png" alt="">
-            </a>
-          </div>
+            <div class="social-icon">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin"
+              >
+                <!-- Linkedin icon -->
+                <img
+                  class="inons-all"
+                  src="../assets/img/linkedin.png"
+                  alt=""
+                />
+              </a>
+            </div>
 
-          <div class="social-icon">
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <!-- Instagram icon -->
-              <img class="inons-all" src="../assets/img/instagram.png" alt="">
-            </a>
-          </div>
+            <div class="social-icon">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <!-- Instagram icon -->
+                <img
+                  class="inons-all"
+                  src="../assets/img/instagram.png"
+                  alt=""
+                />
+              </a>
+            </div>
 
-          <div class="social-icon">
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-            >
-              <!-- Twitter icon -->
-              <img class="inons-all" src="../assets/img/twitter.png" alt="">
-            </a>
+            <div class="social-icon">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <!-- Twitter icon -->
+                <img
+                  class="inons-all"
+                  src="../assets/img/twitter.png"
+                  alt=""
+                />
+              </a>
+            </div>
           </div>
+          <h4 class="mx-5">Up to 15% discount on your first subscribe</h4>
         </div>
-        <h4 class="mx-5">Up to 15% discount on your first subscribe</h4>
-        </div>
+
       </div>
     </section>
   </footer>
@@ -267,6 +305,27 @@ import AppLogo from "../components/app/app-logo.vue";
 </script>
 
 <style scoped>
+.tel-tel-all {
+  display: flex;
+}
+.futter-icons-all {
+  display: flex;
+}
+.wrapper1 {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-around;
+}
+.img-tel {
+  width: 40px;
+  height: 40px;
+}
+.inons-all {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
 .site-map {
   border-y: 1px solid #09d18b;
 }
@@ -292,7 +351,7 @@ import AppLogo from "../components/app/app-logo.vue";
   flex-direction: column;
   gap: 1rem;
 }
-.footer-list li :hover{
+.footer-list li :hover {
   color: #19f4a4;
 }
 .contact-us {
@@ -300,11 +359,11 @@ import AppLogo from "../components/app/app-logo.vue";
   flex-direction: column;
   gap: 1rem;
 }
-.li1{
+.li1 {
   display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    color: #34d399;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: #34d399;
 }
 .rights-social {
   display: flex;
@@ -318,9 +377,20 @@ import AppLogo from "../components/app/app-logo.vue";
     justify-content: space-between;
   }
 }
+@media screen and(max-width: 1000px) {
+  .futter-icons-all {
+    display: none;
+  }
+}
 @media screen and(max-width: 1000px){
   .futter-icons-all{
     display: none;
+  }
+  .tel-tel-all{
+    display: none;
+  }
+  .wrapper1{
+    flex-direction: column;
   }
 }
 </style>
