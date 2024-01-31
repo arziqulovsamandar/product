@@ -26,6 +26,7 @@
     ></a>
   </div>
   <Navbar />
+  <Product />
   <div class="futter">
     <Futter />
   </div>
@@ -35,10 +36,11 @@
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import Navbar from "../../../components/navbar.vue";
 import Futter from "../../../components/footer.vue";
+import Product from "./products.vue";
 </script>
 
 <style scoped>
-.futter{
+.futter {
   margin: 130px 0px;
 }
 .navbar {
