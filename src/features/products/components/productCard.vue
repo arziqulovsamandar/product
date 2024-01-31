@@ -124,20 +124,37 @@
 .top-seling-all h2 {
   color: rgb(61, 60, 57);
 }
-.top-seling-all {
-  width: 25%;
-}
 .top-seling-all hr {
   margin: 20px 5px;
-}
-.top-seling {
-  margin: 80px 30px;
-  display: flex;
-  justify-content: space-between;
 }
 .top-selling-img {
   width: 100px;
   height: 100px;
   border-radius: 5px;
 }
+.top-seling {
+  margin: 80px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Elementlar chetlashtirilgan joyda joylashishi */
+}
+
+.top-seling-all {
+  width: calc(25% - 20px); /* 4 ta div dan chetlab yoki marginlardan kichik joylar mahsulot qilamiz */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 880px) {
+  .top-seling-all {
+    width: calc(50% - 20px); /* 2 ta div qoladi */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top-seling-all {
+    width: calc(100% - 20px); /* Faqatgina 1 ta div qoladi */
+  }
+}
+
 </style>
