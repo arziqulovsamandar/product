@@ -176,12 +176,12 @@
     </section>
 
     <!-- Rights & Social Links -->
-    <section class="rights-social border-t-2 border-green-500 pt-2 mt-4"
+    <section class="rights-social border-t-2 border-green-100 pt-2 mt-4"
              style="justify-content: space-between"
     >
       <div
         class="wrapper"
-        style="justify-content: space-between; align-items: center; gap: 23rem"
+        style="justify-content: space-between; align-items: center; gap: 23rem; padding: 5px"
       >
         <p class="font-medium">© 2024, All rights reserved</p>
 
@@ -253,8 +253,11 @@ import AppLogo from "../components/app/app-logo.vue";
 </script>
 
 <style scoped>
-.site-map {
-  border-y: 1px solid #09d18b;
+.app-text-lg{
+  color: #253d4e;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 .wrapper {
   display: flex;
