@@ -26,6 +26,7 @@
     ></a>
   </div>
   <Navbar />
+  <Input placeholder="Your email address" button="Subscribe"/>
   <div class="futter">
     <Futter />
   </div>
@@ -35,6 +36,7 @@
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import Navbar from "../../../components/navbar.vue";
 import Futter from "../../../components/footer.vue";
+import Input from "../../../components/base/input.vue";
 </script>
 
 <style scoped>
