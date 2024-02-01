@@ -30,5 +30,27 @@
     "top_selling":"Top Selling",
     "recently":"Recently added",
     "top_raded":"Top Rated"
+  },
+  "banners": {
+    "intro_banner":{
+      "title": "Stay home & get your daily needs from our shop",
+      "subtitle": "Start Your Daily Shopping with",
+      "link": "Nest Mart"
+    },
+    "grid_banner":{
+      "title": "Stay home & get your daily needs from our shop",
+      "subtitle": "Start Your Daily Shopping with",
+      "link": "Nest Mart"
+    },
+    "inputs": {
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "nav": {
+      "cake": "Cake",
+      "coffee": "Coffes",
+      "pet_food": "Pet Foods",
+      "vegetables": "Vegetables"
+    }
   }
 }

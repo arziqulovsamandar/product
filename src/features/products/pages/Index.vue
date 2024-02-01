@@ -30,10 +30,10 @@
   </div>
   <!-- <drapDown /> -->
   <Banner
-    class="py-[60px] px-[50px]"
-    title="Stay home & get your daily needs from our shop"
-    subtitle="Start Your Daily Shopping with"
-    linkText="Nest Mart"
+    class="md:py-[60px] md:px-[50px] p-[25px]"
+    :title="t('banners.intro_banner.title')"
+    :subtitle="t('banners.intro_banner.subtitle')"
+    :linkText="t('banners.intro_banner.link')"
     img-centered
     blockCenter
     has-link
@@ -44,10 +44,10 @@
   <Product />
   <productCard />
   <Banner
-    class="bg-[#D8F1E5] rounded-3xl md:px-[78px] md:m-[10px] md:py-[84px] py-[25px] px-[25px]"
-    title="Stay home & get your daily needs from our shop"
-    subtitle="Start Your Daily Shopping with"
-    linkText="Nest Mart"
+    class="bg-[#D8F1E5] rounded-3xl md:px-[78px] md:m-[10px] md:py-[84px] p-[25px]"
+    :title="t('banners.grid_banner.title')"
+    :subtitle="t('banners.grid_banner.subtitle')"
+    :linkText="t('banners.grid_banner.link')"
     backgroundImage="src/assets/img/grid-banner.png"
   />
   <div>
@@ -68,7 +68,7 @@ import productCard from "../components/productCard.vue";
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import { useI18n } from "vue-i18n";
 // import drapDown from "../../../components/drop-down.vue";
-import productCard1 from '../../../components/product/product-card.vue';
+// import productCard1 from '../../../components/product/product-card.vue';
 const { t } = useI18n();
 </script>
 

@@ -18,32 +18,36 @@
       </div>
       <div class="flex mb-[45px]">
         {{ subtitle }}
-        <div class="text-[#3BB77E] cursor-pointer">
+        <a href="/" class="text-[#3BB77E] cursor-pointer">
           &nbsp{{ linkText }}
-        </div>
+        </a>
       </div>
-      <Input placeholder="Your email address" button="Subscribe" />
-      <div class="link-cake mt-[30px]" v-if="hasLink">
-        <a
-            class="link-cake-a"
-            href=""
-            >Cake</a
-        >
+      <Input :placeholder="t('banners.inputs.placeholder')" :button="t('banners.inputs.button')" />
+      <div class="link-cake mt-[30px] text-center" v-if="hasLink">
         <a
           class="link-cake-a"
           href=""
-          >Coffes</a
         >
+          {{ t('banners.nav.cake') }}
+        </a>
         <a
           class="link-cake-a"
           href=""
-          >Pet Foods</a
         >
+          {{ t('banners.nav.coffee') }}
+        </a>
         <a
           class="link-cake-a"
           href=""
-          >Vegetables</a
         >
+          {{ t('banners.nav.pet_food') }}
+        </a>
+        <a
+          class="link-cake-a"
+          href=""
+        >
+          {{ t('banners.nav.vegetables') }}
+        </a>
       </div>
     </div>
   </div>
@@ -51,6 +55,8 @@
 
 <script setup lang="ts">
 import Input from "../components/base/input.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 defineProps<{
   title?: string;
@@ -76,7 +82,7 @@ defineProps<{
 
 .link-cake {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   padding: 25px;
   text-decoration: none;
 }
