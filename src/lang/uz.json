@@ -71,5 +71,16 @@
     "work-hours":"Ish vaqti",
     "follow":"Bizga qo'shiling",
     "upto":"Birinchi obunangiz uchun 15% gacha chegirma"
+  },
+  "cards":{
+    "best":"Eng yaxshi narxlar va takliflar",
+    "orders":"$ 50 yoki undan ko'p buyurtmalar",
+    "free":"Bepul yetkazib berish",
+    "great":"Ajoyib kundalik shartnomalar",
+    "when":"Ro'yxatdan o'tganingizda",
+    "wide":"Keng assortiment",
+    "mega":"Katta chegirmalar",
+    "easy":"Oson qaytish",
+    "within":"30 kun ichida"
   }
 }

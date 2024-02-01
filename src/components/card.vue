@@ -8,8 +8,8 @@
         />
       </div>
       <div>
-        <h3>Best prices & offers</h3>
-        <p>Orders $50 or more</p>
+        <h3>{{ t('cards.best') }}</h3>
+        <p>{{ t('cards.orders') }}</p>
       </div>
     </div>
     <div class="card-container">
@@ -20,8 +20,8 @@
         />
       </div>
       <div>
-        <h3 style="padding-right: 75px">Free delivery</h3>
-        <p>24/7 amazing services</p>
+        <h3 style="padding-right: 75px">{{ t('cards.free') }}</h3>
+        <p>24/7 {{ t('futter.work-hours') }}</p>
       </div>
     </div>
     <div class="card-container">
@@ -32,8 +32,8 @@
         />
       </div>
       <div style="padding-right: 35px">
-        <h3>Great daily deal</h3>
-        <p>When you sign up</p>
+        <h3>{{ t('cards.great') }}</h3>
+        <p>{{ t('cards.when') }}</p>
       </div>
     </div>
     <div class="card-container">
@@ -44,8 +44,8 @@
         />
       </div>
       <div style="padding-right: 25px">
-        <h3>Wide assortment</h3>
-        <p>Mega discounts</p>
+        <h3>{{ t('cards.wide') }}</h3>
+        <p>{{ t('cards.mega') }}</p>
       </div>
     </div>
     <div class="card-container">
@@ -56,14 +56,17 @@
         />
       </div>
       <div style="padding-right: 55px">
-        <h3>Easy returns</h3>
-        <p>Within 30 days</p>
+        <h3>{{ t('cards.easy') }}</h3>
+        <p>{{ t('cards.within') }}</p>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+</script>
 
 <style scoped>
 .img-pd :hover {
