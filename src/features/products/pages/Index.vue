@@ -29,14 +29,30 @@
     <Navbar />
   </div>
   <h2 class="deals-of">Deals of the day</h2>
+  <Banner
+    class="py-[60px] px-[50px]"
+    title="Stay home & get your daily needs from our shop"
+    subtitle="Start Your Daily Shopping with"
+    linkText="Nest Mart"
+    blockCenter="true"
+    backgroundImage="src/assets/img/intro-banner.jpg"
+  />
   <Product />
   <productCard />
-  <div>
+  <Banner
+    class="bg-[#D8F1E5] rounded-3xl px-[78px] m-[10px] py-[84px]"
+    title="Stay home & get your daily needs from our shop"
+    subtitle="Start Your Daily Shopping with"
+    linkText="Nest Mart"
+    backgroundImage="src/assets/img/grid-banner.png"
+  />
+  <div class="futter">
     <Futter />
   </div>
 </template>
 
 <script setup lang="ts">
+import Banner from "../../../components/banner.vue";
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import Navbar from "../../../components/navbar.vue";
 import Futter from "../../../components/footer.vue";
