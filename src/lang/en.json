@@ -71,5 +71,16 @@
     "work-hours":"Work Hours",
     "follow":"Follow us",
     "upto":"Up to 15% discount on your first subscribe"
+  },
+  "cards":{
+    "best":"Best prices & offers",
+    "orders":"Orders $50 or more",
+    "free":"Free delivery",
+    "great":"Great daily deal",
+    "when":"When you sign up",
+    "wide":"Wide assortment",
+    "mega":"Mega discounts",
+    "easy":"Easy returns",
+    "within":"Within 30 days"
   }
 }
