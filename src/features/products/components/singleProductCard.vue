@@ -36,31 +36,31 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useProductStore } from "../store";
+// import { useProductStore } from "../store";
 import { ref, onMounted } from 'vue';
 
-const productCart = useProductStore();
+// const productCart = useProductStore();
 const props = defineProps({
   data: Object,
 });
 
 const count = ref(0);
 
-function increment() {
-  count.value += 1;
-  productCart.counterPlus(props.data?.id, "plus");
-}
+// function increment() {
+//   count.value += 1;
+//   productCart.counterPlus(props.data?.id, "plus");
+// }
 
-function decrement() {
-  if (count.value <= 1) {
-    return;
-  }
-  count.value -= 1;
-  productCart.counterPlus(props.data?.id, "minus");
-}
+// function decrement() {
+//   if (count.value <= 1) {
+//     return;
+//   }
+//   count.value -= 1;
+//   productCart.counterPlus(props.data?.id, "minus");
+// }
 
 function addToCart() {
-  productCart.addToCart(props.data);
+  // productCart.addToCart(props.data);
 }
 
 onMounted(() => {
