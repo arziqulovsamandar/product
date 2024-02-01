@@ -33,7 +33,9 @@
     title="Stay home & get your daily needs from our shop"
     subtitle="Start Your Daily Shopping with"
     linkText="Nest Mart"
-    blockCenter="true"
+    img-centered
+    blockCenter
+    has-link
     backgroundImage="src/assets/img/intro-banner.jpg"
   />
   <h2 class="deals-of">Trending items</h2>
@@ -41,7 +43,7 @@
   <Product />
   <productCard />
   <Banner
-    class="bg-[#D8F1E5] rounded-3xl px-[78px] m-[10px] py-[84px]"
+    class="bg-[#D8F1E5] rounded-3xl md:px-[78px] md:m-[10px] md:py-[84px] py-[25px] px-[25px]"
     title="Stay home & get your daily needs from our shop"
     subtitle="Start Your Daily Shopping with"
     linkText="Nest Mart"

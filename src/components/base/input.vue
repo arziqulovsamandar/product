@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-[450px] relative h-[64px] rounded-[50px] shadow-lg">
+  <div class="flex sm:w-[450px] relative h-[64px] rounded-[50px] shadow-lg w-full">
     <input
       class="px-[30px] rounded-[50px] outline-none w-full h-full"
       :placeholder="placeholder"
