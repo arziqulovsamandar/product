@@ -101,7 +101,7 @@ const { t } = useI18n();
   height: 50px;
   border-radius: 5px;
   padding: 10px;
-  width: 300px;
+  width: 250px;
   text-decoration-style: initial;
 }
 .nanbar-button {
@@ -150,9 +150,9 @@ const { t } = useI18n();
     width: 400px;
   }
 }
-@media screen and (max-width: 1405px) {
+@media screen and (max-width: 1430px) {
   .input-navbar {
-    width: 300px;
+    width: 200px;
   }
   .became-vendor1 {
     display: none;

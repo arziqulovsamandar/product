@@ -28,7 +28,7 @@
   <div>
     <Navbar />
   </div>
-  <drapDown />
+  <!-- <drapDown /> -->
   <Banner
     class="py-[60px] px-[50px]"
     title="Stay home & get your daily needs from our shop"
@@ -67,7 +67,8 @@ import Futter from "../../../components/footer.vue";
 import productCard from "../components/productCard.vue";
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import { useI18n } from "vue-i18n";
-import drapDown from "../../../components/drop-down.vue";
+// import drapDown from "../../../components/drop-down.vue";
+import productCard1 from '../../../components/product/product-card.vue';
 const { t } = useI18n();
 </script>
 
