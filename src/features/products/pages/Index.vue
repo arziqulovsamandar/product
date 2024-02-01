@@ -36,8 +36,8 @@
     blockCenter="true"
     backgroundImage="src/assets/img/intro-banner.jpg"
   />
-  <h2 class="deals-of">Trending items</h2>
-  <h2 class="deals-of">Deals of the day</h2>
+  <h2 class="deals-of">{{ t('index.trending') }}</h2>
+  <h2 class="deals-of">{{ t('index.deals') }}</h2>
   <Product />
   <productCard />
   <Banner

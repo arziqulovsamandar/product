@@ -2,7 +2,7 @@
   <div>
     <div class="top-seling">
       <div class="top-seling-all">
-        <h2>Top Selling</h2>
+        <h2>{{ t('product_card.top_selling') }}</h2>
         <hr />
         <div
           style="display: flex"
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="top-seling-all">
-        <h2>Trending Products</h2>
+        <h2>{{ t('index.trending') }}</h2>
         <hr />
         <div
           style="display: flex"
@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="top-seling-all">
-        <h2>Recently added</h2>
+        <h2>{{ t('product_card.recently') }}</h2>
         <hr />
         <div
           style="display: flex"
@@ -71,7 +71,7 @@
         </div>
       </div>
       <div class="top-seling-all">
-        <h2>Top Rated</h2>
+        <h2>{{ t('product_card.top_raded') }}</h2>
         <hr />
         <div
           style="display: flex"
@@ -96,7 +96,10 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+</script>
 <style scoped>
 .h5 :hover {
   color: yellowgreen;
@@ -140,7 +143,9 @@
 }
 
 .top-seling-all {
-  width: calc(25% - 20px); /* 4 ta div dan chetlab yoki marginlardan kichik joylar mahsulot qilamiz */
+  width: calc(
+    25% - 20px
+  ); /* 4 ta div dan chetlab yoki marginlardan kichik joylar mahsulot qilamiz */
   margin: 10px;
   box-sizing: border-box;
 }
@@ -156,5 +161,4 @@
     width: calc(100% - 20px); /* Faqatgina 1 ta div qoladi */
   }
 }
-
 </style>
