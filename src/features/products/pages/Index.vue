@@ -28,7 +28,7 @@
   <div>
     <Navbar />
   </div>
-  <!-- <drapDown /> -->
+  <drapDown />
   <Banner
     class="md:py-[60px] md:px-[50px] p-[25px]"
     :title="t('banners.intro_banner.title')"
@@ -39,7 +39,9 @@
     has-link
     backgroundImage="src/assets/img/intro-banner.jpg"
   />
+
   <h2 class="deals-of">{{ t('index.trending') }}</h2>
+  <singleProductCard />
   <h2 class="deals-of">{{ t('index.deals') }}</h2>
   <Product />
   <productCard />
@@ -67,8 +69,9 @@ import Futter from "../../../components/footer.vue";
 import productCard from "../components/productCard.vue";
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import { useI18n } from "vue-i18n";
-// import drapDown from "../../../components/drop-down.vue";
-// import productCard1 from '../../../components/product/product-card.vue';
+import singleProductCard from '../components/singleProductCard.vue';
+import drapDown from "../../../components/drop-down.vue";
+
 const { t } = useI18n();
 </script>
 
@@ -83,6 +86,7 @@ const { t } = useI18n();
   justify-content: space-between;
   border: 1px solid rgb(227, 192, 192);
   padding: 10px;
+  width: 96%;
 }
 .navbar1 a {
   color: rgb(77, 92, 90);

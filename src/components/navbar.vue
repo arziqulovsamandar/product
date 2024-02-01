@@ -86,6 +86,7 @@ const { t } = useI18n();
 .navbar {
   display: flex;
   justify-content: space-between;
+  width: 95%;
 }
 .navbar-h1 {
   font-size: 36px;
@@ -156,7 +157,7 @@ const { t } = useI18n();
     width: 400px;
   }
 }
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1440px) {
   .input-navbar {
     width: 300px;
   }

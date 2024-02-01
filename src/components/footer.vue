@@ -298,6 +298,10 @@ const { t } = useI18n();
 </script>
 
 <style scoped>
+footer{
+  width: 95%;
+  margin: 2px;
+}
 .phone-number {
   cursor: pointer;
   color: yellowgreen;

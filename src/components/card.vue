@@ -78,6 +78,7 @@ const { t } = useI18n();
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 95%;
 }
 
 .card-container {

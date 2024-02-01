@@ -35,16 +35,14 @@
     </div>
   </div>
 </template>
-
-<script setup>
+<script setup lang="ts">
 import { useProductStore } from "../store";
+import { ref, onMounted } from 'vue';
 
 const productCart = useProductStore();
 const props = defineProps({
   data: Object,
 });
-
-import { ref, onMounted } from 'vue';
 
 const count = ref(0);
 
