@@ -11,11 +11,11 @@
           :placeholder="t('navbar.search_placeholder')"
           class="input-navbar"
         />
-        <button class="nanbar-button">{{ t('navbar.search') }}</button>
+        <button class="nanbar-button">{{ t("navbar.search") }}</button>
       </div>
     </div>
     <div class="became-vendor1">
-      <span style="color: yellowgreen">{{ t('navbar.become') }}</span>
+      <h5 class="navbar-become1">{{ t("navbar.become") }}</h5>
       <img
         class="right"
         src="../assets/img/icons8-right-50.png"
@@ -30,7 +30,7 @@
             alt=""
             class="compare-img"
           />
-          <h1 class="compare">{{ t('navbar.compare') }}</h1>
+          <h1 class="compare">{{ t("navbar.compare") }}</h1>
         </div>
         <div style="margin: 20px; display: flex">
           <img
@@ -38,7 +38,7 @@
             alt=""
             class="compare-img"
           />
-          <h1 class="compare">{{ t('navbar.wishlist') }}</h1>
+          <h1 class="compare">{{ t("navbar.wishlist") }}</h1>
         </div>
       </div>
       <div style="margin: 20px; display: flex">
@@ -47,7 +47,7 @@
           alt=""
           class="compare-img"
         />
-        <h1 class="compare">{{ t('navbar.cart') }}</h1>
+        <h1 class="compare">{{ t("navbar.cart") }}</h1>
       </div>
       <div style="margin: 20px; display: flex">
         <img
@@ -58,7 +58,7 @@
         <a
           href="/login"
           class="compare account"
-          >{{ t('navbar.account') }}</a
+          >{{ t("navbar.account") }}</a
         >
       </div>
     </div>
@@ -70,6 +70,12 @@ import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
 <style scoped>
+.navbar-become1 {
+  color: yellowgreen;
+}
+.right {
+  margin: 0px 40px;
+}
 .campare-wishlist {
   display: flex;
 }
@@ -101,7 +107,7 @@ const { t } = useI18n();
   height: 50px;
   border-radius: 5px;
   padding: 10px;
-  width: 250px;
+  width: 300px;
   text-decoration-style: initial;
 }
 .nanbar-button {
@@ -118,7 +124,7 @@ const { t } = useI18n();
   padding: 5px;
   margin: 25px;
   border: 2px solid yellowgreen;
-  width: 15%;
+  width: auto;
   gap: 10px;
   height: 40px;
   border-radius: 5px;
@@ -152,7 +158,7 @@ const { t } = useI18n();
 }
 @media screen and (max-width: 1430px) {
   .input-navbar {
-    width: 200px;
+    width: 300px;
   }
   .became-vendor1 {
     display: none;
