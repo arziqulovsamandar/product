@@ -50,10 +50,10 @@
 }
 
 .card-container {
-  width: 300px;
-  min-width: 250px; 
+  width: 250px;
+  min-width: 200px; 
   margin: 10px; 
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center; 
