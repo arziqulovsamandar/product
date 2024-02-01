@@ -12,5 +12,23 @@
     "order":"Order tracking",
     "securete":"100% Secure delivery without contacting the courier",
     "need_help":"Neeed help? Call Us:"
+  },
+  "navbar":{
+    "search":"Search",
+    "search_placeholder":"Search for products...",
+    "become":"Became Vendor",
+    "compare":"Compare",
+    "wishlist":"Wishlist",
+    "cart":"Cart",
+    "account":"Account"
+  },
+  "index":{
+    "trending":"Trending items",
+    "deals":"Deals of the day"
+  },
+  "product_card":{
+    "top_selling":"Top Selling",
+    "recently":"Recently added",
+    "top_raded":"Top Rated"
   }
 }

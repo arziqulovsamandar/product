@@ -8,14 +8,14 @@
       >
         <input
           type="text"
-          placeholder="Search for products..."
+          :placeholder="t('navbar.search_placeholder')"
           class="input-navbar"
         />
-        <button class="nanbar-button">Search</button>
+        <button class="nanbar-button">{{ t('navbar.search') }}</button>
       </div>
     </div>
     <div class="became-vendor1">
-      <span style="color: yellowgreen">Became Vendor</span>
+      <span style="color: yellowgreen">{{ t('navbar.become') }}</span>
       <img
         class="right"
         src="../assets/img/icons8-right-50.png"
@@ -30,7 +30,7 @@
             alt=""
             class="compare-img"
           />
-          <h1 class="compare">Compare</h1>
+          <h1 class="compare">{{ t('navbar.compare') }}</h1>
         </div>
         <div style="margin: 20px; display: flex">
           <img
@@ -38,7 +38,7 @@
             alt=""
             class="compare-img"
           />
-          <h1 class="compare">Wishlist</h1>
+          <h1 class="compare">{{ t('navbar.wishlist') }}</h1>
         </div>
       </div>
       <div style="margin: 20px; display: flex">
@@ -47,7 +47,7 @@
           alt=""
           class="compare-img"
         />
-        <h1 class="compare">Cart</h1>
+        <h1 class="compare">{{ t('navbar.cart') }}</h1>
       </div>
       <div style="margin: 20px; display: flex">
         <img
@@ -58,7 +58,7 @@
         <a
           href="/login"
           class="compare account"
-          >Account</a
+          >{{ t('navbar.account') }}</a
         >
       </div>
     </div>
@@ -66,6 +66,8 @@
 </template>
 <script setup lang="ts">
 import AppLogo from "./app/app-logo.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 <style scoped>
 .campare-wishlist {
