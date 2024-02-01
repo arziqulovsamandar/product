@@ -9,125 +9,125 @@
           <ul class="contact-us">
             <li class="l1">
               <span :i-carbon-location-filled="true"></span>
-              <p class="font-medium">Address:</p>
-              <p class="text-blue-200">9999 UMB House Road</p>
+              <p class="font-medium">{{ t('futter.address') }}</p>
+              <p class="text-blue-200">{{ t('futter.umb') }}</p>
             </li>
 
             <li class="l1">
               <span :i-bx-support="true"></span>
-              <p class="font-medium">Call Us:</p>
+              <p class="font-medium">{{ t('futter.call') }}</p>
               <p class="text-blue-200">+01 (3050) 001</p>
             </li>
 
             <li class="l1">
               <span :i-carbon-email="true"></span>
-              <p class="font-medium">Email:</p>
+              <p class="font-medium">{{ t('futter.umb') }}</p>
               <p class="text-blue-200">umbstore@gmail.com</p>
             </li>
 
             <li class="l1">
               <span :i-carbon-time="true"></span>
-              <p class="font-medium">Hours:</p>
+              <p class="font-medium">{{ t('futter.hours') }}</p>
               <p class="text-blue-200">8:00 AM - 12:00 PM and 4/7</p>
             </li>
           </ul>
         </div>
 
         <div class="footer-block">
-          <p class="app-text-lg">Company</p>
+          <p class="app-text-lg">{{ t('futter.company') }}</p>
 
           <ul class="footer-list">
-            <li><router-link to="/about">About Us</router-link></li>
+            <li><router-link to="/about">{{ t('product.about') }}</router-link></li>
             <li>
-              <router-link to="/delivery">Delivery Information</router-link>
+              <router-link to="/delivery">{{ t('futter.deleviry') }}</router-link>
             </li>
-            <li><router-link to="/privacy">Privacy Policy</router-link></li>
-            <li><router-link to="/terms">Terms & Conditions</router-link></li>
-            <li><router-link to="/contact">Contact Us</router-link></li>
-            <li><router-link to="/support">Support Center</router-link></li>
-            <li><router-link to="/careers">Careers</router-link></li>
+            <li><router-link to="/privacy">{{ t('futter.privarcy') }}</router-link></li>
+            <li><router-link to="/terms">{{ t('futter.terms') }}</router-link></li>
+            <li><router-link to="/contact">{{ t('futter.call') }}</router-link></li>
+            <li><router-link to="/support">{{ t('futter.support') }}</router-link></li>
+            <li><router-link to="/careers">{{ t('futter.careers') }}</router-link></li>
           </ul>
         </div>
 
         <div class="footer-block">
-          <p class="app-text-lg">Account</p>
+          <p class="app-text-lg">{{ t('navbar.account') }}</p>
 
           <ul class="footer-list">
-            <li><router-link to="/signin">Sign In</router-link></li>
-            <li><router-link to="/cart">View Cart</router-link></li>
-            <li><router-link to="/wishlist">My Wishlist</router-link></li>
-            <li><router-link to="/track-order">Track My Order</router-link></li>
-            <li><router-link to="/help-ticket">Help Ticket</router-link></li>
+            <li><router-link to="/signin">{{ t('futter.signn') }}</router-link></li>
+            <li><router-link to="/cart">{{ t('futter.cart') }}</router-link></li>
+            <li><router-link to="/wishlist">{{ t('navbar.wishlist') }}</router-link></li>
+            <li><router-link to="/track-order">{{ t('futter.track') }}</router-link></li>
+            <li><router-link to="/help-ticket">{{ t('futter.help1') }}</router-link></li>
             <li>
-              <router-link to="/shipping-details">Shipping Details</router-link>
+              <router-link to="/shipping-details">{{ t('futter.shiping') }}</router-link>
             </li>
             <li>
-              <router-link to="/compare-products">Compare Products</router-link>
+              <router-link to="/compare-products">{{ t('futter.compare') }}</router-link>
             </li>
           </ul>
         </div>
 
         <div class="footer-block">
-          <p class="app-text-lg">Corporate</p>
+          <p class="app-text-lg">{{ t('futter.corparate') }}</p>
 
           <ul class="footer-list">
             <li>
-              <router-link to="/become-vendor">Become a Vendor</router-link>
+              <router-link to="/become-vendor">{{ t('navbar.become') }}</router-link>
             </li>
             <li>
               <router-link to="/affiliate-program"
-                >Affiliate Program</router-link
+                >{{ t('futter.affilate') }}</router-link
               >
             </li>
             <li>
-              <router-link to="/farm-business">Farm Business</router-link>
+              <router-link to="/farm-business">{{ t('futter.busines') }}</router-link>
             </li>
-            <li><router-link to="/farm-careers">Farm Careers</router-link></li>
+            <li><router-link to="/farm-careers">{{ t('futter.careers') }}</router-link></li>
             <li>
-              <router-link to="/our-suppliers">Our Suppliers</router-link>
+              <router-link to="/our-suppliers">{{ t('futter.supliers') }}</router-link>
             </li>
             <li>
-              <router-link to="/accessibility">Accessibility</router-link>
+              <router-link to="/accessibility">{{ t('futter.access') }}</router-link>
             </li>
-            <li><router-link to="/promotions">Promotions</router-link></li>
+            <li><router-link to="/promotions">{{ t('futter.promo') }}</router-link></li>
           </ul>
         </div>
 
         <div class="footer-block">
-          <p class="app-text-lg">Popular</p>
+          <p class="app-text-lg">{{ t('futter.popular') }}</p>
 
           <ul class="footer-list">
             <li>
               <router-link to="/milk-flavoured-milk"
-                >Milk & Flavoured Milk</router-link
+                >{{ t('futter.milk') }}</router-link
               >
             </li>
             <li>
               <router-link to="/butter-margarine"
-                >Butter and Margarine</router-link
+                >{{ t('futter.butter') }}</router-link
               >
             </li>
             <li>
-              <router-link to="/eggs-substitutes">Eggs Substitutes</router-link>
+              <router-link to="/eggs-substitutes">{{ t('futter.eggs') }}</router-link>
             </li>
-            <li><router-link to="/marmalades">Marmalades</router-link></li>
+            <li><router-link to="/marmalades">{{ t('futter.marmalades') }}</router-link></li>
             <li>
               <router-link to="/sour-cream-dips"
-                >Sour Cream and Dips</router-link
+                >{{ t("futter.sour") }}</router-link
               >
             </li>
             <li>
-              <router-link to="/tea-kombucha">Tea & Kombucha</router-link>
+              <router-link to="/tea-kombucha">{{ t('futter.tea') }}</router-link>
             </li>
-            <li><router-link to="/cheese">Cheese</router-link></li>
+            <li><router-link to="/cheese">{{ t('futter.cheasee') }}</router-link></li>
           </ul>
         </div>
 
         <div class="footer-block">
-          <p class="app-text-lg">Install App</p>
+          <p class="app-text-lg">{{ t('futter.install') }}</p>
 
           <ul class="footer-list">
-            <p class="text-blue-200">From App Store or Google Play</p>
+            <p class="text-blue-200">{{ t('futter.geogle') }}</p>
             <div class="app-stores">
               <ul class="mt-4 flex gap-4 text-xl">
                 <li class="stores-icon">
@@ -157,7 +157,7 @@
               </ul>
             </div>
 
-            <p class="text-blue-200">Secured Payment Gateways</p>
+            <p class="text-blue-200">{{ t('futter.secured') }}</p>
             <li class="stores-icon">
               <a
                 href="https://www.google.com/search?q=money+transfer+options"
@@ -183,8 +183,8 @@
       <div class="wrapper1">
         <div>
           <p class="font-medium">
-            © 2022,Nest - WordPress Ecommerce Template<br />
-            All rights reserved
+            {{ t('futter.nest') }}<br />
+            {{ t('futter.all') }}
           </p>
         </div>
 
@@ -199,7 +199,7 @@
             <div>
               <span class="phone-number">1900646666</span>
               <br />
-              <h6 class="h6as">Work Hours: 8:00 - 22:00</h6>
+              <h6 class="h6as">{{ t('futter.work-hours') }}: 8:00 - 22:00</h6>
             </div>
           </div>
           <div class="tel-tel-all">
@@ -212,14 +212,14 @@
             <div>
               <span class="phone-number">1900648888</span>
               <br />
-              <h6 class="h6as">24/7 Support Center</h6>
+              <h6 class="h6as">24/7 {{ t('futter.support') }}</h6>
             </div>
           </div>
         </div>
 
         <div>
           <div class="flex gap-4 mt-5 mx-5">
-            <h4>Follow us</h4>
+            <h4>{{ t('futter.follow') }}</h4>
             <div class="social-icon">
               <a
                 href="https://www.facebook.com"
@@ -284,7 +284,7 @@
               </a>
             </div>
           </div>
-          <h4 class="mx-5">Up to 15% discount on your first subscribe</h4>
+          <h4 class="mx-5">{{ t('futter.upto') }}</h4>
         </div>
       </div>
     </section>
@@ -293,6 +293,8 @@
 
 <script setup lang="ts">
 import AppLogo from "../components/app/app-logo.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 
 <style scoped>
