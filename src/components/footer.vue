@@ -7,25 +7,25 @@
           <AppLogo />
 
           <ul class="contact-us">
-            <li>
+            <li class="l1">
               <span :i-carbon-location-filled="true"></span>
               <p class="font-medium">Address:</p>
               <p class="text-blue-200">9999 UMB House Road</p>
             </li>
 
-            <li>
+            <li class="l1">
               <span :i-bx-support="true"></span>
               <p class="font-medium">Call Us:</p>
               <p class="text-blue-200">+01 (3050) 001</p>
             </li>
 
-            <li>
+            <li class="l1">
               <span :i-carbon-email="true"></span>
               <p class="font-medium">Email:</p>
               <p class="text-blue-200">umbstore@gmail.com</p>
             </li>
 
-            <li>
+            <li class="l1">
               <span :i-carbon-time="true"></span>
               <p class="font-medium">Hours:</p>
               <p class="text-blue-200">8:00 AM - 12:00 PM and 4/7</p>
@@ -176,73 +176,125 @@
     </section>
 
     <!-- Rights & Social Links -->
-    <section class="rights-social border-t-2 border-green-500 pt-2 mt-4"
-             style="justify-content: space-between"
+    <section
+      class="rights-social border-t-2 border-green-100 pt-2 mt-4"
+      style="justify-content: space-between"
     >
-      <div
-        class="wrapper"
-        style="justify-content: space-between; align-items: center; gap: 23rem"
-      >
-        <p class="font-medium">© 2024, All rights reserved</p>
+      <div class="wrapper1">
+        <div>
+          <p class="font-medium">
+            © 2022,Nest - WordPress Ecommerce Template<br />
+            All rights reserved
+          </p>
+        </div>
 
-        <div class="flex gap-4 mt-4">
-          <div>
-            <span :i-icon-phone="true"></span>
+        <div class="futter-icons-all">
+          <div class="tel-tel-all">
+            <img
+              class="img-tel"
+              src="../assets/img/telephone-call.png"
+              alt=""
+            />
+
+            <div>
+              <a
+                href="tel:+01001001"
+                style="color: yellowgreen"
+                >1900646666</a
+              >
+              <br />
+              <h6 class="h6as">Work Hours: 8:00 - 22:00</h6>
+            </div>
           </div>
+          <div class="tel-tel-all">
+            <img
+              class="img-tel"
+              src="../assets/img/telephone-call.png"
+              alt=""
+            />
 
-          <div>
-            <p class="font-medium text-green-500 text-2xl">
-              <a href="tel:+01001001">+01 (001) 001</a>
-            </p>
-            <p>Work Hours: 8:00 AM - 12:00 PM (Mon-Thu)</p>
+            <div>
+              <a
+                href="tel:+01001001"
+                style="color: yellowgreen"
+                >1900648888</a
+              >
+              <br />
+              <h6 class="h6as">24/7 Support Center</h6>
+            </div>
           </div>
         </div>
 
-        <ul class="mt-4 flex gap-4 text-xl">
-          <li class="social-icon">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              <!-- Facebook icon -->
-            </a>
-          </li>
+        <div>
+          <div class="flex gap-4 mt-5 mx-5">
+            <h4>Follow us</h4>
+            <div class="social-icon">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  class="inons-all"
+                  src="../assets/img/facebook.png"
+                  alt=""
+                />
+                <!-- Facebook icon -->
+              </a>
+            </div>
 
-          <li class="social-icon">
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Linkedin"
-            >
-              <!-- Linkedin icon -->
-            </a>
-          </li>
+            <div class="social-icon">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin"
+              >
+                <!-- Linkedin icon -->
+                <img
+                  class="inons-all"
+                  src="../assets/img/linkedin.png"
+                  alt=""
+                />
+              </a>
+            </div>
 
-          <li class="social-icon">
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <!-- Instagram icon -->
-            </a>
-          </li>
+            <div class="social-icon">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <!-- Instagram icon -->
+                <img
+                  class="inons-all"
+                  src="../assets/img/instagram.png"
+                  alt=""
+                />
+              </a>
+            </div>
 
-          <li class="social-icon">
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-            >
-              <!-- Twitter icon -->
-            </a>
-          </li>
-        </ul>
+            <div class="social-icon">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <!-- Twitter icon -->
+                <img
+                  class="inons-all"
+                  src="../assets/img/twitter.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <h4 class="mx-5">Up to 15% discount on your first subscribe</h4>
+        </div>
+
       </div>
     </section>
   </footer>
@@ -253,14 +305,35 @@ import AppLogo from "../components/app/app-logo.vue";
 </script>
 
 <style scoped>
+.tel-tel-all {
+  display: flex;
+}
+.futter-icons-all {
+  display: flex;
+}
+.wrapper1 {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-around;
+}
+.img-tel {
+  width: 40px;
+  height: 40px;
+}
+.inons-all {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
 .site-map {
   border-y: 1px solid #09d18b;
 }
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
 }
 .footer-block {
   flex: 1;
@@ -277,55 +350,47 @@ import AppLogo from "../components/app/app-logo.vue";
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
-  a {
-    &:hover {
-      color: #34d399;
-    }
-  }
+}
+.footer-list li :hover {
+  color: #19f4a4;
 }
 .contact-us {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
-  li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    color: #34d399;
-  }
+}
+.li1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: #34d399;
 }
 .rights-social {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+  .rights-social {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .social-icon {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    border-radius: 9999px;
-    background-color: #34d399;
-    padding: 0.3rem;
-    transition: opacity 0.3s;
-
-    &:hover {
-      opacity: 0.9;
-    }
-
-    a {
-      display: block;
-      width: 24px;
-      height: 24px;
-      background-size: cover;
-    }
+}
+@media screen and(max-width: 1000px) {
+  .futter-icons-all {
+    display: none;
+  }
+}
+@media screen and(max-width: 1000px){
+  .futter-icons-all{
+    display: none;
+  }
+  .tel-tel-all{
+    display: none;
+  }
+  .wrapper1{
+    flex-direction: column;
   }
 }
 </style>
