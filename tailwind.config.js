@@ -32,12 +32,11 @@ export default {
 
       keyframes: {
         progress: {
-          '0%': { width: '0%' },
-          '100%': { transform: '100%' },
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
         },
       },
     },
   },
   plugins: [],
 };
-

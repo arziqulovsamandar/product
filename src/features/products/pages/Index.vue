@@ -1,29 +1,29 @@
 <template>
   <div class="navbar1">
     <div>
-      <a href="">About Us</a>
+      <a href="">{{ t('product.about') }}</a>
       <span> | </span>
-      <a href="">My Account</a>
+      <a href="">{{ t('product.my_acount') }}</a>
       <span> | </span>
-      <a href="">Wishlist</a>
+      <a href="">{{ t('product.wishlist') }}</a>
       <span> | </span>
-      <a href="">Order Tracking</a>
+      <a href="">{{ t('product.order') }}</a>
     </div>
     <a href=""
       ><span class="navbar-p1"
-        >100% Secure delivery without contacting the courier</span
+        >{{ t('product.securete') }}</span
       ></a
     >
     <div>
       <a href=""
-        >Neeed help? Call Us: <span class="navbar-p">+1800900122</span></a
+        >{{ t('product.need_help') }}<span class="navbar-p">+1800900122</span></a
       >
     </div>
-    <a
+    <div
       href=""
       class="navbar-lang"
       ><span> | </span><lang-switcher /><span> | </span> INR <span> </span
-    ></a>
+    ></div>
   </div>
   <div>
     <Navbar />
@@ -38,8 +38,8 @@
     has-link
     backgroundImage="src/assets/img/intro-banner.jpg"
   />
-  <h2 class="deals-of">Trending items</h2>
-  <h2 class="deals-of">Deals of the day</h2>
+  <h2 class="deals-of">{{ t('index.trending') }}</h2>
+  <h2 class="deals-of">{{ t('index.deals') }}</h2>
   <Product />
   <productCard />
   <Banner
@@ -49,18 +49,24 @@
     linkText="Nest Mart"
     backgroundImage="src/assets/img/grid-banner.png"
   />
+  <div>
+    <Card />
+  </div>
   <div class="futter">
     <Futter />
   </div>
 </template>
 
 <script setup lang="ts">
+import Card from '../../../components/card.vue';
+import Product from "../components/products.vue";
 import Banner from "../../../components/banner.vue";
-import LangSwitcher from "../../../components/langSwitcher.vue";
 import Navbar from "../../../components/navbar.vue";
 import Futter from "../../../components/footer.vue";
-import Product from "../components/products.vue";
 import productCard from "../components/productCard.vue";
+import LangSwitcher from "../../../components/langSwitcher.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 
 <style scoped>
@@ -97,6 +103,7 @@ import productCard from "../components/productCard.vue";
 .navbar-lang {
   display: flex;
   gap: 5px;
+  font-size: 14px;
 }
 .navbar1 a :hover {
   color: black;

@@ -1,0 +1,34 @@
+{
+  "login": {
+    "phone_number": "Telefon raqam",
+    "kod": "Kodni olish",
+    "sms_code": "Sms kod",
+    "confirmation": "Tasdiqlash"
+  },
+  "product": {
+    "about": "Biz haqimizda",
+    "my_acount": "Mening hisobim",
+    "wishlist": "Sevimlilar",
+    "order": "Buyurtmani kuzatish",
+    "securete": "Kuryerga murojaat qilmasdan 100% xavfsiz yetkazib berish",
+    "need_help": "Yordam kerakmi? Bizga qo'ng'iroq qiling:"
+  },
+  "navbar": {
+    "search": "Qidiruv",
+    "search_placeholder": "Mahsulotlarni qidirish...",
+    "become": "Sotuvga o'tish",
+    "compare": "Qayta ishlash",
+    "wishlist": "Sevimlilar",
+    "cart": "Savat",
+    "account": "Hisob"
+  },
+  "index": {
+    "trending": "Ko'p sotilgan tovar",
+    "deals":"Kunning takliflari"
+  },
+  "product_card":{
+    "top_selling":"Eng ko'p sotilgan",
+    "recently":"Yaqinda qo'shilgan",
+    "top_raded":"Eng yuqori balli"
+  }
+}
