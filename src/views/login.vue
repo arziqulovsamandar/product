@@ -6,18 +6,18 @@
         v-if="showModal1"
       >
         <form class="login-form">
-          <h2>{{ t("login") }}</h2>
+          <h2>{{ t("login.phone_number") }}</h2>
           <input
             type="tel"
             v-model="phoneNumber"
-            placeholder="Telefon raqam"
+            :placeholder="t('login.phone_number')"
           />
           <button
             type="button"
             class="button1"
             @click="submitPhoneNumber"
           >
-            Kodni olish
+            {{ t('login.kod') }}
           </button>
         </form>
       </div>
@@ -28,18 +28,18 @@
         class="modal"
       >
         <div class="login-form">
-          <h2>SMS Kodini Kiriting</h2>
+          <h2>{{ t('login.sms_code') }}</h2>
           <input
             class="sms-kod"
             type="text"
             v-model="smsCode"
-            placeholder="SMS Kod"
+            :placeholder="t('login.sms_code')"
           />
           <button
             @click="submitSmsCode"
             class="button1"
           >
-            Tasdiqlash
+            {{ t('login.confirmation') }}
           </button>
         </div>
       </div>

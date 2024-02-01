@@ -1,3 +1,16 @@
 {
-    "login":"Telefon raqam"
+  "login": {
+    "phone_number": "Telefon raqam",
+    "kod":"Kodni olish",
+    "sms_code":"Sms kod",
+    "confirmation":"Tasdiqlash"
+  },
+  "product":{
+    "about":"Biz haqimizda",
+    "my_acount":"Mening hisobim",
+    "wishlist":"Sevimlilar",
+    "order":"Buyurtmani kuzatish",
+    "securete":"Kuryerga murojaat qilmasdan 100% xavfsiz yetkazib berish",
+    "need_help":"Yordam kerakmi? Bizga qo'ng'iroq qiling:"
+  }
 }

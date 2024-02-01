@@ -1,3 +1,16 @@
 {
-    "login":"Phone number"
+  "login": {
+    "phone_number": "Phone number",
+    "kod":"Get the code",
+    "sms_code":"Sms c code",
+    "confirmation":"Confirmation"
+  },
+  "product":{
+    "about":"About Us",
+    "my_acount":"My account",
+    "wishlist":"Wishlist",
+    "order":"Order tracking",
+    "securete":"100% Secure delivery without contacting the courier",
+    "need_help":"Neeed help? Call Us:"
+  }
 }
