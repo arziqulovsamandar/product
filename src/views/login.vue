@@ -6,7 +6,7 @@
         v-if="showModal1"
       >
         <form class="login-form">
-          <h2>Telefon raqamini kiriting</h2>
+          <h2>{{ t("login") }}</h2>
           <input
             type="tel"
             v-model="phoneNumber"
@@ -45,10 +45,16 @@
       </div>
     </div>
   </div>
+  <div class="absolute items-end top-5 right-5 text-center">
+    <lang-switcher />
+  </div>
 </template>
 
 <script setup lang="ts">
-import { useRouter } from 'vue-router';
+import LangSwitcher from "../components/langSwitcher.vue";
+import { useRouter } from "vue-router";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 
 const router = useRouter();
 import { ref } from "vue";
@@ -64,9 +70,8 @@ const submitPhoneNumber = () => {
 };
 
 const submitSmsCode = () => {
-  router.push("/")
+  router.push("/");
 };
-
 </script>
 
 <style scoped>
