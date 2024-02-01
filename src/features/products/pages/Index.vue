@@ -68,7 +68,7 @@ import productCard from "../components/productCard.vue";
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import { useI18n } from "vue-i18n";
 // import drapDown from "../../../components/drop-down.vue";
-import productCard1 from '../../../components/product/product-card.vue';
+// import productCard1 from '../../../components/product/product-card.vue';
 const { t } = useI18n();
 </script>
 
