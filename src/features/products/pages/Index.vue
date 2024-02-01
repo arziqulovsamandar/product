@@ -47,18 +47,22 @@
     linkText="Nest Mart"
     backgroundImage="src/assets/img/grid-banner.png"
   />
+  <div>
+    <Card />
+  </div>
   <div class="futter">
     <Futter />
   </div>
 </template>
 
 <script setup lang="ts">
+import Card from '../../../components/card.vue';
+import Product from "../components/products.vue";
 import Banner from "../../../components/banner.vue";
-import LangSwitcher from "../../../components/langSwitcher.vue";
 import Navbar from "../../../components/navbar.vue";
 import Futter from "../../../components/footer.vue";
-import Product from "../components/products.vue";
 import productCard from "../components/productCard.vue";
+import LangSwitcher from "../../../components/langSwitcher.vue";
 </script>
 
 <style scoped>
