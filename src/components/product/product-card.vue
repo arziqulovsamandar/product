@@ -1,13 +1,13 @@
 <template>
-  <router-link class="product-card" :to="`/products/${product.id}`">
+  <router-link :to="`/products/${product.id}`" class="product-card">
     <!-- Tags -->
-    <div v-if="productData.isBestDeal" class="tag tag--best-deal">
-      {{ t('Best Deal') }}
-    </div>
+    <base-tag v-if="productData.isBestDeal" class="tag tag--best-deal">
+      Best Deal
+    </base-tag>
 
-    <div v-else-if="productData.isSaving" class="tag tag--saving">
-      {{ t('Save {0}', [productData.savingValue()]) }}
-    </div>
+    <base-tag v-else-if="productData.isSaving" class="tag tag--saving">
+      Save {{ productData.savingValue() }}
+    </base-tag>
 
     <!-- Img -->
     <img :src="productData.img()" :alt="productData.name" class="img" />
@@ -23,7 +23,7 @@
 
     <!-- Rating -->
     <div class="flex items-center gap-1 text-yellow-200">
-      <span class="icon-star"></span>
+      <span i-bxs-star></span>
       <p class="font-medium">{{ productData.ratingValue }}</p>
       <p class="text-sm text-gray-200">({{ productData.ratingCount }})</p>
     </div>
@@ -44,17 +44,14 @@
 
 <script setup lang="ts">
 import { defineProps } from 'vue';
-import { useI18n } from 'vue-i18n';
 
 const props = defineProps({
   product: {
-    type: Object as () => ({ attributes: { [key: string]: any } }),
+    type: Object,
     required: false,
     default: () => ({}),
   },
 });
-
-const { t } = useI18n();
 
 const productData = {
   name: props.product.attributes.Name,
@@ -88,33 +85,60 @@ const productData = {
 
 <style scoped>
 .product-card {
-  rounded-lg border border-gray-100 transition-colors hover:border-green-200
-px-6 pt-12 pb-4
-flex h-full flex-col justify-center gap-2
-relative overflow-hidden;
+  border: 1px solid #cbd5e0;
+  transition: border-color 0.3s;
+
+  padding: 24px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+
+  &:hover {
+    border-color: #48bb78;
+  }
 }
 
 .tag {
-  absolute top-0 left-0 py-2 px-4;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 16px;
 
-.tag--best-deal {
-  bg-green-100 text-green-200;
-}
+  &--best-deal {
+    background-color: #f0fff4;
+    color: #48bb78;
+  }
 
-.tag--saving {
-  bg-yellow-100 text-white;
+  &--saving {
+    background-color: #fefcbf;
+    color: #fff;
+  }
 }
 
 .img {
-  mx-auto mb-4 h-[96px] w-[96px];
+  margin: auto;
+  margin-bottom: 16px;
+  height: 96px;
+  width: 96px;
 }
 
 .brand-category {
-  flex items-center justify-between gap-2 text-sm font-medium text-gray-200;
-}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #a0aec0;
 
-.brand-category p {
-  line-clamp-1;
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 </style>
