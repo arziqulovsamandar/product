@@ -197,11 +197,7 @@
             />
 
             <div>
-              <a
-                href="tel:+01001001"
-                style="color: yellowgreen"
-                >1900646666</a
-              >
+              <span class="phone-number">1900646666</span>
               <br />
               <h6 class="h6as">Work Hours: 8:00 - 22:00</h6>
             </div>
@@ -214,11 +210,7 @@
             />
 
             <div>
-              <a
-                href="tel:+01001001"
-                style="color: yellowgreen"
-                >1900648888</a
-              >
+              <span class="phone-number">1900648888</span>
               <br />
               <h6 class="h6as">24/7 Support Center</h6>
             </div>
@@ -294,7 +286,6 @@
           </div>
           <h4 class="mx-5">Up to 15% discount on your first subscribe</h4>
         </div>
-
       </div>
     </section>
   </footer>
@@ -305,6 +296,14 @@ import AppLogo from "../components/app/app-logo.vue";
 </script>
 
 <style scoped>
+.phone-number {
+  cursor: pointer;
+  color: yellowgreen;
+  font-size: 24px;
+}
+.phone-number:hover {
+  color: rgb(22, 23, 22);
+}
 .tel-tel-all {
   display: flex;
 }
@@ -318,6 +317,7 @@ import AppLogo from "../components/app/app-logo.vue";
   justify-content: space-around;
 }
 .img-tel {
+  margin: 10px;
   width: 40px;
   height: 40px;
 }
@@ -382,14 +382,14 @@ import AppLogo from "../components/app/app-logo.vue";
     display: none;
   }
 }
-@media screen and(max-width: 1000px){
-  .futter-icons-all{
+@media screen and(max-width: 1000px) {
+  .futter-icons-all {
     display: none;
   }
-  .tel-tel-all{
+  .tel-tel-all {
     display: none;
   }
-  .wrapper1{
+  .wrapper1 {
     flex-direction: column;
   }
 }
