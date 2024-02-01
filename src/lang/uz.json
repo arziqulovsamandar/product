@@ -31,6 +31,28 @@
     "recently":"Yaqinda qo'shilgan",
     "top_raded":"Eng yuqori balli"
   },
+  "banners": {
+    "intro_banner":{
+      "title": "Uyda qoling & kundalik bozoringizni bizni do'konimizdan xarid qiling",
+      "subtitle": "Bozoringizni biz bilan boshlang",
+      "link": "Nest Mart"
+    },
+    "grid_banner":{
+      "title": "Uyda qoling & kundalik bozoringizni bizni do'konimizdan xarid qiling",
+      "subtitle": "Bozoringizni biz bilan boshlang!",
+      "link": "Nest Mart"
+    },
+    "inputs": {
+      "placeholder": "Pochtangizni qoldiring",
+      "button": "Obuna bo'lish"
+    },
+    "nav": {
+      "cake": "Shirinliklar",
+      "coffee": "Kofe",
+      "pet_food": "Uy hayvonlari uchun",
+      "vegetables": "Sabzavotlar"
+    }
+  },
   "futter":{
     "address":"Manzil:",
     "umb":"9999 UMB uy yo'li",

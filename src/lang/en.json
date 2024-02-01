@@ -82,5 +82,27 @@
     "mega":"Mega discounts",
     "easy":"Easy returns",
     "within":"Within 30 days"
+  },
+  "banners": {
+    "intro_banner":{
+      "title": "Stay home & get your daily needs from our shop",
+      "subtitle": "Start Your Daily Shopping with",
+      "link": "Nest Mart"
+    },
+    "grid_banner":{
+      "title": "Stay home & get your daily needs from our shop",
+      "subtitle": "Start Your Daily Shopping with",
+      "link": "Nest Mart"
+    },
+    "inputs": {
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    },
+    "nav": {
+      "cake": "Cake",
+      "coffee": "Coffes",
+      "pet_food": "Pet Foods",
+      "vegetables": "Vegetables"
+    }
   }
 }
