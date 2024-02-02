@@ -6,11 +6,12 @@
           id="lang"
           class="langs"
           v-bind="props"
-        >{{ currentLang }}</span>
+          >{{ currentLang }}</span
+        >
       </template>
 
       <div>
-        <select @change="onLangChange($event.target.value)">
+        <select @change="onLangChange($event)">
           <option
             v-for="(item, i) in langs"
             :key="i"
@@ -53,7 +54,10 @@ const langs = ref<langObj[]>([
     locale: "ru",
   },
 ]);
-function onLangChange(lang: string) {
+
+function onLangChange(event: Event) {
+  const target = event.target as HTMLSelectElement;
+  const lang = target.value;
   showList.value = false;
   locale.value = lang;
   localStorage.setItem("lang", lang);

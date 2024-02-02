@@ -22,9 +22,9 @@
         alt=""
       />
     </div>
-    <div style="display: flex">
+    <div style="display: flex;">
       <div class="campare-wishlist">
-        <div style="margin: 20px; display: flex">
+        <div style="margin: 20px 0px; display: flex">
           <img
             src="../assets/img/icons8-compare-git-50.png"
             alt=""
@@ -32,7 +32,7 @@
           />
           <h1 class="compare">{{ t("navbar.compare") }}</h1>
         </div>
-        <div style="margin: 20px; display: flex">
+        <div style="margin: 20px 5px; display: flex">
           <img
             src="../assets/img/icons8-heart-26.png"
             alt=""
@@ -41,7 +41,7 @@
           <h1 class="compare">{{ t("navbar.wishlist") }}</h1>
         </div>
       </div>
-      <div style="margin: 20px; display: flex">
+      <div style="margin: 20px 5px; display: flex">
         <img
           src="../assets/img/icons8-cart-24.png"
           alt=""
@@ -126,7 +126,6 @@ const { t } = useI18n();
   margin: 25px;
   border: 2px solid yellowgreen;
   width: auto;
-  gap: 10px;
   height: 40px;
   border-radius: 5px;
 }
