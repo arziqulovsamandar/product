@@ -67,7 +67,7 @@ function onLangChange(event: Event) {
   } else {
     console.error("Element with id 'lang' not found.");
   }
-  updateMeta(route?.meta?.title);
+  updateMeta(route?.meta?.title as string);
 }
 </script>
 

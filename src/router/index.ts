@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory, Router } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import UserLayout from "../components/layouts/User.vue";
-import Loginpage from "../views/login.vue";
+import LoginPage from "../views/login.vue";
 // import all features routes
 import productsRoutes from "../features/products/router";
 import { layoutMiddleware } from "./middlewares";
@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: "/login",
       component: UserLayout,
-      children: [{ path: "/login", component: Loginpage, name: "USER" }],
+      children: [{ path: "/login", component: LoginPage, name: "USER" }], // Fayl nomi LoginPage sifatida ishlatilgan
     },
   ],
 });
@@ -29,7 +29,7 @@ router.beforeResolve(async (to) => {
   }
 });
 
-function updateMeta(title:string) {
+function updateMeta(title: string) {
   if (typeof title === "string") {
     document.title = i18n.global.t(title);
   }
