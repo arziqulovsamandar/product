@@ -61,6 +61,10 @@
 </template>
 
 <style scoped>
+.a{
+  height: 30px;
+  margin: 20px;
+}
 .all-categories {
   display: flex;
   gap: 20px;
