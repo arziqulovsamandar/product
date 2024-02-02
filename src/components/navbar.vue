@@ -22,15 +22,17 @@
         alt=""
       />
     </div>
-    <div style="display: flex;">
+    <div style="display: flex">
       <div class="campare-wishlist">
         <div style="margin: 20px 0px; display: flex">
-          <img
-            src="../assets/img/icons8-compare-git-50.png"
-            alt=""
-            class="compare-img"
-          />
-          <h1 class="compare">{{ t("navbar.compare") }}</h1>
+          <router-link to="/wishlist" style="display: flex;">
+            <img
+              src="../assets/img/icons8-compare-git-50.png"
+              alt=""
+              class="compare-img"
+            />
+            <h1 class="compare">{{ t("navbar.compare") }}</h1>
+          </router-link>
         </div>
         <div style="margin: 20px 5px; display: flex">
           <img
