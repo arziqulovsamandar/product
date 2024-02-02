@@ -29,7 +29,7 @@
     <div>
       <Navbar />
     </div>
-    <div class="dropdown-container">
+    <div>
       <DropDown />
     </div>
     <div class="futter">
@@ -47,17 +47,6 @@ import Navbar from "./navbar.vue";
 </script>
 
 <style scoped>
-.dropdown-container {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-}
-.deals-of {
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-}
 .navbar1 {
   display: flex;
   justify-content: space-between;

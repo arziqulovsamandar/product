@@ -41,4 +41,10 @@ import futter from "../../../components/footer.vue";
 const { t } = useI18n();
 </script>
 
-<style scoped></style>
+<style scoped>
+.deals-of {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+</style>

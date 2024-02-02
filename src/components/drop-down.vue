@@ -60,6 +60,23 @@
 <script setup lang="ts"></script>
 
 <style scoped>
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: yellowgreen;
+  height: auto;
+  min-height: 90px;
+}
 .a {
   height: 30px;
   margin: 20px;
@@ -110,14 +127,6 @@
   margin: 0px 20px;
   border-radius: 10px;
   padding: 10px;
-}
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: yellowgreen;
-  height: auto;
-  min-height: 90px;
 }
 
 @media screen and (max-width: 880px) {
