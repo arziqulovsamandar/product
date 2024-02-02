@@ -7,9 +7,10 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import TheSidebar from "../theSidebar.vue";
 </script>
+
 
 <style scoped>
 .main {
