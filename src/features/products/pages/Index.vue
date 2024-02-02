@@ -1,34 +1,40 @@
 <template>
   <div class="navbar1">
     <div>
-      <a href="">{{ t('product.about') }}</a>
+      <a href="">{{ t("product.about") }}</a>
       <span> | </span>
-      <a href="">{{ t('product.my_acount') }}</a>
+      <a href="">{{ t("product.my_acount") }}</a>
       <span> | </span>
-      <a href="">{{ t('product.wishlist') }}</a>
+      <a href="">{{ t("product.wishlist") }}</a>
       <span> | </span>
-      <a href="">{{ t('product.order') }}</a>
+      <a href="">{{ t("product.order") }}</a>
     </div>
     <a href=""
-      ><span class="navbar-p1"
-        >{{ t('product.securete') }}</span
-      ></a
+      ><span class="navbar-p1">{{ t("product.securete") }}</span></a
     >
     <div>
       <a href=""
-        >{{ t('product.need_help') }}<span class="navbar-p">+1800900122</span></a
+        >{{ t("product.need_help")
+        }}<span class="navbar-p">+1800900122</span></a
       >
     </div>
     <div
       href=""
       class="navbar-lang"
-      ><span> | </span><lang-switcher /><span> | </span> INR <span> </span
-    ></div>
+    >
+      <span> | </span><lang-switcher /><span> | </span> INR <span> </span>
+    </div>
   </div>
   <div>
     <Navbar />
   </div>
-  <drapDown />
+
+  <div
+    class="dropdown-container"
+  >
+    <drapDown />
+  </div>
+
   <Banner
     class="md:py-[60px] md:px-[50px] p-[25px]"
     :title="t('banners.intro_banner.title')"
@@ -40,9 +46,9 @@
     backgroundImage="src/assets/img/intro-banner.jpg"
   />
 
-  <h2 class="deals-of">{{ t('index.trending') }}</h2>
+  <h2 class="deals-of">{{ t("index.trending") }}</h2>
   <singleProductCard />
-  <h2 class="deals-of">{{ t('index.deals') }}</h2>
+  <h2 class="deals-of">{{ t("index.deals") }}</h2>
   <Product />
   <productCard />
   <Banner
@@ -61,7 +67,7 @@
 </template>
 
 <script setup lang="ts">
-import Card from '../../../components/card.vue';
+import Card from "../../../components/card.vue";
 import Product from "../components/products.vue";
 import Banner from "../../../components/banner.vue";
 import Navbar from "../../../components/navbar.vue";
@@ -69,13 +75,19 @@ import Futter from "../../../components/footer.vue";
 import productCard from "../components/productCard.vue";
 import LangSwitcher from "../../../components/langSwitcher.vue";
 import { useI18n } from "vue-i18n";
-import singleProductCard from '../components/singleProductCard.vue';
+import singleProductCard from "../components/singleProductCard.vue";
 import drapDown from "../../../components/drop-down.vue";
 
 const { t } = useI18n();
 </script>
 
 <style scoped>
+.dropdown-container {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
 .deals-of {
   margin: 10px;
   display: flex;

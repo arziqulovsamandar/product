@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="wrapper">
     <div style="display: flex; margin: 20px 0px">
@@ -59,9 +57,10 @@
     </div>
   </div>
 </template>
+<script setup lang="ts"></script>
 
 <style scoped>
-.a{
+.a {
   height: 30px;
   margin: 20px;
 }
@@ -120,13 +119,16 @@
   height: auto;
   min-height: 90px;
 }
-@media screen and(max-width: 880px) {
-  .a {
-    display: none;
+
+@media screen and (max-width: 880px) {
+  .all-categories {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
-@media screen and(max-width: 1060px) {
-  .hot-img {
+
+@media screen and (max-width: 1060px) {
+  .hotdeals {
     display: none;
   }
 }
