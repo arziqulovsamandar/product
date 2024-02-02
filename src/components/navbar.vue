@@ -86,7 +86,7 @@ const { t } = useI18n();
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
 }
 .navbar-h1 {
   font-size: 36px;

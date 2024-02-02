@@ -111,7 +111,7 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  width: 96%;
+  width: 100%;
   background-color: yellowgreen;
   height: auto;
   min-height: 90px;

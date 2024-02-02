@@ -86,7 +86,7 @@ const { t } = useI18n();
   justify-content: space-between;
   border: 1px solid rgb(227, 192, 192);
   padding: 10px;
-  width: 96%;
+  width: 100%;
 }
 .navbar1 a {
   color: rgb(77, 92, 90);
