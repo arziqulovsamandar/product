@@ -41,9 +41,9 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
-import LangSwitcher from "../components/langSwitcher.vue";
-import DropDown from "./drop-down.vue";
-import Navbar from "./navbar.vue";
+import LangSwitcher from "../../components/langSwitcher.vue";
+import DropDown from "../drop-down.vue";
+import Navbar from "../navbar.vue";
 </script>
 
 <style scoped>

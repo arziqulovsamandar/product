@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import TheNavbar from "../theNavbar.vue";
+import TheNavbar from "../../header/theNavbar.vue";
 </script>
 
 <style scoped></style>

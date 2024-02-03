@@ -1,5 +1,5 @@
 import Wishlist from "../pages/Wishlist.vue";
-import Home from "../../../components/layouts/Home.vue";
+import Home from "../../../components/layouts/Home/Home.vue";
 import IndexVue from "../pages/Index.vue";
 
 export default [
