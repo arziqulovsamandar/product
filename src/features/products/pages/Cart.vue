@@ -8,7 +8,9 @@
       <h5>Home ></h5>
       <span>Shop Card</span>
     </div>
-    <div class="wishlist"></div>
+    <div class="product-img-action-wrap"></div>
+    <div class="wishlist">
+    </div>
     <productCard class="wishlist-products" />
     <Banner
       class="bg-[#D8F1E5] rounded-3xl md:px-[78px] md:m-[10px] md:py-[84px] p-[25px]"
@@ -34,6 +36,9 @@ import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
 <style scoped>
+.product-img-action-wrap {
+  display: flex;
+}
 .Home-wishlist h5 {
   color: rgb(11, 147, 45);
   font-weight: 600;
