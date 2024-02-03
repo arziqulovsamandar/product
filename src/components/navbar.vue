@@ -53,7 +53,7 @@
       </div>
       <div style="margin: 20px 5px; display: flex">
         <router-link
-          to="/card"
+          to="/cards"
           style="display: flex"
         >
           <img
@@ -64,17 +64,23 @@
           <h1 class="compare">{{ t("navbar.cart") }}</h1>
         </router-link>
       </div>
-      <div style="margin: 20px; display: flex">
-        <img
-          src="../assets/img/icons8-user-30.png"
-          alt=""
-          class="compare-img"
-        />
-        <a
-          href="/login"
-          class="compare account"
-          >{{ t("navbar.account") }}</a
+      <div style="margin: 30px; display: flex">
+        <n-dropdown :options="options">
+          <n-button
+            circle
+            @click="Login"
+          >
+            <n-icon size="36">
+              <UserIcon />
+            </n-icon>
+          </n-button>
+        </n-dropdown>
+        <h1
+          class="compare"
+          style="margin: 5px"
         >
+          Account
+        </h1>
       </div>
     </div>
   </div>
@@ -82,7 +88,51 @@
 <script setup lang="ts">
 import AppLogo from "./app/app-logo.vue";
 import { useI18n } from "vue-i18n";
+import { NDropdown } from "naive-ui";
+import { NButton } from "naive-ui";
+
+import { useRouter } from "vue-router";
+
 const { t } = useI18n();
+const router = useRouter();
+
+import { h, Component } from "vue";
+import { NIcon } from "naive-ui";
+import {
+  PersonCircleOutline as UserIcon,
+  Pencil as EditIcon,
+  LogOutOutline as LogoutIcon,
+} from "@vicons/ionicons5";
+
+const renderIcon = (icon: Component) => {
+  return () => {
+    return h(NIcon, null, {
+      default: () => h(icon),
+    });
+  };
+};
+
+const Login = () => {
+  router.push("/login");
+};
+
+const options = [
+  {
+    label: "Login",
+    key: "login",
+    icon: renderIcon(UserIcon),
+  },
+  {
+    label: "Edit Profile",
+    key: "editProfile",
+    icon: renderIcon(EditIcon),
+  },
+  {
+    label: "Logout",
+    key: "logout",
+    icon: renderIcon(LogoutIcon),
+  },
+];
 </script>
 <style scoped>
 .navbar-become1 {

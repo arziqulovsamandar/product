@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: "/login",
       component: UserLayout,
-      children: [{ path: "/login", component: LoginPage, name: "USER" }], // Fayl nomi LoginPage sifatida ishlatilgan
+      children: [{ path: "/login", component: LoginPage, name: "Login" }], // Fayl nomi LoginPage sifatida ishlatilgan
     },
   ],
 });

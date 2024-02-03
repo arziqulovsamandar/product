@@ -16,13 +16,8 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-aside {
-  background-color: #2ecc71;
-  color: #ffffff;
-  padding: 10px;
-}
-
 nav ul {
+  margin: 20px;
   list-style: none;
   padding: 0;
   width: 200px;
@@ -33,7 +28,7 @@ nav ul {
 nav li {
   margin-bottom: 5px;
   width: 80%;
-  background-color: #ffffff;
+  background-color: #08f327;
   color: black;
   padding: 10px;
   border-radius: 10px;

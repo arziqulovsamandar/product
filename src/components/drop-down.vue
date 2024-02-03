@@ -61,15 +61,6 @@
 
 <style scoped>
 .wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: relative;
-  top: auto;
-  left: auto;
-  right: auto;
-  z-index: 999;
   display: flex;
   justify-content: space-between;
   width: 100%;
