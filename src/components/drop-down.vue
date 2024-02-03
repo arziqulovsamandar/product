@@ -24,12 +24,12 @@
     <div class="all-categories">
       <a
         class="a"
-        href=""
+        href="/about"
         >About</a
       >
       <a
         class="a"
-        href=""
+        href="/"
         >Home</a
       >
       <select class="a">

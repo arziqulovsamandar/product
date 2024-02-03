@@ -34,64 +34,6 @@ import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
 <style scoped>
-.wishlist-addcart h5 {
-  font-weight: 600;
-}
-.wishlist-addcart h6 {
-  font-weight: 600;
-  color: white;
-}
-.addcart {
-  display: flex;
-  width: 150px;
-  height: 50px;
-  background-color: yellowgreen;
-  border-radius: 10px;
-  padding: 10px;
-  cursor: pointer;
-}
-.wishlist-addcart :hover {
-  background-color: rgb(239, 151, 9);
-}
-.wishlist-addcart {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border: 1px solid silver;
-  width: 32%;
-  padding: 30px;
-}
-.wishlist-product-name h4 {
-  font-weight: 600;
-}
-.wishlist-product-name h5 {
-  color: rgb(54, 52, 52);
-}
-.wishlist-product-name {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: auto;
-  border: 1px solid silver;
-  padding: 20px;
-  gap: 10px;
-}
-.cancelwishlist {
-  width: 8%;
-  height: auto;
-  border: 1px solid silver;
-}
-.cancelwishlist1 {
-  width: 10%;
-  height: auto;
-  border: 1px solid silver;
-}
-.wishlistcards {
-  display: flex;
-  margin: 60px;
-  border: 1px solid silver;
-  height: 150px;
-}
 .Home-wishlist h5 {
   color: rgb(11, 147, 45);
   font-weight: 600;

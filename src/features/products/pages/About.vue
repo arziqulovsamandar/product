@@ -6,10 +6,9 @@
         alt=""
       />
       <h5>Home ></h5>
-      <span>Shop Card</span>
+      <span>About</span>
     </div>
     <div class="wishlist"></div>
-    <productCard class="wishlist-products" />
     <Banner
       class="bg-[#D8F1E5] rounded-3xl md:px-[78px] md:m-[10px] md:py-[84px] p-[25px]"
       :title="t('banners.grid_banner.title')"
@@ -29,7 +28,6 @@
 import futter from "../../../components/footer.vue";
 import Banner from "../../../components/banner.vue";
 import Card from "../../../components/card.vue";
-import productCard from "../components/productCard.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
@@ -44,12 +42,7 @@ const { t } = useI18n();
   padding: 20px;
   gap: 5px;
 }
-.wishlist-products {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  border: 1px dashed wheat;
-}
+
 .wishlist {
   min-height: 250px;
 }
