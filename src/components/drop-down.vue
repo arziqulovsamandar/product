@@ -122,6 +122,37 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import { ref } from "vue";
+// import { NCollapse, NCollapseItem } from "naive-ui";
+
+interface UserData {
+  name: string;
+  image: string;
+}
+
+const users = ref<UserData[]>([]);
+
+const fetchData = async () => {
+  try {
+    const response = await fetch("http://localhost:3000/api/category/all");
+    if (response.ok) {
+      users.value = await response.json();
+      console.log(users.value);
+    } else {
+      console.error(`Serverdan xato: ${response.status}`);
+    }
+  } catch (error) {
+    console.error("Xatolik yuz berdi:", error);
+  }
+};
+
+fetchData();
+
+// const getImageUrl = (imageName: string): string => {
+//   return require(`@/assets/img/${imageName}`);
+// };
+</script>
 
 <style scoped>
 .dropdown-link {

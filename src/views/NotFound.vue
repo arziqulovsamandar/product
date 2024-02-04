@@ -1,34 +1,45 @@
 <template>
-  <section class="section container mx-auto grid place-content-center gap-4 px-3 my-4 mb-xl-5">
-    <img src="../assets/img/page-404.png" alt="Page not found" class="notfmed mx-auto" />
+  <section
+    class="section container mx-auto grid place-content-center gap-4 px-3 my-4 mb-xl-5"
+  >
+    <img
+      src="../assets/img/page-404.png"
+      alt="Page not found"
+      class="notfmed mx-auto"
+    />
     <h2 class="text-center text-3xl font-semibold mb-2">
-      <span class="text-blue-600">Oops!</span> Why <span class="text-gray-700">are</span> you here?
+      <span class="text-blue-600">Oops!</span> Why
+      <span class="text-gray-700">are</span> you here?
     </h2>
     <p class="text-center text-gray-500">
-      We are very sorry for the inconvenience. It looks like you’re trying to access a page that either has been deleted or never existed.
+      We are very sorry for the inconvenience. It looks like you’re trying to
+      access a page that either has been deleted or never existed.
     </p>
     <h4 class="text-center text-lg">
-      You'll be redirected to the <span class="text-silver-500">Homepage</span> in
+      You'll be redirected to the
+      <span class="text-silver-500">Homepage</span> in
       <span class="text-gray-600"> 10 seconds</span>
     </h4>
   </section>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import { useRouter } from 'vue-router';
+import { onMounted, defineProps } from "vue";
+import { useRouter } from "vue-router";
+import { ref } from "vue";
 
-const props = defineProps(['count']);
+const props = defineProps<{ count: number }>();
 
 const router = useRouter();
+const count = ref(props.count);
 
 onMounted(() => {
   setInterval(() => {
-    props.count--;
+    count.value--;
   }, 1000);
 
   setTimeout(() => {
-    router.push('/');
+    router.push("/");
   }, 10000);
 });
 </script>

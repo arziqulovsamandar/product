@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar1">
+  <!-- <div class="navbar1">
     <div>
       <a href="">{{ t('product.about') }}</a>
       <span> | </span>
@@ -24,7 +24,7 @@
       class="navbar-lang"
       ><span> | </span><lang-switcher /><span> | </span> INR <span> </span
     ></div>
-  </div>
+  </div> -->
   <div>
     <Navbar />
   </div>
@@ -40,9 +40,9 @@
     backgroundImage="src/assets/img/intro-banner.jpg"
   />
 
-  <h2 class="deals-of">{{ t('index.trending') }}</h2>
+  <h2 class="deals-of">{{ t("index.trending") }}</h2>
   <singleProductCard />
-  <h2 class="deals-of">{{ t('index.deals') }}</h2>
+  <h2 class="deals-of">{{ t("index.deals") }}</h2>
   <Product />
   <productCard />
   <Banner
@@ -55,23 +55,19 @@
   <div>
     <Card />
   </div>
-  <div class="futter">
-    <Futter />
+  <div>
+    <futter />
   </div>
 </template>
 
 <script setup lang="ts">
-import Card from '../../../components/card.vue';
+import Card from "../../../components/card.vue";
 import Product from "../components/products.vue";
 import Banner from "../../../components/banner.vue";
-import Navbar from "../../../components/navbar.vue";
-import Futter from "../../../components/footer.vue";
 import productCard from "../components/productCard.vue";
-import LangSwitcher from "../../../components/langSwitcher.vue";
 import { useI18n } from "vue-i18n";
-import singleProductCard from '../components/singleProductCard.vue';
-import drapDown from "../../../components/drop-down.vue";
-
+import singleProductCard from "../components/singleProductCard.vue";
+import futter from "../../../components/footer.vue";
 const { t } = useI18n();
 </script>
 
@@ -80,43 +76,5 @@ const { t } = useI18n();
   margin: 10px;
   display: flex;
   justify-content: center;
-}
-.navbar1 {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid rgb(227, 192, 192);
-  padding: 10px;
-  width: 96%;
-}
-.navbar1 a {
-  color: rgb(77, 92, 90);
-  font-size: 13px;
-}
-.navbar-p {
-  cursor: pointer;
-  font-weight: 500;
-}
-.navbar-p1 {
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.navbar-p :hover {
-  color: rgb(96, 130, 118);
-}
-.navbar-lang {
-  display: flex;
-  gap: 5px;
-  font-size: 14px;
-}
-.navbar1 a :hover {
-  color: black;
-}
-
-@media screen and (max-width: 1200px) {
-  .navbar1 {
-    display: none;
-  }
 }
 </style>

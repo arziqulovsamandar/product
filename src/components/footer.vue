@@ -299,7 +299,7 @@ const { t } = useI18n();
 
 <style scoped>
 footer{
-  width: 95%;
+  width: 99%;
   margin: 2px;
 }
 .phone-number {
