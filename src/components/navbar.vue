@@ -29,11 +29,16 @@
             to="/compare"
             style="display: flex"
           >
-            <img
-              src="../assets/img/icons8-compare-git-50.png"
-              alt=""
-              class="compare-img"
-            />
+            <n-badge
+              value="2"
+              color="yellowgreen"
+            >
+              <img
+                src="../assets/img/icons8-compare-git-50.png"
+                alt=""
+                class="compare-img"
+              />
+            </n-badge>
             <h1 class="compare">{{ t("navbar.compare") }}</h1>
           </router-link>
         </div>
@@ -42,11 +47,16 @@
             to="/wishlist"
             style="display: flex"
           >
-            <img
-              src="../assets/img/icons8-heart-26.png"
-              alt=""
-              class="compare-img"
-            />
+            <n-badge
+              value="1"
+              color="yellowgreen"
+            >
+              <img
+                src="../assets/img/icons8-heart-26.png"
+                alt=""
+                class="compare-img"
+              />
+            </n-badge>
             <h1 class="compare">{{ t("navbar.wishlist") }}</h1>
           </router-link>
         </div>
@@ -56,11 +66,16 @@
           to="/cards"
           style="display: flex"
         >
-          <img
-            src="../assets/img/icons8-cart-24.png"
-            alt=""
-            class="compare-img"
-          />
+          <n-badge
+            value="3"
+            color="yellowgreen"
+          >
+            <img
+              src="../assets/img/icons8-cart-24.png"
+              alt=""
+              class="compare-img"
+            />
+          </n-badge>
           <h1 class="compare">{{ t("navbar.cart") }}</h1>
         </router-link>
       </div>
@@ -88,7 +103,7 @@
 <script setup lang="ts">
 import AppLogo from "./app/app-logo.vue";
 import { useI18n } from "vue-i18n";
-import { NDropdown } from "naive-ui";
+import { NDropdown, NBadge } from "naive-ui";
 import { NButton } from "naive-ui";
 
 import { useRouter } from "vue-router";
@@ -153,21 +168,6 @@ const options = [
   justify-content: space-between;
   width: 100%;
 }
-.navbar-h1 {
-  font-size: 36px;
-  color: yellowgreen;
-  font-weight: 700;
-}
-.img1 {
-  width: 70px;
-  height: 70px;
-}
-.navbar-span {
-  font-size: 12px;
-  margin: -5px 0px;
-  font-weight: 700;
-  color: rgb(79, 76, 73);
-}
 .input-navbar {
   border: 2px solid yellowgreen;
   height: 50px;
@@ -200,13 +200,11 @@ const options = [
   font-size: 18px;
 }
 .compare-img {
-  margin: 15px;
+  margin:15px;
   width: 30px;
   height: 30px;
 }
-.account {
-  font-weight: 700;
-}
+
 @media screen and (max-width: 1200px) {
   .became-vendor1 {
     display: none;
@@ -244,10 +242,6 @@ const options = [
   }
   .compare {
     font-size: 16px;
-  }
-  .account {
-    font-weight: 700;
-    margin: 14px 0px;
   }
 }
 </style>

@@ -12,14 +12,14 @@
       <div class="wishlistcards">
         <div class="cancelwishlist">
           <img
-            style="margin: 50px 30px; cursor: pointer;"
+            style="margin: 50px 30px; cursor: pointer"
             src="../../../assets/img/icons8-cancel-50.png"
             alt=""
           />
         </div>
         <div class="cancelwishlist1">
           <img
-            style="width: 100%; height: 100%;"
+            style="width: 100%; height: 100%"
             src="../../../assets/img/healthy-vegetables-wooden-table_1150-38014.avif"
             alt=""
           />
@@ -30,13 +30,16 @@
           <h5>February 2,2024</h5>
         </div>
         <div class="wishlist-addcart">
-          <h5>151 in stock</h5>
-          <div class="addcart">
-            <img style="width: 30px; height: 30px;"
-              src="../../../assets/img/icons8-cart-24.png"
-              alt=""
-            />
-            <h6>Add to card</h6>
+          <h5 class="h51">151 in stock</h5>
+          <div class="effects">
+            <div class="addcart">
+              <img
+                style="width: 30px; height: 30px"
+                src="../../../assets/img/icons8-cart-24.png"
+                alt=""
+              />
+              <h6>Add to card</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +69,7 @@ import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 </script>
 <style scoped>
-.wishlist-addcart h5 {
+.h51 {
   font-weight: 600;
 }
 .wishlist-addcart h6 {
@@ -82,7 +85,7 @@ const { t } = useI18n();
   padding: 10px;
   cursor: pointer;
 }
-.wishlist-addcart :hover{
+.effects :hover {
   background-color: rgb(239, 151, 9);
 }
 .wishlist-addcart {

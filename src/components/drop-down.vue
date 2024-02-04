@@ -4,13 +4,51 @@
       <div class="browerall">
         <img
           class="border-all1"
-          src="../assets//img/icons8-border-all-48.png"
+          src="../assets/img/icons8-border-all-48.png"
           alt=""
         />
-        <select class="selectoption">
+        <!-- <select class="selectoption">
           <option value="">Browse All Categories</option>
-          <option value="Category all"></option>
-        </select>
+          <option class="categoryall">
+            <tbody>
+              <tr
+                style="display: flex; flex-direction: column"
+                v-for="(item, i) in users"
+                :key="i"
+              >
+                <option>{{ item.name }}</option>
+              </tr>
+            </tbody>
+          </option>
+        </select> -->
+        <!-- <div>Browse All Categories</div> -->
+        <n-collapse arrow-placement="right" class="selectoption">
+          <n-collapse-item
+            title="Browse All Categories"
+            name="1"
+          >
+            <div
+              v-for="(item, i) in users"
+              :key="i"
+            >
+              <h5>{{ item.name }}</h5>
+            </div>
+          </n-collapse-item>
+          <!-- <n-table
+            :bordered="false"
+            :single-line="false"
+          >
+            <tbody>
+              <tr
+                style="display: flex; flex-direction: column"
+                v-for="(item, i) in users"
+                :key="i"
+              >
+                <td>{{ item.name }}</td>
+              </tr>
+            </tbody>
+          </n-table> -->
+        </n-collapse>
       </div>
       <div class="hotdeals">
         <img
@@ -57,13 +95,49 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+import { NCollapse, NCollapseItem } from "naive-ui";
+
+interface UserData {
+  name: string;
+  image: string;
+}
+const users = ref<UserData[]>([]);
+
+const fetchData = async () => {
+  try {
+    const response = await fetch("http://localhost:3000/api/category/all");
+    if (response.ok) {
+      users.value = await response.json();
+      console.log(users.value);
+    } else {
+      console.error(`Serverdan xato: ${response.status}`);
+    }
+  } catch (error) {
+    console.error("Xatolik yuz berdi:", error);
+  }
+};
+
+fetchData();
+
+// const getImageUrl = (imageName: string): string => {
+//   return require(`@/assets/${imageName}`);
+// };
+</script>
 
 <style scoped>
+.categoryall {
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
 .wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
   background-color: yellowgreen;
   height: auto;
   min-height: 90px;
@@ -102,6 +176,8 @@
   align-items: center;
 }
 .selectoption {
+  margin: 5px;
+  width: 100%;
   background-color: rgb(128, 230, 100);
   color: rgb(249, 243, 243);
   font-weight: 700;
@@ -113,7 +189,6 @@
 .browerall {
   display: flex;
   width: auto;
-  height: auto;
   background-color: rgb(128, 230, 100);
   margin: 0px 20px;
   border-radius: 10px;
