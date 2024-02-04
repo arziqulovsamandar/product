@@ -22,7 +22,10 @@
           </option>
         </select> -->
         <!-- <div>Browse All Categories</div> -->
-        <n-collapse arrow-placement="right" class="selectoption">
+        <n-collapse
+          arrow-placement="right"
+          class="selectoption"
+        >
           <n-collapse-item
             title="Browse All Categories"
             name="1"
@@ -34,20 +37,6 @@
               <h5>{{ item.name }}</h5>
             </div>
           </n-collapse-item>
-          <!-- <n-table
-            :bordered="false"
-            :single-line="false"
-          >
-            <tbody>
-              <tr
-                style="display: flex; flex-direction: column"
-                v-for="(item, i) in users"
-                :key="i"
-              >
-                <td>{{ item.name }}</td>
-              </tr>
-            </tbody>
-          </n-table> -->
         </n-collapse>
       </div>
       <div class="hotdeals">
@@ -121,9 +110,9 @@ const fetchData = async () => {
 
 fetchData();
 
-// const getImageUrl = (imageName: string): string => {
-//   return require(`@/assets/${imageName}`);
-// };
+const getImageUrl = (imageName: string): string => {
+  return require(`@/assets/img/${imageName}`);
+};
 </script>
 
 <style scoped>
