@@ -92,6 +92,7 @@ interface UserData {
   name: string;
   image: string;
 }
+
 const users = ref<UserData[]>([]);
 
 const fetchData = async () => {
