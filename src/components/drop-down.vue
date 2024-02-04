@@ -1,56 +1,3 @@
-<style scoped>
-.dropdown-link {
-  display: block;
-  padding: 8px 16px;
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-.dropdown-link:hover {
-  background-color:#ececec80;
-}
-
-.dropdown-btn {
-  padding: 0 8px;
-  color: white;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-}
-
-
-.main-dropdown {
-  position: relative;
-}
-
-.main-dropdown-content {
-  display: none;
-}
-.main-dropdown-content a {
-  font-weight: 500;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  width: calc(50% - 5px);
-}
-
-.main-dropdown-content a:hover {
-  background-color: #ececec80;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
-
-.main-dropdown:hover .main-dropdown-content {
-  display: block;
-}
-
-@media (min-width: 1280px) {
-  .dropdown-btn{
-    padding: 0 17px;
-  }
-}
-</style>
 <template>
   <div class="bg-main-100 h-[70px] flex justify-center">
     <div class="w-[1610px] flex justify-between items-center h-full px-[15px] mx-[5px]">
@@ -92,7 +39,7 @@
             </div>
           </div>
           <a class="hover:bg-main-200 hidden lg:flex items-center text-white h-full min-w-[132px] w-[14vw]">
-            <i class='xl:pl-[17px] bx bxs-hot text-[25px] mr-[2px]'></i>
+            <i class='xl:pl-[17px] pl-[8px] bx bxs-hot text-[25px] mr-[2px]'></i>
             <span class="text-[16px] pr-[17px] font-semibold">Hot Deals</span>
           </a>
         </div>
@@ -175,5 +122,60 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.dropdown-link {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.dropdown-link:hover {
+  background-color: #ececec80;
+}
+
+.dropdown-btn {
+  padding: 0 8px;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+
+.main-dropdown {
+  position: relative;
+}
+
+.main-dropdown-content {
+  display: none;
+}
+
+.main-dropdown-content a {
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: calc(50% - 5px);
+}
+
+.main-dropdown-content a:hover {
+  background-color: #ececec80;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.main-dropdown:hover .main-dropdown-content {
+  display: block;
+}
+
+@media (min-width: 1280px) {
+  .dropdown-btn {
+    padding: 0 17px;
+  }
+}
+</style>
 
 
