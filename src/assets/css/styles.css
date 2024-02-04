@@ -18,6 +18,14 @@
     button {
         @apply outline-none;
     }
+
+    .banner-link {
+        @apply text-fortitle-200;
+    }
+
+    .banner-link:hover {
+        @apply text-main-100 cursor-pointer translate-y-[-5px] transition-all duration-300;
+    }
 }
 
 

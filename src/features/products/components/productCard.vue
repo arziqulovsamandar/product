@@ -20,7 +20,7 @@
               src="../../../assets/img/rating.png"
               alt=""
             />
-            <h6>$52.85</h6>
+            <h6 class="text-main-100">$52.85</h6>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
               src="../../../assets/img/rating.png"
               alt=""
             />
-            <h6>$52.85</h6>
+            <h6 class="text-main-100">$52.85</h6>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@
               src="../../../assets/img/rating.png"
               alt=""
             />
-            <h6>$52.85</h6>
+            <h6 class="text-main-100">$52.85</h6>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
               src="../../../assets/img/rating.png"
               alt=""
             />
-            <h6>$52.85</h6>
+            <h6 class="text-main-100">$52.85</h6>
           </div>
         </div>
       </div>
@@ -117,7 +117,6 @@ const { t } = useI18n();
   margin: -25px -5px;
 }
 .natural h6 {
-  color: yellowgreen;
   margin: 0px 5px;
 }
 .rating {

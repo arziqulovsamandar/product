@@ -7,12 +7,12 @@
     />
   </div>
   <div class="product-card-table">
-    <h3>Organic Cage Grade A Large Eggs</h3>
-    <span>By Hambger Hel</span>
+    <h3 class="text-fortitle-200">Organic Cage Grade A Large Eggs</h3>
+    <span class="text-main-100">By Hambger Hel</span>
     <div class="price-card">
-      <h4>$21</h4>
+      <h4 class="text-main-100">$21</h4>
       <div class="cardbutton">
-        <div class="button1">
+        <div class="button1 text-main-100">
           <img
             src="../../../assets/img/icons8-cart-24.png"
             alt=""
@@ -34,14 +34,9 @@
 }
 .product-card-table h3 {
   font-size: 20px;
-  color: rgb(43, 40, 37);
-}
-.product-card-table span {
-  color: yellowgreen;
 }
 .product-card-table h4 {
   margin: 5px;
-  color: yellowgreen;
   font-weight: 800;
 }
 .product-card-table {
@@ -62,7 +57,6 @@
 .button1 {
   display: flex;
   padding: 5px;
-  color: yellowgreen;
   font-weight: 800;
   background-color: rgb(230, 244, 204);
   width: 70px;

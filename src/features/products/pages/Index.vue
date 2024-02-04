@@ -10,13 +10,13 @@
       <a href="">{{ t('product.order') }}</a>
     </div>
     <a href=""
-      ><span class="navbar-p1"
+      ><span class="navbar-p1 text-main-100"
         >{{ t('product.securete') }}</span
       ></a
     >
     <div>
       <a href=""
-        >{{ t('product.need_help') }}<span class="navbar-p">+1800900122</span></a
+        >{{ t('product.need_help') }}<span class="navbar-p text-main-100">+1800900122</span></a
       >
     </div>
     <div
@@ -30,7 +30,7 @@
   </div>
   <drapDown />
   <Banner
-    class="md:py-[60px] md:px-[50px] p-[25px]"
+    class="py-[60px]"
     :title="t('banners.intro_banner.title')"
     :subtitle="t('banners.intro_banner.subtitle')"
     :linkText="t('banners.intro_banner.link')"
@@ -46,7 +46,7 @@
   <Product />
   <productCard />
   <Banner
-    class="bg-[#D8F1E5] rounded-3xl md:px-[78px] md:m-[10px] md:py-[84px] p-[25px]"
+    class="bg-[#D8F1E5] rounded-3xl md:px-[78px] m-[10px] md:py-[84px] p-[20px]"
     :title="t('banners.grid_banner.title')"
     :subtitle="t('banners.grid_banner.subtitle')"
     :linkText="t('banners.grid_banner.link')"
@@ -93,12 +93,10 @@ const { t } = useI18n();
   font-size: 13px;
 }
 .navbar-p {
-  color: yellowgreen;
   cursor: pointer;
   font-weight: 500;
 }
 .navbar-p1 {
-  color: yellowgreen;
   cursor: pointer;
   font-weight: 700;
   font-size: 14px;

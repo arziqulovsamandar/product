@@ -197,7 +197,7 @@
             />
 
             <div>
-              <span class="phone-number">1900646666</span>
+              <span class="phone-number text-main-100">1900646666</span>
               <br />
               <h6 class="h6as">{{ t('futter.work-hours') }}: 8:00 - 22:00</h6>
             </div>
@@ -210,7 +210,7 @@
             />
 
             <div>
-              <span class="phone-number">1900648888</span>
+              <span class="phone-number text-main-100">1900648888</span>
               <br />
               <h6 class="h6as">24/7 {{ t('futter.support') }}</h6>
             </div>
@@ -304,7 +304,6 @@ footer{
 }
 .phone-number {
   cursor: pointer;
-  color: yellowgreen;
   font-size: 24px;
 }
 .phone-number:hover {
