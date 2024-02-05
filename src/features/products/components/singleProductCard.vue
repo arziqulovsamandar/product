@@ -43,9 +43,9 @@
       <p class="text-fortitle-100">
         By
         <a
-          href="http://localhost:3000/"
+          href="http://localhost:5173/"
           class="text-main-100 text-[16px]"
-          >NestFood</a
+        >NestFood</a
         >
       </p>
     </div>
@@ -64,6 +64,45 @@
         Add
       </button>
     </div>
+
+
+
+<!--    <div class="w-full">-->
+<!--      <img class="mb-2 w-full p-4 hover:p-0 transition-all duration-300" :src="product.image" alt="" />-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <p class="text-[14px] text-fortitle-100 mb-2">{{ product.category }}</p>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <h1 class="font-semibold text-[16px] text-fortitle-200 mb-3">{{ product.name }}</h1>-->
+<!--    </div>-->
+<!--    <div class="text-slate-400 text-[15px] mb-2">-->
+<!--      <i class="bx bx-star"></i>-->
+<!--      <i class="bx bx-star"></i>-->
+<!--      <i class="bx bx-star"></i>-->
+<!--      <i class="bx bx-star"></i>-->
+<!--      <i class="bx bx-star"></i>-->
+<!--      <span class="ml-2">{{ product.rating }}</span>-->
+<!--    </div>-->
+<!--    <div class="mb-3">-->
+<!--      <p class="text-fortitle-100">-->
+<!--        By <a :href="product.brand_website" class="text-main-100 text-[16px]">{{ product.brand }}</a>-->
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div class="flex text-main-100 font-bold gap-3 justify-between items-baseline mb-2">-->
+<!--      <s class="text-gray-400">{{ product.original_price }}</s>-->
+<!--      <span class="text-[18px] underline">{{ product.sale_price }}</span>-->
+<!--      <button-->
+<!--        @click="addToCart"-->
+<!--        class="bg-green-100 text-main-100 font-semibold px-5 py-2 justify-center flex rounded-md items-center opacity-100 hover:opacity-100 w-40 h-9"-->
+<!--      >-->
+<!--        <img src="../../../assets/img/cart-18-16g.png" alt="Cart Icon" class="-ml-1 mr-1 h-5 w-4" />-->
+<!--        Add-->
+<!--      </button>-->
+<!--    </div>-->
+
+
+
 
     <div class="dropdown absolute flex flex-nowrap">
       <router-link :to="'/product/' + exampleProp.props.data.id">
@@ -123,6 +162,32 @@ import { ref, onMounted } from "vue";
 import { NDropdown } from "naive-ui";
 import { NButton } from "naive-ui";
 import { NIcon } from "naive-ui";
+import { fetchProducts } from '../../../services/ProductService.ts';
+
+interface Product {
+  id: number;
+  name: string;
+  category: string;
+  image: string;
+  rating: string;
+  brand: string;
+  brand_website: string;
+  original_price: string;
+  sale_price: string;
+}
+
+const product = ref<Product>({
+  id: 0,
+  name: '',
+  category: '',
+  image: '',
+  rating: '',
+  brand: '',
+  brand_website: '',
+  original_price: '',
+  sale_price: '',
+});
+
 
 const options = [
   { label: "Quick view" },
@@ -137,6 +202,7 @@ const options2 = [
 ];
 
 // const productCart = useProductStore();
+
 const props = defineProps({
   data: Object,
 });
@@ -171,9 +237,22 @@ function addToCart() {
   // productCart.addToCart(props.data);
 }
 
-onMounted(() => {
-  count.value = props.data?.count || 1;
+
+onMounted(async () => {
+  try {
+    const products = await fetchProducts();
+    if (products.length > 0) {
+      product.value = products[0];
+    }
+  } catch (error) {
+    console.error('Error fetching products:', error);
+  }
 });
+
+
+// onMounted(() => {
+//   count.value = props.data?.count || 1;
+// });
 </script>
 
 <style scoped>
