@@ -1,5 +1,5 @@
 <script setup>
-import Navbar from "../../../components/navbar.vue"
+import Navbar from "../../../components/header/theNavbar.vue"
 import dropDown from "../../../components/drop-down.vue"
 import SingleProductSlider from "../components/singleProductSlider.vue";
 import ProductInfoCard from "../components/ProductInfoCard.vue";
@@ -27,9 +27,8 @@ const exampleProduct = {
 
 <template>
   <div>
-      <Navbar />
-    </div>
-    <dropDown />
+    <Navbar />
+  </div>
   <main class="">
     <div class="flex items-center">
       <SingleProductSlider class="w-[50%]" :images="exampleProduct.images" />

@@ -33,7 +33,7 @@ export default [
     children: [{ path: "/about", component: About, name: HomeName.About }], // Fayl nomi LoginPage sifatida ishlatilgan
   },
   {
-    path: "/product",
+    path: "/product/:id",
     name: "single-product",
     component: () => import("../pages/SingleProduct.vue"),
   },
