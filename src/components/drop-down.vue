@@ -51,9 +51,9 @@
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1'></i>
             </button>
             <div class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]">
-              <a href="#" class="dropdown-link text-fortitle-100">Пункт 1</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Пункт 2</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Пункт 3</a>
+              <a href="/" class="dropdown-link text-fortitle-100">Home 1</a>
+              <a href="/" class="dropdown-link text-fortitle-100">Home 2</a>
+              <a href="/" class="dropdown-link text-fortitle-100">Home 3</a>
             </div>
           </div>
 
