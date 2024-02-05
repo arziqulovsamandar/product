@@ -22,10 +22,10 @@
       />
     </div>
     <div>
-      <p style="font-size: small; color: gray">Fresh Fruit</p>
+      <p class="cardCategory" style='font-size: small; color: gray'>Fresh Fruit</p>
     </div>
     <div>
-      <h1 class="font-bold text-lg text-gray-600 mb-3">
+      <h1 class="cardText font-bold text-lg text-gray-600 mb-3">
         Seeds of Change Organic Red Rice
       </h1>
     </div>
@@ -37,34 +37,14 @@
       <i class="bx bx-star"></i>
       <span class="ml-2">0</span>
     </div>
-    <div class="mb-3">
-      <p style="color: gray">
-        By
-        <a
-          href="http://localhost:3000/"
-          style="color: #3bb77e; font-size: medium; opacity: 100%"
-          >NestFood</a
-        >
-      </p>
+    <div class='mb-3'>
+      <p class="cardBy" style='color: gray'>By <a href="http://localhost:3000/" style="color: #3bb77e; font-size: medium; opacity: 100%">NestFood</a></p>
     </div>
-    <div
-      class="flex text-green-500 font-bold gap-3 items-baseline mb-2"
-      style="color: #3bb77e"
-    >
-      <span class="text-[18px] underline">$28.95</span>
-      <s class="text-slate-400"
-        >$<s class="text-[13px] text-primary">32.80</s></s
-      >
-      <button
-        @click="addToCart"
-        class="bg-green-100 text-green-500 font-semibold px-4 py-2 rounded-md flex items-center ml-8 opacity-100 hover:opacity-100 w-40 h-9"
-      >
-        <img
-          src="../../../assets/img/cart-18-16g.png"
-          alt="Cart Icon"
-          class="-ml-1 mr-1 h-5 w-4"
-          style="color: #3bb77e"
-        />
+    <div class="flex text-green-500 font-bold gap-3 items-baseline mb-2 add-button" style="color: #3bb77e">
+      <span class="price text-[18px] underline">$28.95</span>
+      <s class="price text-slate-400">$<s class="text-[13px] text-primary">32.80</s></s>
+      <button @click="addToCart" class="bg-green-100 text-green-500 text-center font-semibold px-4 py-2 rounded-md flex items-center ml-8 opacity-100 hover:opacity-100 w-40 h-9">
+        <img src="../../../assets/img/cart-18-16g.png" alt="Cart Icon" class="addText ml-2 mr-1 h-5 w-4" style="color: #3bb77e">
         Add
       </button>
     </div>
@@ -167,36 +147,123 @@ onMounted(() => {
 .main {
   width: 100%;
   max-width: 280px;
-  margin: 0 auto;
-}
-.dropdownn {
-  position: absolute;
-  margin: -370px 60px;
-}
-.main:hover {
-  opacity: 1;
-  visibility: visible;
-  top: 45%;
-}
+  margin: auto;
+  position: relative;
 
-.main:hover {
-  box-shadow: none;
-  border: none;
-}
-main {
+  .dropdownn {
+    position: absolute;
+    margin: -370px 60px;
+  }
+
+  .main:hover {
+    opacity: 1;
+    visibility: visible;
+    top: 45%;
+  }
+
+  .main:hover {
+    box-shadow: none;
+    border: none;
+  }
+  
   @media screen and (max-width: 375px) {
     max-width: 250px;
-    /* iPhone SE */
   }
 
   @media screen and (min-width: 376px) and (max-width: 412px) {
-    max-width: 280px;
-    /* Samsung S20 Ultra */
+    max-width: 330px;
   }
 
   @media screen and (min-width: 413px) and (max-width: 820px) {
-    max-width: 260px;
-    /* iPad Air */
+    max-width: 250px;
   }
 }
+
+.add-button {
+  @media screen and (max-width: 375px) {
+    flex-direction: row;
+    margin-right: 5px;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 412px) {
+    flex-direction: row;
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 820px) {
+    flex-direction: row;
+  }
+}
+
+.addText {
+  @media screen and (max-width: 375px) {
+    margin-left: -10px;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 412px) {
+    margin-left: 15px;
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 820px) {
+    margin-left: -4px;
+  }
+}
+
+.cardText {
+  @media screen and (max-width: 375px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 412px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 820px) {
+    flex-direction: row;
+  }
+}
+
+.cardCategory {
+  @media screen and (max-width: 375px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 412px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 820px) {
+    flex-direction: row;
+  }
+}
+
+.cardBy {
+  @media screen and (max-width: 375px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 412px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 820px) {
+    flex-direction: row;
+  }
+}
+
+.price {
+  @media screen and (max-width: 375px) {
+    margin-left: 3px;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 412px) {
+    margin-left: 10px;
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 820px) {
+    flex-direction: row;
+  }
+}
+
+
 </style>
