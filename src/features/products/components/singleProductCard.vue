@@ -168,22 +168,22 @@ onMounted(() => {
   width: 100%;
   max-width: 280px;
   margin: 0 auto;
+}
+.dropdownn {
+  position: absolute;
+  margin: -370px 60px;
+}
+.main:hover {
+  opacity: 1;
+  visibility: visible;
+  top: 45%;
+}
 
-  .dropdownn {
-    position: absolute;
-    margin: -370px 60px;
-  }
-  .main:hover {
-    opacity: 1;
-    visibility: visible;
-    top: 45%;
-  }
-
-  .main:hover {
-    box-shadow: none;
-    border: none;
-  }
-
+.main:hover {
+  box-shadow: none;
+  border: none;
+}
+main {
   @media screen and (max-width: 375px) {
     max-width: 250px;
     /* iPhone SE */
