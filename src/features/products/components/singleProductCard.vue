@@ -1,9 +1,17 @@
 <template>
-  <div class="main relative p-3 border-2 border-slate-200 hover:shadow-lg shadow-slate-800 duration-500 ease-in-out cursor-pointer rounded-2xl m-2">
-    <div class="text-white w-[22%] h-[6%] absolute top-0 left-0 text-center rounded-br-2xl rounded-tl-xl" style="font-size: smaller; padding-top: 3px; background-color: #6ec1e4">
+  <div
+    class="main relative p-3 border-2 border-slate-200 hover:shadow-lg shadow-slate-800 duration-500 ease-in-out cursor-pointer rounded-2xl m-2"
+  >
+    <div
+      class="text-white w-[22%] h-[6%] absolute top-0 left-0 text-center rounded-br-2xl rounded-tl-xl"
+      style="font-size: smaller; padding-top: 3px; background-color: #6ec1e4"
+    >
       13%
     </div>
-    <div class="text-white w-[22%] h-[6%] absolute top-0 right-0 text-center rounded-bl-2xl rounded-tr-xl" style="background-color: #3bb77e; font-size: smaller; padding-top: 3px">
+    <div
+      class="text-white w-[22%] h-[6%] absolute top-0 right-0 text-center rounded-bl-2xl rounded-tr-xl"
+      style="background-color: #3bb77e; font-size: smaller; padding-top: 3px"
+    >
       Sale
     </div>
     <div>
@@ -157,7 +165,7 @@ onMounted(() => {
     box-shadow: none;
     border: none;
   }
-
+  
   @media screen and (max-width: 375px) {
     max-width: 250px;
   }
