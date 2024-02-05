@@ -1,15 +1,15 @@
 <template>
-  <div class="navbar">
+  <div class="navbar w-[1600px] py-[15px]">
     <div class="input-navbar1">
-      <AppLogo />
+      <AppLogo class="min-w-[170px] max-w-[170px]"/>
       <div
         style="margin: 20px"
-        class="search-input1"
+        class="search-input1 w-full"
       >
         <input
           type="text"
           :placeholder="t('navbar.search_placeholder')"
-          class="input-navbar border-main-100 border-[2px]"
+          class="input-navbar w-full border-main-100 border-[2px]"
         />
         <button class="nanbar-button bg-main-100">{{ t("navbar.search") }}</button>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="main relative p-3 border-2 border-slate-200 hover:shadow-lg shadow-slate-800 duration-500 ease-in-out cursor-pointer rounded-2xl m-2"
+    class="transition-all duration-300 relative card 2lg:w-[calc(20%-10px)] 3xs:w-[calc(50%-10px)] md:w-[calc(100%/3-10px)] w-full hover:border-[rgba(59,183,125,0.35)] hover:border-opa p-[10px] sm:p-[20px] border-[1px] border-slate-200 cursor-pointer hover:shadow-xl rounded-2xl"
   >
     <div
       class="text-white w-[22%] h-[6%] absolute top-0 left-0 text-center rounded-br-2xl rounded-tl-xl"
@@ -9,27 +9,28 @@
       13%
     </div>
     <div
-      class="text-white w-[22%] h-[6%] absolute top-0 right-0 text-center rounded-bl-2xl rounded-tr-xl"
-      style="background-color: #3bb77e; font-size: smaller; padding-top: 3px"
+      class="text-white w-[22%] h-[6%] bg-main-100 absolute top-0 right-0 text-center rounded-bl-2xl rounded-tr-xl"
+      style=" font-size: smaller; padding-top: 3px"
     >
       Sale
     </div>
-    <div>
+
+    <div class="w-full">
       <img
-        class="mx-auto mb-2"
+        class=" mb-2 w-full p-4 hover:p-0 transition-all duration-300"
         src="../../../assets/img/product-2-1.jpg"
         alt=""
       />
     </div>
     <div>
-      <p style="font-size: small; color: gray">Fresh Fruit</p>
+      <p class="text-[14px] text-fortitle-100 mb-2">Fresh Fruit</p>
     </div>
     <div>
-      <h1 class="font-bold text-lg text-gray-600 mb-3">
+      <h1 class="font-semibold text-[16px] text-fortitle-200 mb-3">
         Seeds of Change Organic Red Rice
       </h1>
     </div>
-    <div class="text-slate-400 text-sm mb-2">
+    <div class="text-slate-400 text-[15px] mb-2">
       <i class="bx bx-star"></i>
       <i class="bx bx-star"></i>
       <i class="bx bx-star"></i>
@@ -38,77 +39,71 @@
       <span class="ml-2">0</span>
     </div>
     <div class="mb-3">
-      <p style="color: gray">
+      <p class="text-fortitle-100">
         By
         <a
           href="http://localhost:3000/"
-          style="color: #3bb77e; font-size: medium; opacity: 100%"
+          class="text-main-100 text-[16px]"
           >NestFood</a
         >
       </p>
     </div>
-    <div
-      class="flex text-green-500 font-bold gap-3 items-baseline mb-2"
-      style="color: #3bb77e"
-    >
+    <div class="flex text-main-100 font-bold gap-3 justify-between items-baseline mb-2">
+      <s class="text-gray-400">$<s class="text-[13px] text-primary">32.80</s></s>
       <span class="text-[18px] underline">$28.95</span>
-      <s class="text-slate-400"
-        >$<s class="text-[13px] text-primary">32.80</s></s
-      >
       <button
         @click="addToCart"
-        class="bg-green-100 text-green-500 font-semibold px-4 py-2 rounded-md flex items-center ml-8 opacity-100 hover:opacity-100 w-40 h-9"
+        class="bg-green-100 text-main-100 font-semibold px-5 py-2 justify-center flex rounded-md items-center opacity-100 hover:opacity-100 w-40 h-9"
       >
         <img
           src="../../../assets/img/cart-18-16g.png"
           alt="Cart Icon"
           class="-ml-1 mr-1 h-5 w-4"
-          style="color: #3bb77e"
         />
         Add
       </button>
     </div>
-  </div>
-  <div class="dropdownn">
-    <n-dropdown
-      trigger="hover"
-      :options="options"
-      style="background-color: yellowgreen"
-    >
-      <n-button style="background-color: white"
-        ><n-icon size="24">
-          <img
-            src="../../../assets/img/icons8-eye-24.png"
-            alt=""
-          /> </n-icon
-      ></n-button>
-    </n-dropdown>
-    <n-dropdown
-      trigger="hover"
-      :options="options1"
-      style="background-color: yellowgreen"
-    >
-      <n-button style="background-color: white"
-        ><n-icon size="24">
-          <img
-            src="../../../assets/img/icons8-arrow-32.png"
-            alt=""
-          /> </n-icon
-      ></n-button>
-    </n-dropdown>
-    <n-dropdown
-      trigger="hover"
-      :options="options2"
-      style="background-color: yellowgreen"
-    >
-      <n-button style="background-color: white"
-        ><n-icon size="24">
-          <img
-            src="../../../assets/img/icons8-heart-24.png"
-            alt=""
-          /> </n-icon
-      ></n-button>
-    </n-dropdown>
+    <div class="dropdown absolute flex flex-nowrap">
+      <n-dropdown
+        class="bg-main-100"
+        trigger="hover"
+        :options="options"
+      >
+        <n-button class="rounded-e-none" style="background-color: white"
+          ><n-icon size="24">
+            <img
+              src="../../../assets/img/icons8-eye-24.png"
+              alt=""
+            /> </n-icon
+        ></n-button>
+      </n-dropdown>
+      <n-dropdown
+        trigger="hover"
+        :options="options1"
+        class="bg-main-100"
+      >
+        <n-button class="rounded-none" style="background-color: white"
+          ><n-icon size="24">
+            <img
+              src="../../../assets/img/icons8-arrow-32.png"
+              alt=""
+            /> </n-icon
+        ></n-button>
+      </n-dropdown>
+      <n-dropdown
+        trigger="hover"
+        :options="options2"
+        class="bg-main-100"
+      >
+        <n-button class="rounded-s-none" style="background-color: white"
+          ><n-icon size="24">
+            <img
+              src="../../../assets/img/icons8-heart-24.png"
+              alt=""
+            /> </n-icon
+        ></n-button>
+      </n-dropdown>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
@@ -141,19 +136,6 @@ const props = defineProps({
 
 const count = ref(0);
 
-// function increment() {
-//   count.value += 1;
-//   productCart.counterPlus(props.data?.id, "plus");
-// }
-
-// function decrement() {
-//   if (count.value <= 1) {
-//     return;
-//   }
-//   count.value -= 1;
-//   productCart.counterPlus(props.data?.id, "minus");
-// }
-
 function addToCart() {
   // productCart.addToCart(props.data);
 }
@@ -164,39 +146,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.main {
-  width: 100%;
-  max-width: 280px;
-  margin: 0 auto;
+.card:hover .dropdown {
+  display: flex;
 }
-.dropdownn {
-  position: absolute;
-  margin: -370px 60px;
-}
-.main:hover {
-  opacity: 1;
-  visibility: visible;
-  top: 45%;
-}
-
-.main:hover {
-  box-shadow: none;
-  border: none;
-}
-main {
-  @media screen and (max-width: 375px) {
-    max-width: 250px;
-    /* iPhone SE */
-  }
-
-  @media screen and (min-width: 376px) and (max-width: 412px) {
-    max-width: 280px;
-    /* Samsung S20 Ultra */
-  }
-
-  @media screen and (min-width: 413px) and (max-width: 820px) {
-    max-width: 260px;
-    /* iPad Air */
-  }
+.dropdown {
+  display: none;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 </style>

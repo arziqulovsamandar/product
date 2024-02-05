@@ -1,4 +1,6 @@
 <script setup>
+import Navbar from "../../../components/navbar.vue"
+import dropDown from "../../../components/drop-down.vue"
 import SingleProductSlider from "../components/singleProductSlider.vue";
 import ProductInfoCard from "../components/ProductInfoCard.vue";
 import { useRoute } from "vue-router";
@@ -24,6 +26,10 @@ const exampleProduct = {
 </script>
 
 <template>
+  <div>
+      <Navbar />
+    </div>
+    <dropDown />
   <main class="">
     <div class="flex items-center">
       <SingleProductSlider class="w-[50%]" :images="exampleProduct.images" />
