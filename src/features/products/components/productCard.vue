@@ -14,10 +14,10 @@
             class="top-selling-img"
           />
           <div class="natural">
-            <h5 class="h5">All Natural Style Chicken Meatballs</h5>
+            <h5 class="h5">{{ date.des }}</h5>
             <img
               class="rating"
-              src="../../../assets/img/rating.png"
+              :src=date.img
               alt=""
             />
             <h6 class="text-main-100">$52.85</h6>
@@ -37,13 +37,13 @@
             class="top-selling-img"
           />
           <div class="natural">
-            <h5 class="h5">All Natural Style Chicken Meatballs</h5>
+            <h5 class="h5">{{ date.des }}</h5>
             <img
               class="rating"
-              src="../../../assets/img/rating.png"
+              :src=date.img
               alt=""
             />
-            <h6 class="text-main-100">$52.85</h6>
+            <h6 class="text-main-100">{{ date.price }}</h6>
           </div>
         </div>
       </div>
@@ -55,18 +55,18 @@
           class="effect1"
         >
           <img
-            src="../../../assets/img/strawberries-3359755_640.jpg"
+          src="../../../assets/img/strawberries-3359755_640.jpg"
             alt=""
             class="top-selling-img"
           />
           <div class="natural">
-            <h5 class="h5">All Natural Style Chicken Meatballs</h5>
+            <h5 class="h5">{{ date.des }}</h5>
             <img
               class="rating"
-              src="../../../assets/img/rating.png"
+              :src=date.img
               alt=""
             />
-            <h6 class="text-main-100">$52.85</h6>
+            <h6 class="text-main-100">{{ date.price }}</h6>
           </div>
         </div>
       </div>
@@ -78,18 +78,18 @@
           class="effect1"
         >
           <img
-            src="../../../assets/img/strawberries-3359755_640.jpg"
+          src="../../../assets/img/strawberries-3359755_640.jpg"
             alt=""
             class="top-selling-img"
           />
           <div class="natural">
-            <h5 class="h5">All Natural Style Chicken Meatballs</h5>
+            <h5 class="h5">{{ date.des }}</h5>
             <img
               class="rating"
-              src="../../../assets/img/rating.png"
+              :src=date.img
               alt=""
             />
-            <h6 class="text-main-100">$52.85</h6>
+            <h6 class="text-main-100">{{ date.price }}</h6>
           </div>
         </div>
       </div>
@@ -98,7 +98,21 @@
 </template>
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
+import { ref } from 'vue';
+
 const { t } = useI18n();
+
+// const response = await fetch("");
+// const date = await response.json();
+
+const date = ref(
+  {
+    img: "../../../assets/img/rating.png",
+    des: "All Natural Style Chicken Meatballs",
+    price: "$52.85"
+  }
+)
+
 </script>
 <style scoped>
 .h5 :hover {
