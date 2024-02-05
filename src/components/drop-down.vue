@@ -11,12 +11,12 @@
                 <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
                   <div class="flex items-center">
                     <i class='bx bx-ghost text-main-100 text-[25px] mr-1'></i>
-                    <div>
-                      Пункт 1
+                    <div v-for="(item, i) in users" :key="i">
+                      {{ item.name }}
                     </div>
                   </div>
                 </a>
-                <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
+                <!-- <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
                   <div class="flex items-center">
                     <i class='bx bxs-pyramid text-main-100 text-[25px] mr-1'></i>
                     <div>
@@ -31,7 +31,7 @@
                       Пункт 3
                     </div>
                   </div>
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="ml-3 flex items-center relative top-[1px] justify-center">
@@ -135,7 +135,7 @@ const users = ref<UserData[]>([]);
 
 const fetchData = async () => {
   try {
-    const response = await fetch("http://localhost:3000/api/category/all");
+    const response = await fetch("http://34.136.49.137:4000/api/category/all");
     if (response.ok) {
       users.value = await response.json();
       console.log(users.value);
