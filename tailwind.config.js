@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        fortitle: {100: '#7E7E7E', 200: '#253D4E'},
+        main: { 100: '#3BB77E', 200: '#29A56C'},
         green: { 100: '#DEF9EC', 200: '#237D64' },
         blue: { 100: '#F2F3F4', 200: '#253D4E' },
         yellow: { 100: '#FFD480', 200: '#FDC040' },
@@ -17,6 +19,7 @@ export default {
         xs: '560px',
         sm: '640px',
         md: '768px',
+        '2md': '820px',
         lg: '1024px',
         xl: '1280px',
         xxl: '1440px',

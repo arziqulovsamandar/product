@@ -5,7 +5,7 @@
         class="login-container"
         v-if="showModal1"
       >
-        <form class="login-form">
+        <form class="login-form text-main-100">
           <h2>{{ t("login.phone_number") }}</h2>
           <input
             type="tel"
@@ -27,7 +27,7 @@
         v-if="showModal"
         class="modal"
       >
-        <div class="login-form">
+        <div class="login-form text-main-100">
           <h2>{{ t('login.sms_code') }}</h2>
           <input
             class="sms-kod"
@@ -99,7 +99,6 @@ const submitSmsCode = () => {
 }
 
 .login-form h2 {
-  color: yellowgreen;
   font-size: 24px;
   margin-top: 0;
   font-weight: 700;

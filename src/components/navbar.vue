@@ -9,13 +9,13 @@
         <input
           type="text"
           :placeholder="t('navbar.search_placeholder')"
-          class="input-navbar"
+          class="input-navbar border-main-100 border-[2px]"
         />
-        <button class="nanbar-button">{{ t("navbar.search") }}</button>
+        <button class="nanbar-button bg-main-100">{{ t("navbar.search") }}</button>
       </div>
     </div>
-    <div class="became-vendor1">
-      <h5 class="navbar-become1">{{ t("navbar.become") }}</h5>
+    <div class="became-vendor1 border-main-100 border-[2px]">
+      <h5 class="text-main-100">{{ t("navbar.become") }}</h5>
       <img
         class="right"
         src="../assets/img/icons8-right-50.png"
@@ -150,9 +150,6 @@ const options = [
 ];
 </script>
 <style scoped>
-.navbar-become1 {
-  color: yellowgreen;
-}
 .right {
   margin: 0px 40px;
 }
@@ -166,10 +163,23 @@ const options = [
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
+}
+.navbar-h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.img1 {
+  width: 70px;
+  height: 70px;
+}
+.navbar-span {
+  font-size: 12px;
+  margin: -5px 0px;
+  font-weight: 700;
+  color: rgb(79, 76, 73);
 }
 .input-navbar {
-  border: 2px solid yellowgreen;
   height: 50px;
   border-radius: 5px;
   padding: 10px;
@@ -177,7 +187,6 @@ const options = [
   text-decoration-style: initial;
 }
 .nanbar-button {
-  background-color: rgb(122, 180, 5);
   color: white;
   height: 40px;
   padding: 5px;
@@ -189,7 +198,6 @@ const options = [
   display: flex;
   padding: 5px;
   margin: 25px;
-  border: 2px solid yellowgreen;
   width: auto;
   height: 40px;
   border-radius: 5px;
