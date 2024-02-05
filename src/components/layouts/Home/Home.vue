@@ -1,9 +1,9 @@
 <template>
-  <Layout>
+  <LayoutHome>
     <router-view></router-view>
-  </Layout>
+  </LayoutHome>
 </template>
 
 <script setup lang="ts">
-import Layout from "./Layout.vue";
+import LayoutHome from "./LayoutHome.vue";
 </script>

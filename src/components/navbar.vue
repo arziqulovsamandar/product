@@ -22,44 +22,80 @@
         alt=""
       />
     </div>
-    <div style="display: flex;">
+    <div style="display: flex">
       <div class="campare-wishlist">
         <div style="margin: 20px 0px; display: flex">
-          <img
-            src="../assets/img/icons8-compare-git-50.png"
-            alt=""
-            class="compare-img"
-          />
-          <h1 class="compare">{{ t("navbar.compare") }}</h1>
+          <router-link
+            to="/compare"
+            style="display: flex"
+          >
+            <n-badge
+              value="2"
+              color="yellowgreen"
+            >
+              <img
+                src="../assets/img/icons8-compare-git-50.png"
+                alt=""
+                class="compare-img"
+              />
+            </n-badge>
+            <h1 class="compare">{{ t("navbar.compare") }}</h1>
+          </router-link>
         </div>
         <div style="margin: 20px 5px; display: flex">
-          <img
-            src="../assets/img/icons8-heart-26.png"
-            alt=""
-            class="compare-img"
-          />
-          <h1 class="compare">{{ t("navbar.wishlist") }}</h1>
+          <router-link
+            to="/wishlist"
+            style="display: flex"
+          >
+            <n-badge
+              value="1"
+              color="yellowgreen"
+            >
+              <img
+                src="../assets/img/icons8-heart-26.png"
+                alt=""
+                class="compare-img"
+              />
+            </n-badge>
+            <h1 class="compare">{{ t("navbar.wishlist") }}</h1>
+          </router-link>
         </div>
       </div>
       <div style="margin: 20px 5px; display: flex">
-        <img
-          src="../assets/img/icons8-cart-24.png"
-          alt=""
-          class="compare-img"
-        />
-        <h1 class="compare">{{ t("navbar.cart") }}</h1>
-      </div>
-      <div style="margin: 20px; display: flex">
-        <img
-          src="../assets/img/icons8-user-30.png"
-          alt=""
-          class="compare-img"
-        />
-        <a
-          href="/login"
-          class="compare account"
-          >{{ t("navbar.account") }}</a
+        <router-link
+          to="/cards"
+          style="display: flex"
         >
+          <n-badge
+            value="3"
+            color="yellowgreen"
+          >
+            <img
+              src="../assets/img/icons8-cart-24.png"
+              alt=""
+              class="compare-img"
+            />
+          </n-badge>
+          <h1 class="compare">{{ t("navbar.cart") }}</h1>
+        </router-link>
+      </div>
+      <div style="margin: 30px; display: flex">
+        <n-dropdown :options="options">
+          <n-button
+            circle
+            @click="Login"
+          >
+            <n-icon size="36">
+              <UserIcon />
+            </n-icon>
+          </n-button>
+        </n-dropdown>
+        <h1
+          class="compare"
+          style="margin: 5px"
+        >
+          Account
+        </h1>
       </div>
     </div>
   </div>
@@ -67,7 +103,51 @@
 <script setup lang="ts">
 import AppLogo from "./app/app-logo.vue";
 import { useI18n } from "vue-i18n";
+import { NDropdown, NBadge } from "naive-ui";
+import { NButton } from "naive-ui";
+
+import { useRouter } from "vue-router";
+
 const { t } = useI18n();
+const router = useRouter();
+
+import { h, Component } from "vue";
+import { NIcon } from "naive-ui";
+import {
+  PersonCircleOutline as UserIcon,
+  Pencil as EditIcon,
+  LogOutOutline as LogoutIcon,
+} from "@vicons/ionicons5";
+
+const renderIcon = (icon: Component) => {
+  return () => {
+    return h(NIcon, null, {
+      default: () => h(icon),
+    });
+  };
+};
+
+const Login = () => {
+  router.push("/login");
+};
+
+const options = [
+  {
+    label: "Login",
+    key: "login",
+    icon: renderIcon(UserIcon),
+  },
+  {
+    label: "Edit Profile",
+    key: "editProfile",
+    icon: renderIcon(EditIcon),
+  },
+  {
+    label: "Logout",
+    key: "logout",
+    icon: renderIcon(LogoutIcon),
+  },
+];
 </script>
 <style scoped>
 .navbar-become1 {
@@ -87,21 +167,6 @@ const { t } = useI18n();
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-.navbar-h1 {
-  font-size: 36px;
-  color: yellowgreen;
-  font-weight: 700;
-}
-.img1 {
-  width: 70px;
-  height: 70px;
-}
-.navbar-span {
-  font-size: 12px;
-  margin: -5px 0px;
-  font-weight: 700;
-  color: rgb(79, 76, 73);
 }
 .input-navbar {
   border: 2px solid yellowgreen;
@@ -135,13 +200,11 @@ const { t } = useI18n();
   font-size: 18px;
 }
 .compare-img {
-  margin: 15px;
+  margin:15px;
   width: 30px;
   height: 30px;
 }
-.account {
-  font-weight: 700;
-}
+
 @media screen and (max-width: 1200px) {
   .became-vendor1 {
     display: none;
@@ -179,10 +242,6 @@ const { t } = useI18n();
   }
   .compare {
     font-size: 16px;
-  }
-  .account {
-    font-weight: 700;
-    margin: 14px 0px;
   }
 }
 </style>

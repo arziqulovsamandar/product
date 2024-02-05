@@ -1,5 +1,5 @@
 <template>
-  <div class="main w-[280px] relative p-5 justify-around border-2 border-slate-200 hover:shadow-lg shadow-slate-800 duration-500 ease-in-out cursor-pointer rounded-2xl h-auto m-2">
+  <div class="main relative p-3 border-2 border-slate-200 hover:shadow-lg shadow-slate-800 duration-500 ease-in-out cursor-pointer rounded-2xl m-2">
     <div class="text-white w-[22%] h-[6%] absolute top-0 left-0 text-center rounded-br-2xl rounded-tl-xl" style="font-size: smaller; padding-top: 3px; background-color: #6ec1e4">
       13%
     </div>
@@ -7,20 +7,26 @@
       Sale
     </div>
     <div>
-      <img class="mx-auto mb-2" src="../../../assets/img/product-2-1.jpg" alt="">
+      <img
+        class="mx-auto mb-2"
+        src="../../../assets/img/product-2-1.jpg"
+        alt=""
+      />
     </div>
     <div>
       <p style='font-size: small; color: gray'>Fresh Fruit</p>
     </div>
     <div>
-      <h1 class="font-bold text-lg text-gray-600 mb-3">Seeds of Change Organic Red Rice</h1>
+      <h1 class="font-bold text-lg text-gray-600 mb-3">
+        Seeds of Change Organic Red Rice
+      </h1>
     </div>
     <div class="text-slate-400 text-sm mb-2">
-      <i class='bx bx-star '></i>
-      <i class='bx bx-star'></i>
-      <i class='bx bx-star'></i>
-      <i class='bx bx-star'></i>
-      <i class='bx bx-star'></i>
+      <i class="bx bx-star"></i>
+      <i class="bx bx-star"></i>
+      <i class="bx bx-star"></i>
+      <i class="bx bx-star"></i>
+      <i class="bx bx-star"></i>
       <span class="ml-2">0</span>
     </div>
     <div class='mb-3'>
@@ -35,10 +41,70 @@
       </button>
     </div>
   </div>
+  <div class="dropdownn">
+    <n-dropdown
+      trigger="hover"
+      :options="options"
+      style="background-color: yellowgreen"
+    >
+      <n-button style="background-color: white"
+        ><n-icon size="24">
+          <img
+            src="../../../assets/img/icons8-eye-24.png"
+            alt=""
+          /> </n-icon
+      ></n-button>
+    </n-dropdown>
+    <n-dropdown
+      trigger="hover"
+      :options="options1"
+      style="background-color: yellowgreen"
+    >
+      <n-button style="background-color: white"
+        ><n-icon size="24">
+          <img
+            src="../../../assets/img/icons8-arrow-32.png"
+            alt=""
+          /> </n-icon
+      ></n-button>
+    </n-dropdown>
+    <n-dropdown
+      trigger="hover"
+      :options="options2"
+      style="background-color: yellowgreen"
+    >
+      <n-button style="background-color: white"
+        ><n-icon size="24">
+          <img
+            src="../../../assets/img/icons8-heart-24.png"
+            alt=""
+          /> </n-icon
+      ></n-button>
+    </n-dropdown>
+  </div>
 </template>
 <script setup lang="ts">
 // import { useProductStore } from "../store";
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
+import { NDropdown } from "naive-ui";
+import { NButton } from "naive-ui";
+
+import { NIcon } from "naive-ui";
+const options = [
+  {
+    label: "Quick view",
+  },
+];
+const options1 = [
+  {
+    label: "Compare",
+  },
+];
+const options2 = [
+  {
+    label: "Wishlist",
+  },
+];
 
 // const productCart = useProductStore();
 const props = defineProps({
@@ -70,14 +136,39 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.main:hover .cover {
-  opacity: 1;
-  visibility: visible;
-  top: 45%;
-}
+.main {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
 
-.main:hover {
-  box-shadow: none;
-  border: none;
+  .dropdownn {
+    position: absolute;
+    margin: -370px 60px;
+  }
+  .main:hover {
+    opacity: 1;
+    visibility: visible;
+    top: 45%;
+  }
+
+  .main:hover {
+    box-shadow: none;
+    border: none;
+  }
+
+  @media screen and (max-width: 375px) {
+    max-width: 250px;
+    /* iPhone SE */
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 412px) {
+    max-width: 280px;
+    /* Samsung S20 Ultra */
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 820px) {
+    max-width: 260px;
+    /* iPad Air */
+  }
 }
 </style>
