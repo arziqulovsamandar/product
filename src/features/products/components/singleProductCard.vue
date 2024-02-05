@@ -1,15 +1,9 @@
 <template>
-  <div
-    class="main w-[280px] relative p-5 justify-around border-2 border-slate-200 hover:shadow-lg shadow-slate-800 duration-500 ease-in-out cursor-pointer rounded-2xl h-auto m-2"
-  >
-    <div
-      class="bg-blue-300 text-white w-[22%] h-[6%] absolute top-0 left-0 text-center rounded-br-2xl rounded-tl-xl"
-    >
+  <div class="main relative p-3 border-2 border-slate-200 hover:shadow-lg shadow-slate-800 duration-500 ease-in-out cursor-pointer rounded-2xl m-2">
+    <div class="text-white w-[22%] h-[6%] absolute top-0 left-0 text-center rounded-br-2xl rounded-tl-xl" style="font-size: smaller; padding-top: 3px; background-color: #6ec1e4">
       13%
     </div>
-    <div
-      class="bg-primary text-white w-[22%] h-[6%] absolute top-0 right-0 text-center rounded-bl-2xl rounded-tr-xl"
-    >
+    <div class="text-white w-[22%] h-[6%] absolute top-0 right-0 text-center rounded-bl-2xl rounded-tr-xl" style="background-color: #3bb77e; font-size: smaller; padding-top: 3px">
       Sale
     </div>
     <div>
@@ -20,7 +14,7 @@
       />
     </div>
     <div>
-      <p style="font-size: smaller; color: gray">Fresh Fruit</p>
+      <p style='font-size: small; color: gray'>Fresh Fruit</p>
     </div>
     <div>
       <h1 class="font-bold text-lg text-gray-600 mb-3">
@@ -35,26 +29,15 @@
       <i class="bx bx-star"></i>
       <span class="ml-2">0</span>
     </div>
-    <div class="mb-3">
-      <p style="color: gray">
-        By
-        <a
-          href="http://localhost:3000/"
-          style="color: #46d573; font-size: larger; opacity: 100%"
-          >NestFood</a
-        >
-      </p>
+    <div class='mb-3'>
+      <p style='color: gray'>By <a href="http://localhost:3000/" style="color: #3bb77e; font-size: medium; opacity: 100%">NestFood</a></p>
     </div>
-    <div class="flex text-primary font-bold gap-3 items-baseline mb-2">
-      <span class="text-[20px]">$28.95</span>
-      <s class="text-slate-400"
-        >$<s class="text-[13px] text-primary">32.80</s></s
-      >
-      <button
-        @click="addToCart"
-        class="bg-primary text-white px-4 py-2 rounded-md flex items-center ml-8 opacity-100 hover:opacity-100"
-      >
-        <i class="bx bx-cart-alt mr-2"></i> Add
+    <div class="flex text-green-500 font-bold gap-3 items-baseline mb-2" style="color: #3bb77e">
+      <span class="text-[18px] underline">$28.95</span>
+      <s class="text-slate-400">$<s class="text-[13px] text-primary">32.80</s></s>
+      <button @click="addToCart" class="bg-green-100 text-green-500 font-semibold px-4 py-2 rounded-md flex items-center ml-8 opacity-100 hover:opacity-100 w-40 h-9">
+        <img src="../../../assets/img/cart-18-16g.png" alt="Cart Icon" class="-ml-1 mr-1 h-5 w-4" style="color: #3bb77e">
+        Add
       </button>
     </div>
   </div>
@@ -153,18 +136,39 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.dropdownn {
-  position: absolute;
-  margin: -370px 60px;
-}
-.main:hover {
-  opacity: 1;
-  visibility: visible;
-  top: 45%;
-}
+.main {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
 
-.main:hover {
-  box-shadow: none;
-  border: none;
+  .dropdownn {
+    position: absolute;
+    margin: -370px 60px;
+  }
+  .main:hover {
+    opacity: 1;
+    visibility: visible;
+    top: 45%;
+  }
+
+  .main:hover {
+    box-shadow: none;
+    border: none;
+  }
+
+  @media screen and (max-width: 375px) {
+    max-width: 250px;
+    /* iPhone SE */
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 412px) {
+    max-width: 280px;
+    /* Samsung S20 Ultra */
+  }
+
+  @media screen and (min-width: 413px) and (max-width: 820px) {
+    max-width: 260px;
+    /* iPad Air */
+  }
 }
 </style>
