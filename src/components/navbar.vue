@@ -1,101 +1,63 @@
 <template>
-  <div class="navbar w-[1600px] py-[15px]">
-    <div class="input-navbar1">
-      <AppLogo class="min-w-[170px] max-w-[170px]"/>
-      <div
-        style="margin: 20px"
-        class="search-input1 w-full"
-      >
-        <input
-          type="text"
-          :placeholder="t('navbar.search_placeholder')"
-          class="input-navbar w-full border-main-100 border-[2px]"
-        />
-        <button class="nanbar-button bg-main-100">{{ t("navbar.search") }}</button>
-      </div>
-    </div>
-    <div class="became-vendor1 border-main-100 border-[2px]">
-      <h5 class="text-main-100">{{ t("navbar.become") }}</h5>
-      <img
-        class="right"
-        src="../assets/img/icons8-right-50.png"
-        alt=""
-      />
-    </div>
-    <div style="display: flex">
-      <div class="campare-wishlist">
-        <div style="margin: 20px 0px; display: flex">
-          <router-link
-            to="/compare"
-            style="display: flex"
-          >
-            <n-badge
-              value="2"
-              color="yellowgreen"
-            >
-              <img
-                src="../assets/img/icons8-compare-git-50.png"
-                alt=""
-                class="compare-img"
-              />
-            </n-badge>
-            <h1 class="compare">{{ t("navbar.compare") }}</h1>
-          </router-link>
-        </div>
-        <div style="margin: 20px 5px; display: flex">
-          <router-link
-            to="/wishlist"
-            style="display: flex"
-          >
-            <n-badge
-              value="1"
-              color="yellowgreen"
-            >
-              <img
-                src="../assets/img/icons8-heart-26.png"
-                alt=""
-                class="compare-img"
-              />
-            </n-badge>
-            <h1 class="compare">{{ t("navbar.wishlist") }}</h1>
-          </router-link>
-        </div>
-      </div>
-      <div style="margin: 20px 5px; display: flex">
-        <router-link
-          to="/cards"
-          style="display: flex"
-        >
-          <n-badge
-            value="3"
-            color="yellowgreen"
-          >
-            <img
-              src="../assets/img/icons8-cart-24.png"
-              alt=""
-              class="compare-img"
+  <div class="flex w-full justify-between max-w-[1610px] relative xl:my-[30px] my-[15px] mx-auto">
+    <div class="xl:flex justify-between w-full px-[15px] items-center">
+      <AppLogo class="min-w-[170px] max-w-[170px] mr-[70px]"/>
+      <div class="w-full flex items-end xl:items-center justify-between flex-col-reverse mt-[15px] xl:mt-0 xl:flex-row">
+        <div class="search-input1 w-full h-[50px]">
+          <div class="flex w-full h-full rounded-[4px] border-[2px] border-[#BCE3C9] p-[3px]">
+            <input
+              type="text"
+              :placeholder="t('navbar.search_placeholder')"
+              class="input-navbar py-[10px] px-[15px] w-full outline-none"
             />
-          </n-badge>
-          <h1 class="compare">{{ t("navbar.cart") }}</h1>
-        </router-link>
-      </div>
-      <div style="margin: 30px; display: flex">
-        <n-dropdown :options="options">
-          <n-button
-            circle
+            <button class="nanbar-button bg-main-100 rounded-[3px] text-white px px-[22px] font-semibold">{{ t("navbar.search") }}</button>
+          </div>
+        </div>
+
+        <div class="w-[700px] flex items-center absolute xl:static top-0 justify-end xl:justify-around ml-[50px] my-[8px] xl:mb-0">
+          <a href="/" class="became-vendor1 px-[30px] h-[40px] hidden xl:block">
+            <div class="bg-white flex flex-nowrap items-center text-main-100 py-[6px] pr-[18px] pl-[13px] text-[16px] shadow-md border-[1px] rounded-[5px] border-[#ececec]">
+              <h5 class="whitespace-nowrap">{{ t("navbar.become") }}</h5>
+              <i class='bx bx-right-arrow-alt text-[23px] ml-3'></i>
+            </div>
+          </a>
+          <router-link to="/compare" class="px-[6px] items-center hidden 3xs:flex">
+            <i class='bx bx-refresh text-[#213746] text-[40px] relative'>
+              <div class="bg-main-100 absolute top-[-1px] right-[-1px] text-white px-[6px] pb-[3px] font-sans pt-[3px] rounded-[50%] text-[12px]">3</div>
+            </i>
+            <h3 class="hidden md:block text-[17px] text-[#7e7e7e] font-normal ml-[2px]">{{ t("navbar.compare") }}</h3>
+          </router-link>
+          <router-link to="/wishlist" class="px-[6px] items-center hidden 3xs:flex">
+            <i class='bx bx-heart text-[#213746] text-[32px] relative'>
+              <div class="bg-main-100 absolute top-[-1px] right-[-6px] text-white px-[6px] pb-[3px] font-sans pt-[3px] rounded-[50%] text-[12px]">3</div>
+            </i>
+            <h3 class="hidden md:block text-[17px] leading-5 text-[#7e7e7e] font-normal ml-[7px]">{{ t("navbar.wishlist") }}</h3>
+          </router-link>
+          <router-link to="/cards" class="px-[6px] flex items-center">
+            <i class='bx bx-cart-alt text-[#213746] text-[34px] relative'>
+              <div class="bg-main-100 absolute top-[-1px] right-[-1px] text-white px-[6px] pb-[3px] font-sans pt-[3px] rounded-[50%] text-[12px]">3</div>
+            </i>
+            <h3 class="hidden md:block text-[17px] text-[#7e7e7e] font-normal ml-[2px]">{{ t("navbar.cart") }}</h3>
+          </router-link>
+
+          <div
+            class="group relative flex items-center"
             @click="Login"
           >
-            <n-icon size="36">
-              <UserIcon />
-            </n-icon>
-          </n-button>
-        </n-dropdown>
-        <h1
-          class="compare"
-          style="margin: 5px"
-        >
-          Account
-        </h1>
+            <button class="px-2 text-[#7e7e7e] text-[17px] font-normal relative flex items-center">
+              <i class='bx bx-user mt-[-3px] text-[#213746] text-[32px]'></i>
+              <div class="hidden md:block ml-[2px]">Account</div>
+            </button>
+            <div class="hidden shadow-md p-1 group-hover:block absolute top-[25px] left-[-10px] z-20 bg-white min-w-[130px]">
+              <div
+                v-for="option in options" :key="option.key " class="flex items-center w-full hover:bg-[#ececec80] p-[6px]"
+              >
+                  <i :class="option.icon" class="text-[16px] mb-[-3px]"></i>
+                  <router-link :to="option.link" class="text-[13px] ml-1">{{ option.label }}</router-link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -103,29 +65,11 @@
 <script setup lang="ts">
 import AppLogo from "./app/app-logo.vue";
 import { useI18n } from "vue-i18n";
-import { NDropdown, NBadge } from "naive-ui";
-import { NButton } from "naive-ui";
 
 import { useRouter } from "vue-router";
 
 const { t } = useI18n();
 const router = useRouter();
-
-import { h, Component } from "vue";
-import { NIcon } from "naive-ui";
-import {
-  PersonCircleOutline as UserIcon,
-  Pencil as EditIcon,
-  LogOutOutline as LogoutIcon,
-} from "@vicons/ionicons5";
-
-const renderIcon = (icon: Component) => {
-  return () => {
-    return h(NIcon, null, {
-      default: () => h(icon),
-    });
-  };
-};
 
 const Login = () => {
   router.push("/login");
@@ -135,37 +79,40 @@ const options = [
   {
     label: "Login",
     key: "login",
-    icon: renderIcon(UserIcon),
+    icon: "bx bx-user-circle",
+    link: "/"
   },
   {
     label: "Edit Profile",
     key: "editProfile",
-    icon: renderIcon(EditIcon),
+    icon: "bx bx-pencil",
+    link: "/"
   },
   {
     label: "Logout",
     key: "logout",
-    icon: renderIcon(LogoutIcon),
+    icon: "bx bx-exit",
+    link: "/"
   },
 ];
 </script>
 <style scoped>
-.right {
+/* .right {
   margin: 0px 40px;
 }
 .campare-wishlist {
   display: flex;
-}
-.input-navbar1 {
+} */
+/* .input-navbar1 {
   width: auto;
   display: flex;
-}
-.navbar {
+} */
+/* .navbar {
   display: flex;
   justify-content: space-between;
   width: 95%;
-}
-.navbar-h1 {
+} */
+/* .navbar-h1 {
   font-size: 36px;
   font-weight: 700;
 }
@@ -178,31 +125,31 @@ const options = [
   margin: -5px 0px;
   font-weight: 700;
   color: rgb(79, 76, 73);
-}
-.input-navbar {
+} */
+/* .input-navbar {
   height: 50px;
   border-radius: 5px;
   padding: 10px;
   width: 300px;
   text-decoration-style: initial;
-}
-.nanbar-button {
+} */
+/* .nanbar-button {
   color: white;
   height: 40px;
   padding: 5px;
   width: 100px;
   border-radius: 5px;
   margin: 0px -105px;
-}
-.became-vendor1 {
+} */
+/* .became-vendor1 {
   display: flex;
   padding: 5px;
   margin: 25px;
   width: auto;
   height: 40px;
   border-radius: 5px;
-}
-.compare {
+} */
+/* .compare {
   margin: 18px -10px;
   color: rgb(88, 91, 81);
   font-size: 18px;
@@ -211,36 +158,36 @@ const options = [
   margin:15px;
   width: 30px;
   height: 30px;
-}
+} */
 
-@media screen and (max-width: 1200px) {
-  .became-vendor1 {
+/* @media screen and (max-width: 1200px) { */
+  /* .became-vendor1 {
     display: none;
-  }
-  .input-navbar1 {
+  } */
+  /* .input-navbar1 {
     flex-direction: column;
-  }
-  .navbar {
+  } */
+  /* .navbar {
     justify-content: space-between;
-  }
-  .input-navbar {
+  } */
+  /* .input-navbar {
     width: 400px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .input-navbar {
+  } */
+/* } */
+/* @media screen and (max-width: 1440px) { */
+  /* .input-navbar {
     width: 300px;
-  }
-  .became-vendor1 {
+  } */
+  /* .became-vendor1 {
     display: none;
-  }
-}
-@media screen and (max-width: 480px) {
+  } */
+/* } */
+/* @media screen and (max-width: 480px) {
   .search-input1 {
     display: none;
   }
-}
-@media screen and (max-width: 690px) {
+} */
+/* @media screen and (max-width: 690px) {
   .campare-wishlist {
     display: none;
   }
@@ -251,5 +198,5 @@ const options = [
   .compare {
     font-size: 16px;
   }
-}
+} */
 </style>

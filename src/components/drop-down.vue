@@ -8,15 +8,23 @@
             <button class="text-[16px] font-medium">Browse All Categories</button>
             <div class="main-dropdown-content border-[1px] border-[rgba(59,183,125,0.4)] bor max-h-[350px] p-[10px] overflow-scroll w-[465px] shadow-md rounded-[10px] z-20 bg-white absolute xl:top-[44px] top-[36px] left-0">
               <div class="flex flex-wrap p-[10px] gap-[10px]">
-                <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
+                <!-- <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
                   <div class="flex items-center">
                     <i class='bx bx-ghost text-main-100 text-[25px] mr-1'></i>
                     <div v-for="(item, i) in users" :key="i">
                       {{ item.name }}
                     </div>
                   </div>
+                </a> -->
+                <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
+                  <div class="flex items-center">
+                    <i class='bx bx-ghost text-main-100 text-[25px] mr-1'></i>
+                    <div>
+                      Пункт 1
+                    </div>
+                  </div>
                 </a>
-                <!-- <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
+                <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
                   <div class="flex items-center">
                     <i class='bx bxs-pyramid text-main-100 text-[25px] mr-1'></i>
                     <div>
@@ -31,7 +39,7 @@
                       Пункт 3
                     </div>
                   </div>
-                </a> -->
+                </a>
               </div>
             </div>
             <div class="ml-3 flex items-center relative top-[1px] justify-center">
