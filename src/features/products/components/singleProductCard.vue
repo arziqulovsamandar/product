@@ -106,27 +106,24 @@
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
 // import { useProductStore } from "../store";
 import { ref, onMounted } from "vue";
 import { NDropdown } from "naive-ui";
 import { NButton } from "naive-ui";
-
 import { NIcon } from "naive-ui";
+
 const options = [
-  {
-    label: "Quick view",
-  },
+  { label: "Quick view" },
 ];
+
 const options1 = [
-  {
-    label: "Compare",
-  },
+  { label: "Compare" },
 ];
+
 const options2 = [
-  {
-    label: "Wishlist",
-  },
+  { label: "Wishlist" },
 ];
 
 // const productCart = useProductStore();
@@ -155,4 +152,6 @@ onMounted(() => {
   left: 50%;
   transform: translateX(-50%);
 }
+
+
 </style>
