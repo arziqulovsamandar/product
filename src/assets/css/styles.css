@@ -15,10 +15,6 @@
         @apply text-2xl font-semibold;
     }
 
-    button {
-        @apply outline-none;
-    }
-
     .banner-link {
         @apply text-fortitle-200;
     }
