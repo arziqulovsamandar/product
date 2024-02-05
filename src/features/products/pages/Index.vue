@@ -25,10 +25,6 @@
       ><span> | </span><lang-switcher /><span> | </span> INR <span> </span
     ></div>
   </div> -->
-  <div>
-    <Navbar />
-  </div>
-  <drapDown />
   <Banner
     class="py-[60px]"
     :title="t('banners.intro_banner.title')"
@@ -40,9 +36,17 @@
     backgroundImage="src/assets/img/intro-banner.jpg"
   />
 
-  <h2 class="deals-of">{{ t("index.trending") }}</h2>
-  <singleProductCard />
-  <h2 class="deals-of">{{ t("index.deals") }}</h2>
+  <h2 class="deals-of my-[30px] mx-[10px]">{{ t("index.trending") }}</h2>
+  <div class="flex flex-wrap px-[15px] gap-[12px]">
+    <singleProductCard/>
+    <singleProductCard/>
+    <singleProductCard/>
+    <singleProductCard/>
+    <singleProductCard/>
+    <singleProductCard/>
+    <singleProductCard/>
+  </div>
+  <h2 class="deals-of my-[40px] mx-[10px]">{{ t("index.deals") }}</h2>
   <Product />
   <productCard />
   <Banner
@@ -73,7 +77,6 @@ const { t } = useI18n();
 
 <style scoped>
 .deals-of {
-  margin: 10px;
   display: flex;
   justify-content: center;
 }

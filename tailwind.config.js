@@ -21,6 +21,7 @@ export default {
         md: '768px',
         '2md': '820px',
         lg: '1024px',
+        '2lg': '1200px',
         xl: '1280px',
         xxl: '1440px',
       },
