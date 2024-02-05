@@ -56,11 +56,11 @@
       style="background-color: yellowgreen"
     >
       <n-button style="background-color: white"
-        ><n-icon size="24">
-          <img
-            src="../../../assets/img/icons8-eye-24.png"
-            alt=""
-          /> </n-icon
+      ><n-icon size="24">
+        <img
+          src="../../../assets/img/icons8-eye-24.png"
+          alt=""
+        /> </n-icon
       ></n-button>
     </n-dropdown>
     <n-dropdown
@@ -69,11 +69,11 @@
       style="background-color: yellowgreen"
     >
       <n-button style="background-color: white"
-        ><n-icon size="24">
-          <img
-            src="../../../assets/img/icons8-arrow-32.png"
-            alt=""
-          /> </n-icon
+      ><n-icon size="24">
+        <img
+          src="../../../assets/img/icons8-arrow-32.png"
+          alt=""
+        /> </n-icon
       ></n-button>
     </n-dropdown>
     <n-dropdown
@@ -82,11 +82,11 @@
       style="background-color: yellowgreen"
     >
       <n-button style="background-color: white"
-        ><n-icon size="24">
-          <img
-            src="../../../assets/img/icons8-heart-24.png"
-            alt=""
-          /> </n-icon
+      ><n-icon size="24">
+        <img
+          src="../../../assets/img/icons8-heart-24.png"
+          alt=""
+        /> </n-icon
       ></n-button>
     </n-dropdown>
   </div>
@@ -165,7 +165,7 @@ onMounted(() => {
     box-shadow: none;
     border: none;
   }
-  
+
   @media screen and (max-width: 375px) {
     max-width: 250px;
   }
