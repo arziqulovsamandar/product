@@ -1,31 +1,32 @@
 <template>
-  <div>
-    <div class="navbar1">
+  <div class="">
+    <div class="max-w-[1610px] mx-auto justify-between p-[10px] w-full hidden xl:flex">
       <div>
-        <a href="">{{ t("product.about") }}</a>
-        <span> | </span>
-        <a href="">{{ t("product.my_acount") }}</a>
-        <span> | </span>
-        <a href="">{{ t("product.wishlist") }}</a>
-        <span> | </span>
-        <a href="">{{ t("product.order") }}</a>
+        <a class="text-fortitle-100 text-[13px]" href="">{{ t("product.about") }}</a>
+        <span class="text-[rgba(218,218,218,0.7)]"> | </span>
+        <a class="text-fortitle-100 text-[13px]" href="">{{ t("product.my_acount") }}</a>
+        <span class="text-[rgba(218,218,218,0.7)]"> | </span>
+        <a class="text-fortitle-100 text-[13px]" href="">{{ t("product.wishlist") }}</a>
+        <span class="text-[rgba(218,218,218,0.7)]"> | </span>
+        <a class="text-fortitle-100 text-[13px]" href="">{{ t("product.order") }}</a>
       </div>
-      <a href=""
-        ><span class="navbar-p1">{{ t("product.securete") }}</span></a
+      <a class="text-fortitle-100 text-[13px]" href=""
+        ><span class="hover:text-[#C25] cursor-pointer text-main-100 font-bold">{{ t("product.securete") }}</span></a
       >
       <div>
-        <a href=""
+        <a class="text-fortitle-100 text-[13px]" href=""
           >{{ t("product.need_help")
-          }}<span class="navbar-p">+1800900122</span></a
+          }}<span class="hover:text-main-200 cursor-pointer text-main-100 font-semibold">+1800900122</span></a
         >
       </div>
       <div
         href=""
-        class="navbar-lang"
+        class="flex gap-[5px] text-[14px] text-fortitle-100"
       >
-        <span> | </span><lang-switcher /><span> | </span> INR <span> </span>
+        <span class="text-[rgba(218,218,218,0.7)]"> | </span><lang-switcher /><span class="text-[rgba(218,218,218,0.7)]"> | </span> INR <span> </span>
       </div>
     </div>
+    <hr class="border-[rgba(218,218,218,0.7)]">
     <div>
       <Navbar />
     </div>
@@ -47,44 +48,4 @@ import Navbar from "../navbar.vue";
 </script>
 
 <style scoped>
-.navbar1 {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid rgb(227, 192, 192);
-  padding: 10px;
-  width: 100%;
-}
-.navbar1 a {
-  color: rgb(77, 92, 90);
-  font-size: 13px;
-}
-.navbar-p {
-  color: yellowgreen;
-  cursor: pointer;
-  font-weight: 500;
-}
-.navbar-p1 {
-  color: yellowgreen;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.navbar-p :hover {
-  color: rgb(96, 130, 118);
-}
-.navbar-lang {
-  display: flex;
-  gap: 5px;
-  font-size: 14px;
-}
-.navbar1 a :hover {
-  color: black;
-}
-
-@media screen and (max-width: 1200px) {
-  .navbar1 {
-    display: none;
-  }
-}
 </style>

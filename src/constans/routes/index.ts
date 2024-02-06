@@ -7,7 +7,7 @@ enum HomeName
     About = 'About'
 };
 
-enum LoginName 
+enum LoginName
 {
     Login = 'Login'
 }
