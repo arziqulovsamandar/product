@@ -50,7 +50,7 @@ const langs = ref<langObj[]>([
     locale: "en",
   },
   {
-    text: "Russkiy",
+    text: "Русский",
     locale: "ru",
   },
 ]);
