@@ -50,29 +50,46 @@
   </div>
 </template>
 
+
 <script setup lang="ts">
 import LangSwitcher from "../components/langSwitcher.vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
-const { t } = useI18n();
-
-const router = useRouter();
+import { submitPhoneNumber, submitSmsCode, SignInDto } from "../services/LoginService.ts";
 import { ref } from "vue";
+
+const { t } = useI18n();
+const router = useRouter();
 
 const phoneNumber = ref("");
 const smsCode = ref("");
 const showModal = ref(false);
 const showModal1 = ref(true);
 
-const submitPhoneNumber = () => {
-  showModal1.value = false;
-  showModal.value = true;
+const submitPhoneNumber = async () => {
+  try {
+    const data: SignInDto = {
+      phoneNumber: phoneNumber.value,
+    };
+    await submitPhoneNumber(data);
+    showModal1.value = false;
+    showModal.value = true;
+  } catch (error) {
+    console.error("Error occured while submitting Phone number:", error);
+  }
 };
 
-const submitSmsCode = () => {
-  router.push("/");
+const submitSmsCode = async () => {
+  try {
+    await submitSmsCode(smsCode.value);
+    router.push("/");
+  } catch (error) {
+    console.error("Error occured while submitting Sms code:", error);
+  }
 };
 </script>
+
+
 
 <style scoped>
 .input {
