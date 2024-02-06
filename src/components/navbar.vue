@@ -8,32 +8,32 @@
             <input
               type="text"
               :placeholder="t('navbar.search_placeholder')"
-              class="input-navbar py-[10px] px-[15px] w-full outline-none"
+              class="py-[10px] px-[15px] w-full outline-none"
             />
             <button class="nanbar-button bg-main-100 rounded-[3px] text-white px px-[22px] font-semibold">{{ t("navbar.search") }}</button>
           </div>
         </div>
 
-        <div class="w-[700px] flex items-center absolute xl:static top-0 justify-end xl:justify-around ml-[50px] my-[8px] xl:mb-0">
-          <a href="/" class="became-vendor1 px-[30px] h-[40px] hidden xl:block">
+        <div class="w-fit flex items-center absolute xl:static top-0 justify-end xl:justify-end ml-[50px] my-[8px] xl:mb-0">
+          <a href="/" class="px-[30px] h-[40px] hidden xl:block hover:-mt-3 transition-all duration-300">
             <div class="bg-white flex flex-nowrap items-center text-main-100 py-[6px] pr-[18px] pl-[13px] text-[16px] shadow-md border-[1px] rounded-[5px] border-[#ececec]">
               <h5 class="whitespace-nowrap">{{ t("navbar.become") }}</h5>
               <i class='bx bx-right-arrow-alt text-[23px] ml-3'></i>
             </div>
           </a>
-          <router-link to="/compare" class="px-[6px] items-center hidden 3xs:flex">
+          <router-link to="/compare" class="hover:-mt-3 transition-all duration-300 px-[6px] items-center hidden 3xs:flex">
             <i class='bx bx-refresh text-[#213746] text-[40px] relative'>
               <div class="bg-main-100 absolute top-[-1px] right-[-1px] text-white px-[6px] pb-[3px] font-sans pt-[3px] rounded-[50%] text-[12px]">3</div>
             </i>
             <h3 class="hidden md:block text-[17px] text-[#7e7e7e] font-normal ml-[2px]">{{ t("navbar.compare") }}</h3>
           </router-link>
-          <router-link to="/wishlist" class="px-[6px] items-center hidden 3xs:flex">
+          <router-link to="/wishlist" class="hover:-mt-3 transition-all duration-300 px-[6px] items-center hidden 3xs:flex">
             <i class='bx bx-heart text-[#213746] text-[32px] relative'>
               <div class="bg-main-100 absolute top-[-1px] right-[-6px] text-white px-[6px] pb-[3px] font-sans pt-[3px] rounded-[50%] text-[12px]">3</div>
             </i>
             <h3 class="hidden md:block text-[17px] leading-5 text-[#7e7e7e] font-normal ml-[7px]">{{ t("navbar.wishlist") }}</h3>
           </router-link>
-          <router-link to="/cards" class="px-[6px] flex items-center">
+          <router-link to="/cards" class="hover:-mt-3 transition-all duration-300 px-[6px] flex items-center">
             <i class='bx bx-cart-alt text-[#213746] text-[34px] relative'>
               <div class="bg-main-100 absolute top-[-1px] right-[-1px] text-white px-[6px] pb-[3px] font-sans pt-[3px] rounded-[50%] text-[12px]">3</div>
             </i>
@@ -44,7 +44,7 @@
             class="group relative flex items-center"
             @click="Login"
           >
-            <button class="px-2 text-[#7e7e7e] text-[17px] font-normal relative flex items-center">
+            <button class="pl-2 text-[#7e7e7e] text-[17px] font-normal relative flex items-center">
               <i class='bx bx-user mt-[-3px] text-[#213746] text-[32px]'></i>
               <div class="hidden md:block ml-[2px]">Account</div>
             </button>
