@@ -12,7 +12,7 @@ export interface SignInDto {
 
 export const submitPhoneNumber = async (data: SignInDto): Promise<void> => {
   try {
-    await loginService.post('/user/signin', data);
+    await loginService.post('/user/otp', data);
   } catch (error) {
     handleRequestError(error);
     throw error;
