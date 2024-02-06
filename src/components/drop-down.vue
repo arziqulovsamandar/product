@@ -1,7 +1,7 @@
 <template>
   <div class="bg-main-100 h-[70px] flex justify-center">
     <div class="w-[1610px] flex justify-between items-center h-full px-[15px] mx-[5px]">
-      <div class="flex items-center justify-between xl:justify-start h-full w-full">
+      <div class="flex items-center justify-between 2xl:justify-start h-full w-full">
         <div class="flex items-center h-full">
           <div
             class="main-dropdown flex bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] min-w-[260px] xl:mr-[35px] mr-[10px]">
@@ -32,13 +32,13 @@
               <i class='bx bx-chevron-down text-[24px] text-center'></i>
             </div>
           </div>
-          <a class="hover:bg-main-200 hidden lg:flex items-center text-white h-full min-w-[132px] w-[14vw]">
+          <a class="hover:bg-main-200 hidden lg:flex items-center text-white h-full w-fit min-w-[132px]">
             <i class='xl:pl-[17px] pl-[8px] bx bxs-hot text-[25px] mr-[2px]'></i>
-            <span class="text-[16px] pr-[17px] font-semibold">{{ t('navbar_dropdown.hots.name') }}</span>
+            <span class="text-[16px] pr-[17px] font-semibold whitespace-nowrap">{{ t('navbar_dropdown.hots.name') }}</span>
           </a>
         </div>
 
-        <div class="h-full hidden items-center md:flex">
+        <div class="h-full hidden items-center w-full justify-center md:flex">
           <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
             <button class="dropdown-btn relative">
               <div>{{ t('navbar_dropdown.home.name') }}</div>
@@ -53,7 +53,7 @@
           </div>
 
           <a href="/"
-            class="h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white">
+            class="w-fit whitespace-nowrap h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white">
             {{ t('navbar_dropdown.about.name') }}
           </a>
 
@@ -110,12 +110,12 @@
           </div>
         </div>
       </div>
-      <div class="text-white w-[160px] h-[38px] right-0 hidden xl:block">
-        <div class="flex items-center justify-between">
-          <i class='bx bx-support text-[40px] mr-[4px]'></i>
-          <div class="flex flex-col justify-center items-center w-[120px]">
-            <a href="/" class="text-[22px] leading-[0.8] font-semibold">1900888123</a>
-            <span class="text-[12px] tracking-wide">{{ t('navbar_dropdown.support.support') }}</span>
+      <div class="text-white w-[160px] h-[38px] right-0 hidden xl:flex xl:justify-center">
+        <div class="flex items-center justify-between transition-all duration-300">
+          <i class='bx bx-support text-[25px] 2xl:text-[30px] 3xl:text-[40px] mr-[4px]'></i>
+          <div class="flex flex-col justify-center items-center w-[fit]">
+            <a href="/" class="3xl:text-[22px] transition-all 2xl:text-[18px] text-[17px] leading-[0.8] font-semibold mb-[2px] 2xl:mb-0">1900888123</a>
+            <span class="3xl:text-[12px] 2xl:text-[10px] transition-all text-[9px] whitespace-nowrap tracking-wide">{{ t('navbar_dropdown.support.support') }}</span>
           </div>
         </div>
       </div>
