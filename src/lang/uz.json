@@ -17,10 +17,71 @@
     "search": "Qidiruv",
     "search_placeholder": "Mahsulotlarni qidirish...",
     "become": "Sotuvga o'tish",
-    "compare": "Qayta ishlash",
+    "compare": "Solishtirish",
     "wishlist": "Sevimlilar",
     "cart": "Savat",
     "account": "Hisob"
+  },
+  "navbar_dropdown": {
+    "categories": {
+      "name": "Barcha kategoriyalar",
+      "options": {
+        "option1": "Punkt 1",
+        "option2": "Punkt 2"
+      }
+    },
+    "hots": {
+      "name": "Qaynoq Takliflar"
+    },
+    "home": {
+      "name": "Asosiy",
+      "options": {
+        "option1": "Asosiy 1",
+        "option2": "Asosiy 2",
+        "option3": "Asosiy 3"
+      }
+    },
+    "about": {
+      "name": "Komandamiz"
+    },
+    "shop": {
+      "name": "Do'kon",
+      "options": {
+        "option1": "Punkt 1",
+        "option2": "Punkt 2",
+        "option3": "Punkt 3"
+      }
+    },
+    "mega_menu": {
+      "name": "Mega Menyu",
+      "options": {
+        "option1": "Mega Menyu"
+      }
+    },
+    "vendor": {
+      "name": "Yetqazuvchilar",
+      "options": {
+        "option1": "Yetqazuvchilar",
+        "option2": "Buyurtmalarim",
+        "option3": "Ombor tafsilotlari",
+        "option4": "Ombor ro'yxati"
+      }
+    },
+    "blog": {
+      "name": "Blog",
+      "options": {
+        "option1": "Blog",
+        "option2": "Blog setkasi",
+        "option3": "Blog ro'yxati",
+        "option4": "Katta blog"
+      }
+    },
+    "contact": {
+      "name": "Aloqa"
+    },
+    "support": {
+      "support":"Yordam Markazi"
+    }
   },
   "index": {
     "trending": "Trenddagi mahsulotlar",
