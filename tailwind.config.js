@@ -19,12 +19,12 @@ export default {
         xs: '560px',
         sm: '640px',
         md: '768px',
-        '2md': '820px',
+        '2md': '850px',
         lg: '1024px',
         '2lg': '1200px',
         xl: '1280px',
         '2xl': '1340px',
-        '3xl': '1440px'
+        '3xl': '1440px',
       },
 
       fontFamily: {

@@ -4,9 +4,9 @@
       <div class="flex items-center justify-between 2xl:justify-start h-full w-full">
         <div class="flex items-center h-full">
           <div
-            class="main-dropdown flex bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] min-w-[260px] xl:mr-[35px] mr-[10px]">
+            class="main-dropdown flex bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] w-fit lg:min-w-[260px] xl:mr-[35px] mr-[10px]">
             <i class='bx bx-border-all text-[22px] mr-[3px]'></i>
-            <button class="text-[16px] font-medium">{{ t('navbar_dropdown.categories.name') }}</button>
+            <button class="text-[16px] font-medium whitespace-nowrap">{{ t('navbar_dropdown.categories.name') }}</button>
             <div
               class="main-dropdown-content border-[1px] border-[rgba(59,183,125,0.4)] bor max-h-[350px] p-[10px] overflow-scroll w-[465px] shadow-md rounded-[10px] z-20 bg-white absolute xl:top-[44px] top-[36px] left-0">
               <div class="flex flex-wrap p-[10px] gap-[10px]">
@@ -32,13 +32,13 @@
               <i class='bx bx-chevron-down text-[24px] text-center'></i>
             </div>
           </div>
-          <a class="hover:bg-main-200 hidden lg:flex items-center text-white h-full w-fit min-w-[132px]">
+          <a class="hover:bg-main-200 hidden 2lg:flex items-center text-white h-full w-fit min-w-[132px]">
             <i class='xl:pl-[17px] pl-[8px] bx bxs-hot text-[25px] mr-[2px]'></i>
             <span class="text-[16px] pr-[17px] font-semibold whitespace-nowrap">{{ t('navbar_dropdown.hots.name') }}</span>
           </a>
         </div>
 
-        <div class="h-full hidden items-center w-full justify-center md:flex">
+        <div class="h-full hidden items-center w-full justify-end 3xl:justify-center 2md:flex">
           <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
             <button class="dropdown-btn relative">
               <div>{{ t('navbar_dropdown.home.name') }}</div>
@@ -108,14 +108,20 @@
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.blog.options.option4') }}</a>
             </div>
           </div>
+
+          <a href="/"
+            class="w-fit whitespace-nowrap h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white">
+            Contacts
+          </a>
         </div>
       </div>
-      <div class="text-white w-[160px] h-[38px] right-0 hidden xl:flex xl:justify-center">
+
+      <div class="text-white w-[160px] h-[38px] right-0 hidden 3xl:flex 3xl:justify-center">
         <div class="flex items-center justify-between transition-all duration-300">
-          <i class='bx bx-support text-[25px] 2xl:text-[30px] 3xl:text-[40px] mr-[4px]'></i>
+          <i class='bx bx-support text-[40px] mr-[4px]'></i>
           <div class="flex flex-col justify-center items-center w-[fit]">
-            <a href="/" class="3xl:text-[22px] transition-all 2xl:text-[18px] text-[17px] leading-[0.8] font-semibold mb-[2px] 2xl:mb-0">1900888123</a>
-            <span class="3xl:text-[12px] 2xl:text-[10px] transition-all text-[9px] whitespace-nowrap tracking-wide">{{ t('navbar_dropdown.support.support') }}</span>
+            <a href="/" class="text-[22px] transition-all leading-[0.8] font-semibold mb-[2px] 2xl:mb-0">1900888123</a>
+            <span class="text-[12px] transition-al whitespace-nowrap tracking-wide">{{ t('navbar_dropdown.support.support') }}</span>
           </div>
         </div>
       </div>
