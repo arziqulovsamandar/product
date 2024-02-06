@@ -3,32 +3,18 @@
     <div class="w-[1610px] flex justify-between items-center h-full px-[15px] mx-[5px]">
       <div class="flex items-center justify-between xl:justify-start h-full w-full">
         <div class="flex items-center h-full">
-          <div class="main-dropdown flex bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] min-w-[260px] xl:mr-[35px] mr-[10px]">
+          <div
+            class="main-dropdown flex bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] min-w-[260px] xl:mr-[35px] mr-[10px]">
             <i class='bx bx-border-all text-[22px] mr-[3px]'></i>
-            <button class="text-[16px] font-medium">Browse All Categories</button>
-            <div class="main-dropdown-content border-[1px] border-[rgba(59,183,125,0.4)] bor max-h-[350px] p-[10px] overflow-scroll w-[465px] shadow-md rounded-[10px] z-20 bg-white absolute xl:top-[44px] top-[36px] left-0">
+            <button class="text-[16px] font-medium">{{ t('navbar_dropdown.categories.name') }}</button>
+            <div
+              class="main-dropdown-content border-[1px] border-[rgba(59,183,125,0.4)] bor max-h-[350px] p-[10px] overflow-scroll w-[465px] shadow-md rounded-[10px] z-20 bg-white absolute xl:top-[44px] top-[36px] left-0">
               <div class="flex flex-wrap p-[10px] gap-[10px]">
-                <!-- <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
-                  <div class="flex items-center">
-                    <i class='bx bx-ghost text-main-100 text-[25px] mr-1'></i>
-                    <div v-for="(item, i) in users" :key="i">
-                      {{ item.name }}
-                    </div>
-                  </div>
-                </a> -->
-                <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
-                  <div class="flex items-center">
-                    <i class='bx bx-ghost text-main-100 text-[25px] mr-1'></i>
-                    <div>
-                      Пункт 1
-                    </div>
-                  </div>
-                </a>
                 <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
                   <div class="flex items-center">
                     <i class='bx bxs-pyramid text-main-100 text-[25px] mr-1'></i>
                     <div>
-                      Пункт 2
+                      {{ t('navbar_dropdown.categories.options.option1') }}
                     </div>
                   </div>
                 </a>
@@ -36,7 +22,7 @@
                   <div class="flex items-center">
                     <i class='bx bxs-institution text-main-100 text-[25px] mr-1'></i>
                     <div>
-                      Пункт 3
+                      {{ t('navbar_dropdown.categories.options.option2') }}
                     </div>
                   </div>
                 </a>
@@ -48,72 +34,78 @@
           </div>
           <a class="hover:bg-main-200 hidden lg:flex items-center text-white h-full min-w-[132px] w-[14vw]">
             <i class='xl:pl-[17px] pl-[8px] bx bxs-hot text-[25px] mr-[2px]'></i>
-            <span class="text-[16px] pr-[17px] font-semibold">Hot Deals</span>
+            <span class="text-[16px] pr-[17px] font-semibold">{{ t('navbar_dropdown.hots.name') }}</span>
           </a>
         </div>
 
         <div class="h-full hidden items-center md:flex">
           <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
             <button class="dropdown-btn relative">
-              <div>Home</div>
+              <div>{{ t('navbar_dropdown.home.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1'></i>
             </button>
-            <div class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]">
-              <a href="/" class="dropdown-link text-fortitle-100">Home 1</a>
-              <a href="/" class="dropdown-link text-fortitle-100">Home 2</a>
-              <a href="/" class="dropdown-link text-fortitle-100">Home 3</a>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]">
+              <a href="/" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.home.options.option1') }}</a>
+              <a href="/" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.home.options.option2') }}</a>
+              <a href="/" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.home.options.option3') }}</a>
             </div>
           </div>
 
-          <a href="/" class="h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white">
-            About
+          <a href="/"
+            class="h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white">
+            {{ t('navbar_dropdown.about.name') }}
           </a>
 
           <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
             <button class="dropdown-btn relative">
-              <div>Shop</div>
+              <div>{{ t('navbar_dropdown.shop.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative top-1'></i>
             </button>
-            <div class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]">
-              <a href="#" class="dropdown-link text-fortitle-100">Пункт 1</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Пункт 2</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Пункт 3</a>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]">
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.shop.options.option1') }}</a>
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.shop.options.option2') }}</a>
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.shop.options.option3') }}</a>
             </div>
           </div>
 
           <div class="group h-full relative flex min-w-fit items-center bg-main-100 hover:bg-main-200">
             <button class="dropdown-btn relative">
-              <div>Mega menu</div>
+              <div>{{ t('navbar_dropdown.mega_menu.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative top-1'></i>
             </button>
-            <div class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]">
-              <a href="#" class="dropdown-link text-fortitle-100">Mega menu</a>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]">
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.mega_menu.options.option1') }}</a>
             </div>
           </div>
 
           <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
             <button class="dropdown-btn relative">
-              <div>Vendors</div>
+              <div>{{ t('navbar_dropdown.vendor.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1'></i>
             </button>
-            <div class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] left-[-109px] xl:left-0 z-20 bg-white min-w-[200px] rounded-[10px]">
-              <a href="#" class="dropdown-link text-fortitle-100">Vendors</a>
-              <a href="#" class="dropdown-link text-fortitle-100">My Orders</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Store Details</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Store Listing</a>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] left-[-109px] xl:left-0 z-20 bg-white min-w-[200px] rounded-[10px]">
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.vendor.options.option1') }}</a>
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.vendor.options.option2') }}</a>
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.vendor.options.option3') }}</a>
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.vendor.options.option4') }}</a>
             </div>
           </div>
 
           <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
             <button class="dropdown-btn relative">
-              <div>Blog</div>
+              <div>{{ t('navbar_dropdown.blog.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1'></i>
             </button>
-            <div class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] left-[-135px] xl:left-0 z-20 bg-white min-w-[200px] rounded-[10px]">
-              <a href="#" class="dropdown-link text-fortitle-100">Blog</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Blog grid</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Blog list</a>
-              <a href="#" class="dropdown-link text-fortitle-100">Blog big</a>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] left-[-135px] xl:left-0 z-20 bg-white min-w-[200px] rounded-[10px]">
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.blog.options.option1') }}</a>
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.blog.options.option2') }}</a>
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.blog.options.option3') }}</a>
+              <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.blog.options.option4') }}</a>
             </div>
           </div>
         </div>
@@ -123,7 +115,7 @@
           <i class='bx bx-support text-[40px] mr-[4px]'></i>
           <div class="flex flex-col justify-center items-center w-[120px]">
             <a href="/" class="text-[22px] leading-[0.8] font-semibold">1900888123</a>
-            <span class="text-[12px] tracking-wide">24/7 Support Center</span>
+            <span class="text-[12px] tracking-wide">{{ t('navbar_dropdown.support.support') }}</span>
           </div>
         </div>
       </div>
@@ -131,6 +123,8 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 import { ref } from "vue";
 // import { NCollapse, NCollapseItem } from "naive-ui";
 
@@ -214,7 +208,4 @@ fetchData();
   .dropdown-btn {
     padding: 0 17px;
   }
-}
-</style>
-
-
+}</style>

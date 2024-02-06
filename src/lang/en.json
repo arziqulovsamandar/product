@@ -22,6 +22,69 @@
     "cart":"Cart",
     "account":"Account"
   },
+
+  "navbar_dropdown": {
+    "categories": {
+      "name": "Browse All Categories",
+      "options": {
+        "option1": "Point 1",
+        "option2": "Point 2"
+      }
+    },
+    "hots": {
+      "name": "Hot Deals"
+    },
+    "home": {
+      "name": "Home",
+      "options": {
+        "option1": "Home 1",
+        "option2": "Home 2",
+        "option3": "Home 3"
+      }
+    },
+    "about": {
+      "name": "About"
+    },
+    "shop": {
+      "name": "Shop",
+      "options": {
+        "option1": "Point 1",
+        "option2": "Point 2",
+        "option3": "Point 3"
+      }
+    },
+    "mega_menu": {
+      "name": "Mega Menu",
+      "options": {
+        "option1": "Mega Menu"
+      }
+    },
+    "vendor": {
+      "name": "Vendors",
+      "options": {
+        "option1": "Vendors",
+        "option2": "My Orders",
+        "option3": "Store Details",
+        "option4": "Store Listing"
+      }
+    },
+    "blog": {
+      "name": "Blog",
+      "options": {
+        "option1": "Blog",
+        "option2": "Blog grid",
+        "option3": "Blog list",
+        "option4": "Blog big"
+      }
+    },
+    "contact": {
+      "name": "Contact"
+    },
+    "support": {
+      "support":"24/7 Support Center"
+    }
+  },
+
   "index":{
     "trending":"Trending items",
     "deals":"Deals of the day"
