@@ -1,15 +1,51 @@
 <template>
   <div class="bg-main-100 h-[70px] flex justify-center">
-    <div class="w-[1610px] flex justify-between items-center h-full px-[15px] mx-[5px]">
-      <div class="flex items-center justify-between xl:justify-start h-full w-full">
+    <div
+      class="w-[1610px] flex justify-between items-center h-full px-[15px] mx-[5px]"
+    >
+      <div
+        class="flex items-center justify-between xl:justify-start h-full w-full"
+      >
         <div class="flex items-center h-full">
+<<<<<<< Updated upstream
           <div class="main-dropdown flex bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] min-w-[260px] xl:mr-[35px] mr-[10px]">
             <i class='bx bx-border-all text-[22px] mr-[3px]'></i>
             <button class="text-[16px] font-medium">{{ t('navbar_dropdown.categories.name') }}</button>
             <div class="main-dropdown-content border-[1px] border-[rgba(59,183,125,0.4)] bor max-h-[350px] p-[10px] overflow-scroll w-[465px] shadow-md rounded-[10px] z-20 bg-white absolute xl:top-[44px] top-[36px] left-0">
+=======
+          <div
+            class="main-dropdown flex bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] min-w-[260px] xl:mr-[35px] mr-[10px]"
+          >
+            <i class="bx bx-border-all text-[22px] mr-[3px]"></i>
+            <button class="text-[16px] font-medium">
+              Browse All Categories
+            </button>
+            <div
+              class="main-dropdown-content border-[1px] border-[rgba(59,183,125,0.4)] bor max-h-[350px] p-[10px] overflow-scroll w-[465px] shadow-md rounded-[10px] z-20 bg-white absolute xl:top-[44px] top-[36px] left-0"
+            >
+>>>>>>> Stashed changes
               <div class="flex flex-wrap p-[10px] gap-[10px]">
-                <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
+                <a
+                  href="#"
+                  class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100"
+                >
                   <div class="flex items-center">
+<<<<<<< Updated upstream
+=======
+                    <i class="bx bx-ghost text-main-100 text-[25px] mr-1"></i>
+                    <div
+                      v-for="(item, i) in users"
+                      :key="i"
+                    >
+                      <tbody>
+                        <td>{{ item.name }}</td>
+                      </tbody>
+                    </div>
+                  </div>
+                </a>
+                <!-- <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
+                  <div class="flex items-center">
+>>>>>>> Stashed changes
                     <i class='bx bxs-pyramid text-main-100 text-[25px] mr-1'></i>
                     <div>
                       {{ t('navbar_dropdown.categories.options.option1') }}
@@ -26,19 +62,34 @@
                 </a>
               </div>
             </div>
-            <div class="ml-3 flex items-center relative top-[1px] justify-center">
-              <i class='bx bx-chevron-down text-[24px] text-center'></i>
+            <div
+              class="ml-3 flex items-center relative top-[1px] justify-center"
+            >
+              <i class="bx bx-chevron-down text-[24px] text-center"></i>
             </div>
           </div>
+<<<<<<< Updated upstream
           <a class="hover:bg-main-200 hidden lg:flex items-center text-white h-full min-w-[132px] w-[14vw]">
             <i class='xl:pl-[17px] pl-[8px] bx bxs-hot text-[25px] mr-[2px]'></i>
             <span class="text-[16px] pr-[17px] font-semibold">{{ t('navbar_dropdown.hots.name') }}</span>
+=======
+          <a
+            class="hover:bg-main-200 hidden lg:flex items-center text-white h-full min-w-[132px] w-[14vw]"
+          >
+            <i
+              class="xl:pl-[17px] pl-[8px] bx bxs-hot text-[25px] mr-[2px]"
+            ></i>
+            <span class="text-[16px] pr-[17px] font-semibold">Hot Deals</span>
+>>>>>>> Stashed changes
           </a>
         </div>
 
         <div class="h-full hidden items-center md:flex">
-          <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
+          <div
+            class="group h-full relative flex items-center bg-main-100 hover:bg-main-200"
+          >
             <button class="dropdown-btn relative">
+<<<<<<< Updated upstream
               <div>{{ t('navbar_dropdown.home.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1'></i>
             </button>
@@ -51,10 +102,46 @@
 
           <a href="/" class="h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white">
             {{ t('navbar_dropdown.about.name') }}
+=======
+              <div>Home</div>
+              <i
+                class="pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1"
+              ></i>
+            </button>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]"
+            >
+              <a
+                href="/"
+                class="dropdown-link text-fortitle-100"
+                >Home 1</a
+              >
+              <a
+                href="/"
+                class="dropdown-link text-fortitle-100"
+                >Home 2</a
+              >
+              <a
+                href="/"
+                class="dropdown-link text-fortitle-100"
+                >Home 3</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="/"
+            class="h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white"
+          >
+            About
+>>>>>>> Stashed changes
           </a>
 
-          <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
+          <div
+            class="group h-full relative flex items-center bg-main-100 hover:bg-main-200"
+          >
             <button class="dropdown-btn relative">
+<<<<<<< Updated upstream
               <div>{{ t('navbar_dropdown.shop.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative top-1'></i>
             </button>
@@ -62,21 +149,67 @@
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.shop.options.option1') }}</a>
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.shop.options.option2') }}</a>
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.shop.options.option3') }}</a>
+=======
+              <div>Shop</div>
+              <i
+                class="pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative top-1"
+              ></i>
+            </button>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]"
+            >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Пункт 1</a
+              >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Пункт 2</a
+              >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Пункт 3</a
+              >
+>>>>>>> Stashed changes
             </div>
           </div>
 
-          <div class="group h-full relative flex min-w-fit items-center bg-main-100 hover:bg-main-200">
+          <div
+            class="group h-full relative flex min-w-fit items-center bg-main-100 hover:bg-main-200"
+          >
             <button class="dropdown-btn relative">
+<<<<<<< Updated upstream
               <div>{{ t('navbar_dropdown.mega_menu.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative top-1'></i>
             </button>
             <div class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]">
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.mega_menu.options.option1') }}</a>
+=======
+              <div>Mega menu</div>
+              <i
+                class="pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative top-1"
+              ></i>
+            </button>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] z-20 bg-white min-w-[200px] rounded-[10px]"
+            >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Mega menu</a
+              >
+>>>>>>> Stashed changes
             </div>
           </div>
 
-          <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
+          <div
+            class="group h-full relative flex items-center bg-main-100 hover:bg-main-200"
+          >
             <button class="dropdown-btn relative">
+<<<<<<< Updated upstream
               <div>{{ t('navbar_dropdown.vendor.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1'></i>
             </button>
@@ -85,11 +218,44 @@
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.vendor.options.option2') }}</a>
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.vendor.options.option3') }}</a>
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.vendor.options.option4') }}</a>
+=======
+              <div>Vendors</div>
+              <i
+                class="pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1"
+              ></i>
+            </button>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] left-[-109px] xl:left-0 z-20 bg-white min-w-[200px] rounded-[10px]"
+            >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Vendors</a
+              >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >My Orders</a
+              >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Store Details</a
+              >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Store Listing</a
+              >
+>>>>>>> Stashed changes
             </div>
           </div>
 
-          <div class="group h-full relative flex items-center bg-main-100 hover:bg-main-200">
+          <div
+            class="group h-full relative flex items-center bg-main-100 hover:bg-main-200"
+          >
             <button class="dropdown-btn relative">
+<<<<<<< Updated upstream
               <div>{{ t('navbar_dropdown.blog.name') }}</div>
               <i class='pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1'></i>
             </button>
@@ -98,16 +264,55 @@
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.blog.options.option2') }}</a>
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.blog.options.option3') }}</a>
               <a href="#" class="dropdown-link text-fortitle-100">{{ t('navbar_dropdown.blog.options.option4') }}</a>
+=======
+              <div>Blog</div>
+              <i
+                class="pl-[2px] bx bx-chevron-down text-[18px] mr-[-5px] text-center relative transform top-1"
+              ></i>
+            </button>
+            <div
+              class="hidden border-[1px] shadow-md border-[rgba(231,231,231,0.6)] px-[15px] pt-[20px] pb-[15px] group-hover:block absolute top-[70px] left-[-135px] xl:left-0 z-20 bg-white min-w-[200px] rounded-[10px]"
+            >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Blog</a
+              >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Blog grid</a
+              >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Blog list</a
+              >
+              <a
+                href="#"
+                class="dropdown-link text-fortitle-100"
+                >Blog big</a
+              >
+>>>>>>> Stashed changes
             </div>
           </div>
         </div>
       </div>
       <div class="text-white w-[160px] h-[38px] right-0 hidden xl:block">
         <div class="flex items-center justify-between">
-          <i class='bx bx-support text-[40px] mr-[4px]'></i>
+          <i class="bx bx-support text-[40px] mr-[4px]"></i>
           <div class="flex flex-col justify-center items-center w-[120px]">
+<<<<<<< Updated upstream
             <a href="/" class="text-[22px] leading-[0.8] font-semibold">1900888123</a>
             <span class="text-[12px] tracking-wide">{{ t('navbar_dropdown.support.support') }}</span>
+=======
+            <a
+              href="/"
+              class="text-[22px] leading-[0.8] font-semibold"
+              >1900888123</a
+            >
+            <span class="text-[12px] tracking-wide">24/7 Support Center</span>
+>>>>>>> Stashed changes
           </div>
         </div>
       </div>
@@ -168,7 +373,6 @@ fetchData();
   justify-content: center;
 }
 
-
 .main-dropdown {
   position: relative;
 }
@@ -202,5 +406,3 @@ fetchData();
   }
 }
 </style>
-
-
