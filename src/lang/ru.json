@@ -22,6 +22,67 @@
     "cart": "Корзина",
     "account": "Счёт"
   },
+  "navbar_dropdown": {
+    "categories": {
+      "name": "Все категории",
+      "options": {
+        "option1": "Пункт 1",
+        "option2": "Пункт 2"
+      }
+    },
+    "hots": {
+      "name": "Горячие предложения"
+    },
+    "home": {
+      "name": "Главное",
+      "options": {
+        "option1": "Главное 1",
+        "option2": "Главное 2",
+        "option3": "Главное 3"
+      }
+    },
+    "about": {
+      "name": "О нас"
+    },
+    "shop": {
+      "name": "Магазин",
+      "options": {
+        "option1": "Пункт 1",
+        "option2": "Пункт 2",
+        "option3": "Пункт 3"
+      }
+    },
+    "mega_menu": {
+      "name": "Мега менью",
+      "options": {
+        "option1": "Мега менью"
+      }
+    },
+    "vendor": {
+      "name": "Поставщики",
+      "options": {
+        "option1": "Поставщики",
+        "option2": "Мои заказы",
+        "option3": "Детали склада",
+        "option4": "Список склада"
+      }
+    },
+    "blog": {
+      "name": "Блог",
+      "options": {
+        "option1": "Блог",
+        "option2": "Сетка блога",
+        "option3": "Список блогов",
+        "option4": "Большой блог"
+      }
+    },
+    "contact": {
+      "name": "Контакты"
+    },
+    "support": {
+      "support":"Центр поддержки"
+    }
+  },
   "index": {
     "trending": "Трендовые товары",
     "deals": "Предложения дня"
