@@ -16,9 +16,9 @@
   "navbar": {
     "search": "Поиск",
     "search_placeholder": "Поиск товаров...",
-    "become": "Стал продавцом",
+    "become": "Стать продавцом",
     "compare": "Сравнивать",
-    "wishlist": "Список желаний",
+    "wishlist": "Желания",
     "cart": "Корзина",
     "account": "Счёт"
   },

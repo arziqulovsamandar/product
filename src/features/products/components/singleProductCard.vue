@@ -1,12 +1,13 @@
 <template>
-  <div
+  <router-link
+    :to="'/product/' + exampleProp.props.data.id"
     class="transition-all duration-300 relative card 2lg:w-[calc(20%-10px)] 3xs:w-[calc(50%-10px)] md:w-[calc(100%/3-10px)] w-full hover:border-[rgba(59,183,125,0.35)] hover:border-opa p-[10px] sm:p-[20px] border-[1px] border-slate-200 cursor-pointer hover:shadow-xl rounded-2xl"
   >
     <div
       class="text-white w-[22%] h-[6%] absolute top-0 left-0 text-center rounded-br-2xl rounded-tl-xl"
       style="font-size: smaller; padding-top: 3px; background-color: #6ec1e4"
     >
-      13%
+      {{ exampleProp.props.data.sale }}%
     </div>
     <div
       class="text-white w-[22%] h-[6%] bg-main-100 absolute top-0 right-0 text-center rounded-bl-2xl rounded-tr-xl"
@@ -23,12 +24,12 @@
       />
     </div>
     <div>
-      <p class="text-[14px] text-fortitle-100 mb-2">Fresh Fruit</p>
+      <p class="text-[14px] text-fortitle-100 mb-2">{{ exampleProp.props.data.category }}</p>
     </div>
     <div>
-      <h1 class="font-semibold text-[16px] text-fortitle-200 mb-3">
-        Seeds of Change Organic Red Rice
-      </h1>
+      <h2 class="font-semibold text-[16px] text-fortitle-200 mb-3">
+        {{ exampleProp.props.data.name }}
+      </h2>
     </div>
     <div class="text-slate-400 text-[15px] mb-2">
       <i class="bx bx-star"></i>
@@ -49,8 +50,8 @@
       </p>
     </div>
     <div class="flex text-main-100 font-bold gap-3 justify-between items-baseline mb-2">
-      <s class="text-gray-400">$<s class="text-[13px] text-primary">32.80</s></s>
-      <span class="text-[18px] underline">$28.95</span>
+      <s class="text-gray-400">$<s class="text-[13px] text-primary">{{ exampleProp.props.data.old_price }}</s></s>
+      <span class="text-[18px] underline">{{ exampleProp.props.data.price }}</span>
       <button
         @click="addToCart"
         class="bg-green-100 text-main-100 font-semibold px-5 py-2 justify-center flex rounded-md items-center opacity-100 hover:opacity-100 w-40 h-9"
@@ -102,48 +103,57 @@
 
 
 
+
     <div class="dropdown absolute flex flex-nowrap">
-      <n-dropdown
-        class="bg-main-100"
-        trigger="hover"
-        :options="options"
-      >
-        <n-button class="rounded-e-none" style="background-color: white"
-          ><n-icon size="24">
-            <img
-              src="../../../assets/img/icons8-eye-24.png"
-              alt=""
-            /> </n-icon
-        ></n-button>
-      </n-dropdown>
-      <n-dropdown
-        trigger="hover"
-        :options="options1"
-        class="bg-main-100"
-      >
-        <n-button class="rounded-none" style="background-color: white"
-          ><n-icon size="24">
-            <img
-              src="../../../assets/img/icons8-arrow-32.png"
-              alt=""
-            /> </n-icon
-        ></n-button>
-      </n-dropdown>
-      <n-dropdown
-        trigger="hover"
-        :options="options2"
-        class="bg-main-100"
-      >
-        <n-button class="rounded-s-none" style="background-color: white"
-          ><n-icon size="24">
-            <img
-              src="../../../assets/img/icons8-heart-24.png"
-              alt=""
-            /> </n-icon
-        ></n-button>
-      </n-dropdown>
+      <router-link :to="'/product/' + exampleProp.props.data.id">
+        <n-dropdown
+          class="bg-main-100"
+          trigger="hover"
+          :options="options"
+        >
+          <n-button class="rounded-e-none" style="background-color: white"
+            ><n-icon size="24">
+              <img
+                src="../../../assets/img/icons8-eye-24.png"
+                alt=""
+              /> </n-icon
+          ></n-button>
+        </n-dropdown>
+      </router-link>
+
+      <router-link to="/about">
+        <n-dropdown
+          trigger="hover"
+          :options="options1"
+          class="bg-main-100"
+        >
+          <n-button class="rounded-none" style="background-color: white"
+            ><n-icon size="24">
+              <img
+                src="../../../assets/img/icons8-arrow-32.png"
+                alt=""
+              /> </n-icon
+          ></n-button>
+        </n-dropdown>
+      </router-link>
+
+      <router-link to="/wishlist">
+        <n-dropdown
+          trigger="hover"
+          :options="options2"
+          class="bg-main-100"
+        >
+          <n-button class="rounded-s-none" style="background-color: white"
+            ><n-icon size="24">
+              <img
+                src="../../../assets/img/icons8-heart-24.png"
+                alt=""
+              /> </n-icon
+          ></n-button>
+        </n-dropdown>
+      </router-link>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script setup lang="ts">
@@ -196,6 +206,30 @@ const options2 = [
 const props = defineProps({
   data: Object,
 });
+
+
+const exampleProp = {
+  props: {
+    data: {
+      id: 1,
+      name: "Apple",
+      description: "This is red apple",
+      category: 'Fruits',
+      price: 33.22,
+      old_price: 28.15,
+      sale: 15,
+      total_count: 30,
+      mfg: "01.01.2014",
+      life: "1 year",
+      qr_code: "8m66567",
+      value: 30,
+      brand: "Almazar",
+      is_active: "5 star",
+      unit_of_measure: "kg"
+    }
+  }
+}
+
 
 const count = ref(0);
 
