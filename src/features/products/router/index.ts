@@ -3,7 +3,7 @@ import Home from "../../../components/layouts/Home/Home.vue";
 import IndexVue from "../pages/Index.vue";
 import cardVue from "../pages/Cart.vue";
 import Compare from "../pages/Compare.vue";
-import About from "../pages/About.vue";
+import About from "../../users/pages/About.vue";
 import Login from "../../../views/login.vue";
 import Contact from "../pages/Contact.vue";
 import SingleProduct from "../pages/SingleProduct.vue";

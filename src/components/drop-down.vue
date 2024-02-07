@@ -54,7 +54,7 @@
             </div>
           </div>
 
-          <a href="/"
+          <a href="/about"
             class="w-fit whitespace-nowrap h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white">
             {{ t('navbar_dropdown.about.name') }}
           </a>
