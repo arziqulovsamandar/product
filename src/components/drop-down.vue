@@ -4,9 +4,11 @@
       <div class="flex items-center justify-between 2xl:justify-start h-full w-full">
         <div class="flex items-center h-full">
           <div
-            class="main-dropdown flex bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] w-fit lg:min-w-[260px] xl:mr-[35px] mr-[10px]">
-            <i class='bx bx-border-all text-[22px] mr-[3px]'></i>
-            <button class="text-[16px] font-medium whitespace-nowrap">{{ t('navbar_dropdown.categories.name') }}</button>
+            class="main-dropdown flex justify-between bg-[#FDC040] items-center xl:h-[44px] h-[36px] transition-all rounded-[5px] text-white px-[20px] w-fit lg:w-[260px] xl:mr-[35px] mr-[10px]">
+            <div class="flex items-center">
+              <i class='bx bx-border-all text-[22px] mr-[3px]'></i>
+              <button class="text-[16px] font-medium whitespace-nowrap">{{ t('navbar_dropdown.categories.name') }}</button>
+            </div>
             <div
               class="main-dropdown-content border-[1px] border-[rgba(59,183,125,0.4)] bor max-h-[350px] p-[10px] overflow-scroll w-[465px] shadow-md rounded-[10px] z-20 bg-white absolute xl:top-[44px] top-[36px] left-0">
               <div class="flex flex-wrap p-[10px] gap-[10px]">
@@ -109,9 +111,9 @@
             </div>
           </div>
 
-          <a href="/"
+          <a href="/contact"
             class="w-fit whitespace-nowrap h-full flex items-center bg-main-100 hover:bg-main-200 px-[8px] xl:px-[17px] font-semibold text-white">
-            Contacts
+            {{ t('navbar_dropdown.contact.name') }}
           </a>
         </div>
       </div>
