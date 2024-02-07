@@ -1,9 +1,9 @@
 <template>
   <main>
     <div class="">
-      <div class="w-[1400px] mx-auto flex py-[50px]">
+      <div class="max-w-[1400px] w-full mx-auto flex py-[50px]">
         <div class="w-1/3 p-4">
-          <div class="text-main-100 text-[28px] font-semibold mb-4">How can help you ?</div>
+          <div class="text-main-100 text-[28px] font-semibold mb-4 whitespace-nowrap">How can help you ?</div>
           <h3 class="pb-[27px] text-[32px] font-semibold text-fortitle-200">
             Let us know how we can help you
           </h3>
@@ -44,9 +44,9 @@
         </div>
       </div>
 
-      <div ref="mapContainer" class="w-full mx-auto max-w-[1610px] h-[300px] m-[10px]"></div>
+      <Location class="w-full mx-auto max-w-[1610px] h-[300px] m-[10px]"/>
 
-      <div class="w-full max-w-[1610px] mx-auto flex py-[50px]">
+      <div class="w-full max-w-[1400px] mx-auto flex py-[50px]">
         <div class="w-1/3 p-4 flex flex-col justify-end">
           <h2 class="text-[24px] text-main-100 pb-[15px] font-semibold">
             About Company
@@ -57,11 +57,11 @@
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-headphone text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]">Call Us &nbsp<a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div>Call Us &nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-envelope text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]">Email &nbsp<a href="/" class="text-main-100">sale@Nest.com</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">Email &nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-stopwatch text-main-100 mr-[5px] text-[20px]'></i>
@@ -83,11 +83,11 @@
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-headphone text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]">Call Us &nbsp<a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div>Call Us &nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-envelope text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]">Email &nbsp<a href="/" class="text-main-100">sale@Nest.com</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">Email &nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-stopwatch text-main-100 mr-[5px] text-[20px]'></i>
@@ -109,11 +109,11 @@
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-headphone text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]">Call Us &nbsp<a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div>Call Us &nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-envelope text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]">Email &nbsp<a href="/" class="text-main-100">sale@Nest.com</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">Email &nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-stopwatch text-main-100 mr-[5px] text-[20px]'></i>
@@ -125,6 +125,11 @@
           </button>
         </div>
       </div>
+
+      <div class="mx-auto w-full flex justify-center mb-5">
+        <endContact class="w-[1400px]"/>
+      </div>
+
 
       <Banner
         class="bg-[#D8F1E5] rounded-3xl md:px-[78px] m-[10px] md:py-[84px] p-[20px]"
@@ -145,10 +150,12 @@
 
 <script setup>
 import L from 'leaflet'
+import endContact from "../../users/components/Contact/end-contact.vue"
 import { ref, onMounted } from 'vue'
 import futter from "../../../components/footer.vue";
 import Card from "../../../components/card.vue";
 import Banner from "../../../components/banner.vue";
+import Location from "../../../components/location.vue"
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 
