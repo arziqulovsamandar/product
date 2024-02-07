@@ -32,11 +32,11 @@
           <input
             class="sms-kod"
             type="text"
-            v-model="smsCode"
+            v-model="otp"
             :placeholder="t('login.sms_code')"
           />
           <button
-            @click="submitSmsCode"
+            @click="submitOtp"
             class="button1"
           >
             {{ t('login.confirmation') }}
@@ -50,45 +50,40 @@
   </div>
 </template>
 
-
 <script setup lang="ts">
-import LangSwitcher from "../components/langSwitcher.vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { submitPhoneNumber, submitSmsCode, SignInDto } from "../services/LoginService.ts";
+import { submitPhoneNumber, submitOtp } from "../services/LoginService.ts";
 import { ref } from "vue";
+import axios from "axios";
 
 const { t } = useI18n();
 const router = useRouter();
 
 const phoneNumber = ref("");
-const smsCode = ref("");
+const otp = ref("");
 const showModal = ref(false);
 const showModal1 = ref(true);
 
 const submitPhoneNumber = async () => {
   try {
-    const data: SignInDto = {
-      phoneNumber: phoneNumber.value,
-    };
-    await submitPhoneNumber(data);
+    await submitPhoneNumber({ phoneNumber: phoneNumber.value });
     showModal1.value = false;
     showModal.value = true;
   } catch (error) {
-    console.error("Error occured while submitting Phone number:", error);
+    console.error('Error submitting phone number:', error);
   }
 };
 
-const submitSmsCode = async () => {
+const submitOtp = async () => {
   try {
-    await submitSmsCode(smsCode.value);
-    router.push("/");
+    await submitOtp(otp.value);
+    router.push('/');
   } catch (error) {
-    console.error("Error occured while submitting Sms code:", error);
+    console.error('Error submitting OTP:', error);
   }
 };
 </script>
-
 
 
 <style scoped>

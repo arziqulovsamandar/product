@@ -1,4 +1,4 @@
-import axios, { AxiosError, AxiosResponse } from 'axios';
+import axios, { AxiosError } from 'axios';
 
 const baseURL = import.meta.env.VITE_BASE_URL;
 
@@ -12,15 +12,16 @@ export interface SignInDto {
 
 export const submitPhoneNumber = async (data: SignInDto): Promise<void> => {
   try {
-    await loginService.post('/user/otp', data);
+    await loginService.post('http://34.136.49.137:4000/api/user/otp', data);
   } catch (error) {
     handleRequestError(error);
     throw error;
   }
 };
 
-export const submitSmsCode = async (smsCode: string): Promise<void> => {
+export const submitOtp = async (otp: string): Promise<void> => {
   try {
+    await loginService.post('http://34.136.49.137:4000/api/user/otp', { otp });
   } catch (error) {
     handleRequestError(error);
     throw error;
@@ -34,5 +35,21 @@ const handleRequestError = (error: AxiosError) => {
     console.error('Data:', error.response?.data);
   } else {
     console.error('An error occurred while making the request:', error);
+  }
+};
+
+
+
+const checkAuthentication = (): boolean => {
+  const token = localStorage.getItem('accessToken');
+  if (!token) return false;
+  try {
+    const decodedToken = jwt_decode(token);
+    const currentTime = Math.floor(Date.now() / 1000);
+    if (decodedToken.exp < currentTime) return false;
+    return true;
+  } catch (error) {
+    console.error('Error decoding token:', error);
+    return false;
   }
 };
