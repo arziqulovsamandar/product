@@ -4,7 +4,9 @@ enum HomeName
     Index = 'Index',
     Card = 'Card',
     Compare = 'Compare',
-    About = 'About'
+    About = 'About',
+    Contact = 'Contact',
+    SingleProduct = 'SingleProduct',
 };
 
 enum LoginName

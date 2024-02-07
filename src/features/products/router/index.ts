@@ -4,6 +4,8 @@ import IndexVue from "../pages/Index.vue";
 import cardVue from "../pages/Cart.vue";
 import Compare from "../pages/Compare.vue";
 import About from "../pages/About.vue";
+import Contact from "../pages/Contact.vue";
+import SingleProduct from "../pages/SingleProduct.vue";
 import { HomeName } from "../../../constans/routes";
 
 export default [
@@ -33,8 +35,13 @@ export default [
     children: [{ path: "/about", component: About, name: HomeName.About }], // Fayl nomi LoginPage sifatida ishlatilgan
   },
   {
-    path: "/product/:id",
-    name: "single-product",
-    component: () => import("../pages/SingleProduct.vue"),
+    path: "/contact",
+    component: Home,
+    children: [{ path: "/contact", component: Contact, name: HomeName.Contact }],
+  },
+  {
+  path: "/product/:id",
+  component: Home,
+  children: [{ path: "/product/:id", component: SingleProduct, name: HomeName.SingleProduct }]
   },
 ];
