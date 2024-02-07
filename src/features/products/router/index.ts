@@ -5,6 +5,8 @@ import cardVue from "../pages/Cart.vue";
 import Compare from "../pages/Compare.vue";
 import About from "../pages/About.vue";
 import Login from "../../../views/login.vue";
+import Contact from "../pages/Contact.vue";
+import SingleProduct from "../pages/SingleProduct.vue";
 import { HomeName } from "../../../constans/routes";
 import { checkAuthentication } from '../../../services/LoginService.ts';
 
@@ -37,9 +39,14 @@ const routes = [
     children: [{ path: "/about", component: About, name: HomeName.About }],
   },
   {
-    path: "/product/:id",
-    name: "single-product",
-    component: () => import("../pages/SingleProduct.vue"),
+    path: "/contact",
+    component: Home,
+    children: [{ path: "/contact", component: Contact, name: HomeName.Contact }],
+  },
+  {
+  path: "/product/:id",
+  component: Home,
+  children: [{ path: "/product/:id", component: SingleProduct, name: HomeName.SingleProduct }]
   },
   {
     path: "/login",

@@ -1,6 +1,25 @@
+<template>
+  <main class="">
+    <div class="flex items-center">
+      <SingleProductSlider class="w-[50%]" :images="exampleProduct.images" />
+      <ProductInfoCard class="w-[50%]" :data="exampleProduct.data" />
+    </div>
+
+    <div class="px-[50px] py-[40px] mt-10 border-[1px] border-[#e7e7e7e6] rounded-[15px] w-[1450px] mx-auto">
+      <div class="flex ml-3 mb-12">
+        <button class="hover:text-main-100 text-[17px] mr-2 font-semibold text-[#7e7e7e] border-[1px] border-[#e7e7e78f] py-[13px] px-[25px] shadow-md rounded-[30px]">Description</button>
+        <button class="hover:text-main-100 text-[17px] mr-2 font-semibold text-[#7e7e7e] border-[1px] border-[#e7e7e78f] py-[13px] px-[25px] shadow-md rounded-[30px]">Additional Information</button>
+        <button class="hover:text-main-100 text-[17px] mr-2 font-semibold text-[#7e7e7e] border-[1px] border-[#e7e7e78f] py-[13px] px-[25px] shadow-md rounded-[30px]">Reviews</button>
+      </div>
+      <div class="text-fortitle-100 leading-[2]">
+        {{ exampleProduct.data.description }}
+      </div>
+    </div>
+  </main>
+</template>
+
 <script setup>
-import Navbar from "../../../components/header/theNavbar.vue"
-import dropDown from "../../../components/drop-down.vue"
+
 import SingleProductSlider from "../components/singleProductSlider.vue";
 import ProductInfoCard from "../components/ProductInfoCard.vue";
 import { useRoute } from "vue-router";
@@ -24,28 +43,5 @@ const exampleProduct = {
   }
 }
 </script>
-
-<template>
-  <div>
-    <Navbar />
-  </div>
-  <main class="">
-    <div class="flex items-center">
-      <SingleProductSlider class="w-[50%]" :images="exampleProduct.images" />
-      <ProductInfoCard class="w-[50%]" :data="exampleProduct.data" />
-    </div>
-
-    <div class="px-[50px] py-[40px] mt-10 border-[1px] border-[#e7e7e7e6] rounded-[15px] w-[1450px] mx-auto">
-      <div class="flex ml-3 mb-12">
-        <button class="hover:text-main-100 text-[17px] mr-2 font-semibold text-[#7e7e7e] border-[1px] border-[#e7e7e78f] py-[13px] px-[25px] shadow-md rounded-[30px]">Description</button>
-        <button class="hover:text-main-100 text-[17px] mr-2 font-semibold text-[#7e7e7e] border-[1px] border-[#e7e7e78f] py-[13px] px-[25px] shadow-md rounded-[30px]">Additional Information</button>
-        <button class="hover:text-main-100 text-[17px] mr-2 font-semibold text-[#7e7e7e] border-[1px] border-[#e7e7e78f] py-[13px] px-[25px] shadow-md rounded-[30px]">Reviews</button>
-      </div>
-      <div class="text-fortitle-100 leading-[2]">
-        {{ exampleProduct.data.description }}
-      </div>
-    </div>
-  </main>
-</template>
 
 <style scoped></style>
