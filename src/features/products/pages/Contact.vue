@@ -44,7 +44,8 @@
         </div>
       </div>
 
-      <div ref="mapContainer" class="w-full mx-auto max-w-[1610px] h-[300px] m-[10px]"></div>
+      <!-- <div ref="mapContainer" class="w-full mx-auto max-w-[1610px] h-[300px] m-[10px]"></div> -->
+      <Location class="w-full mx-auto max-w-[1610px] h-[300px] m-[10px]"/>
 
       <div class="w-full max-w-[1610px] mx-auto flex py-[50px]">
         <div class="w-1/3 p-4 flex flex-col justify-end">
@@ -149,6 +150,7 @@ import { ref, onMounted } from 'vue'
 import futter from "../../../components/footer.vue";
 import Card from "../../../components/card.vue";
 import Banner from "../../../components/banner.vue";
+import Location from "../../../components/location.vue"
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
 

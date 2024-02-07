@@ -70,9 +70,9 @@ import Product from "../components/products.vue";
 import Banner from "../../../components/banner.vue";
 import productCard from "../components/productCard.vue";
 import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 import singleProductCard from "../components/singleProductCard.vue";
 import futter from "../../../components/footer.vue";
-const { t } = useI18n();
 </script>
 
 <style scoped>
