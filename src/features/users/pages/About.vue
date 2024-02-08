@@ -12,13 +12,13 @@
 
 
 <script setup lang="ts">
-    import top_carusel from "../components/About/top-carusel.vue"
-    import card from "../components/About/six-card.vue"
-    import performance from "../components/About/performance.vue"
-    import ourTeam from "../components/About/ourTeam.vue"
-    import banner from "../../../components/banner.vue"
-    import footer from "../../../components/footer.vue"
-    import card2 from "../../../components/card.vue"
+import top_carusel from "../components/About/top-carusel.vue"
+import card from "../components/About/six-card.vue"
+import performance from "../components/About/performance.vue"
+import ourTeam from "../components/About/ourTeam.vue"
+import emailSubcribe from "../components/About/subcribe-about.vue"
+import card2 from "../../../components/card.vue"
+import endPage from "../../../components/footer.vue"
 
 </script>
 
