@@ -9,27 +9,18 @@
               <i class='bx bx-border-all text-[22px] mr-[3px]'></i>
               <button class="text-[16px] font-medium whitespace-nowrap">{{ t('navbar_dropdown.categories.name') }}</button>
             </div>
+
             <div
               class="main-dropdown-content border-[1px] border-[rgba(59,183,125,0.4)] bor max-h-[350px] p-[10px] overflow-scroll w-[465px] shadow-md rounded-[10px] z-20 bg-white absolute xl:top-[44px] top-[36px] left-0">
               <div class="flex flex-wrap p-[10px] gap-[10px]">
-                <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
+                <a v-for="category in categories" :key="category.id" :href="`/${category.name}`" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
                   <div class="flex items-center">
-                    <i class='bx bxs-pyramid text-main-100 text-[25px] mr-1'></i>
-                    <div>
-                      {{ t('navbar_dropdown.categories.options.option1') }}
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="text-fortitle-200 border-[1px] border-[rgba(231,231,231,0.6)] hover:border-main-100">
-                  <div class="flex items-center">
-                    <i class='bx bxs-institution text-main-100 text-[25px] mr-1'></i>
-                    <div>
-                      {{ t('navbar_dropdown.categories.options.option2') }}
-                    </div>
+                    <div>{{ category.name }}</div>
                   </div>
                 </a>
               </div>
             </div>
+
             <div class="ml-3 flex items-center relative top-[1px] justify-center">
               <i class='bx bx-chevron-down text-[24px] text-center'></i>
             </div>
@@ -133,35 +124,29 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
-import { ref } from "vue";
 // import { NCollapse, NCollapseItem } from "naive-ui";
 
-interface UserData {
-  name: string;
-  image: string;
-}
+import { ref, onMounted } from "vue";
 
-const users = ref<UserData[]>([]);
+const categories = ref([]);
 
-const fetchData = async () => {
+onMounted(async () => {
   try {
     const response = await fetch("http://34.136.49.137:4000/api/category/all");
     if (response.ok) {
-      users.value = await response.json();
-      console.log(users.value);
+      categories.value = await response.json();
     } else {
-      console.error(`Serverdan xato: ${response.status}`);
+      console.error(`Failed to fetch categories: ${response.status}`);
     }
   } catch (error) {
-    console.error("Xatolik yuz berdi:", error);
+    console.error("Error fetching categories:", error);
   }
-};
+});
 
-fetchData();
-
-// const getImageUrl = (imageName: string): string => {
-//   return require(`@/assets/img/${imageName}`);
+// const getImageUrl = (imageName) => {
+//   return require(`@/assets/${imageName}`);
 // };
+
 </script>
 
 <style scoped>
