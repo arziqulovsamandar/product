@@ -4,10 +4,13 @@ enum HomeName
     Index = 'Index',
     Card = 'Card',
     Compare = 'Compare',
-    About = 'About',
-    Contact = 'Contact',
     SingleProduct = 'SingleProduct',
 };
+
+enum User {
+    Contact = 'Contact',
+    About = 'About',
+}
 
 enum LoginName
 {
@@ -15,4 +18,4 @@ enum LoginName
 }
 
 
-export { HomeName, LoginName };
+export { HomeName, User, LoginName };

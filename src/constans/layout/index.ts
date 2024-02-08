@@ -1,4 +1,4 @@
-enum DefaultLayout 
+enum DefaultLayout
 {
     user = 'user'
 };

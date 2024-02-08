@@ -7,7 +7,6 @@
     <banner/>
     <card2/>
     <footer/>
-    
 </template>
 
 

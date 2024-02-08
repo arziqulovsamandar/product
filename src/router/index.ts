@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import UserLayout from "../components/layouts/Layout/user.vue";
 import LoginPage from "../views/login.vue";
 import productsRoutes from "../features/products/router";
+import userRoutes from "../features/users/router";
+
 import { layoutMiddleware } from "./middlewares";
 import i18n from "../plugins/i18n";
 import { LoginName } from "../constans/routes";
@@ -10,6 +12,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     ...productsRoutes,
+    ...userRoutes,
     {
       path: "/:pathMatch(.*)*",
       component: () => import("../views/NotFound.vue"),
