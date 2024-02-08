@@ -1,22 +1,20 @@
-import {DefaultLayout} from '../../../constans/layout/index.ts';
+import Contact from "../pages/Contact.vue";
+import About from "../pages/About.vue";
+
+import Home from "../../../components/layouts/Home/Home.vue";
+import { User } from "../../../constans/routes";
 
 export default [
   {
-    path:'/about',
-    name:"About",
-    component: () => import("../pages/About.vue"),
-    meta:{
-      layout:DefaultLayout.user,
-      title:"About"
-    }
+    path: "/contact",
+    component: Home,
+    children: [{ path: "/contact", component: Contact, name: User.Contact }],
   },
   {
-    path:"/contact",
-    name:"Contact",
-    component: () => import("../pages/Contact.vue"),
-    meta:{
-      layout:DefaultLayout.user,
-      title:"Contact"
-    }
-  }
+    path: "/about",
+    component: Home,
+    children: [{ path: "/about", component: About, name: User.About }],
+  },
+
 ];
+

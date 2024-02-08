@@ -2,10 +2,8 @@ import Wishlist from "../pages/Wishlist.vue";
 import Home from "../../../components/layouts/Home/Home.vue";
 import IndexVue from "../pages/Index.vue";
 import cardVue from "../pages/Cart.vue";
-import Compare from "../pages/Compare.vue";
-import About from "../../users/pages/About.vue";
 import Login from "../../../views/login.vue";
-import Contact from "../pages/Contact.vue";
+import Compare from "../pages/Compare.vue";
 import SingleProduct from "../pages/SingleProduct.vue";
 import { HomeName } from "../../../constans/routes";
 import { checkAuthentication } from '../../../services/LoginService.ts';
@@ -32,16 +30,6 @@ const routes = [
     path: "/compare",
     component: Home,
     children: [{ path: "/compare", component: Compare, name: HomeName.Compare }],
-  },
-  {
-    path: "/about",
-    component: Home,
-    children: [{ path: "/about", component: About, name: HomeName.About }],
-  },
-  {
-    path: "/contact",
-    component: Home,
-    children: [{ path: "/contact", component: Contact, name: HomeName.Contact }],
   },
   {
   path: "/product/:id",
