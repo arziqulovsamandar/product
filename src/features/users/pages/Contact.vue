@@ -1,7 +1,7 @@
 <template>
     <div>
-      <div class="max-w-[1400px] w-full mx-auto flex py-[50px]">
-        <div class="w-1/3 p-4">
+      <div class="max-w-[1400px] flex-wrap md:flex-nowrap w-full mx-auto flex py-5 2xs:py-[50px]">
+        <div class="w-full md:w-1/3 p-4 text-center 2xs:text-start">
           <div class="text-main-100 text-[28px] font-semibold mb-4 whitespace-nowrap">How can help you ?</div>
           <h3 class="pb-[27px] text-[32px] font-semibold text-fortitle-200">
             Let us know how we can help you
@@ -13,40 +13,50 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </div>
         </div>
-        <div class="w-1/3 p-4 flex flex-col justify-end">
-          <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
-            01. Visit Feedback
-          </h2>
-          <div class="mb-[25px] text-fortitle-100 text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </div>
-          <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
-            03. Billing Inquiries
-          </h2>
-          <div class="text-fortitle-100 text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </div>
+
+        <div class="w-full md:w-2/3 flex items-end">
+          <div class="flex flex-wrap">
+            <div class="p-4 w-full 2xs:w-1/2 text-center 2xs:text-start">
+              <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
+                01. Visit Feedback
+              </h2>
+              <div class=" text-fortitle-100 text-[16px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </div>
+            </div>
+            <div class="p-4 w-full 2xs:w-1/2 text-center 2xs:text-start">
+              <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
+                02. Employer Services
+              </h2>
+              <div class=" text-fortitle-100 text-[16px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </div>
+            </div>
+
+            <div class="p-4 w-full 2xs:w-1/2 text-center 2xs:text-start">
+              <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
+                03. Billing Inquiries
+              </h2>
+              <div class="text-fortitle-100 text-[16px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </div>
+            </div>
+            <div class="p-4 w-full 2xs:w-1/2 text-center 2xs:text-start">
+              <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
+                04. General Inquiries
+              </h2>
+              <div class="text-fortitle-100 text-[16px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </div>
+            </div>
         </div>
-        <div class="w-1/3 p-4 flex flex-col justify-end">
-          <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
-            02. Employer Services
-          </h2>
-          <div class="mb-[25px] text-fortitle-100 text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </div>
-          <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
-            04. General Inquiries
-          </h2>
-          <div class="text-fortitle-100 text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </div>
         </div>
       </div>
 
       <Location class="w-full mx-auto max-w-[1610px] h-[300px] m-[10px]"/>
 
-      <div class="w-full max-w-[1400px] mx-auto flex py-[50px]">
-        <div class="w-1/3 p-4 flex flex-col justify-end">
+      <div class="w-full max-w-[1400px] mx-auto flex flex-wrap md:flex-nowrap py-5 2xs:py-[50px]">
+        <div class="w-full md:w-1/3 p-4 flex flex-col justify-end">
           <h2 class="text-[24px] text-main-100 pb-[15px] font-semibold">
             About Company
           </h2>
@@ -72,7 +82,7 @@
           </button>
         </div>
 
-        <div class="w-1/3 p-4 flex flex-col justify-end">
+        <div class="w-full md:w-1/3 p-4 flex flex-col justify-end">
           <h2 class="text-[24px] text-main-100 pb-[15px] font-semibold">
             About Company
           </h2>
@@ -98,7 +108,7 @@
           </button>
         </div>
 
-        <div class="w-1/3 p-4 flex flex-col justify-end">
+        <div class="w-full md:w-1/3 p-4 flex flex-col justify-end">
           <h2 class="text-[24px] text-main-100 pb-[15px] font-semibold">
             About Company
           </h2>
