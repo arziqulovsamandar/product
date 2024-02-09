@@ -196,7 +196,8 @@
       "address": "Address 5171 W Campbell Ave undefined Kent, Utah 53127 United States",
       "call": "Call Us",
       "email": "Email",
-      "work_time": "Hours 10:00 - 18:00, Mon - Sat"
+      "work_time": "Hours 10:00 - 18:00, Mon - Sat",
+      "btn": "View Map"
     },
     "form": {
       "title": "Contact form",
