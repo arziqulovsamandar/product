@@ -1,23 +1,23 @@
 <template>
     <div>
-        <h1 class="text-center text-2xl font-[700] mt-14">What We Provide ?</h1>
+        <h1 class="text-center text-2xl mb-6 font-[700]">What We Provide ?</h1>
 
-        <div class="flex justify-center items-center flex-wrap mt-1">
-            <div v-for="one in allname" class="w-[360px] h-[360px] border border-[#ECECEC] justify-center items-center rounded-xl ml-2.5 mr-2.5 mt-5 hover:shadow-md">
-                <div class="justify-center items-center flex mt-10">
-                    <div class=" bg-cover w-[100px]">
-                        <img :src="one.img" alt="">
+        <div class="flex justify-center items-center flex-wrap mt-2 w-full max-w-[1400px] mx-auto gap-4">
+            <div v-for="one in allname" class="2md:w-[calc(100%/3-16px)] xs:w-[calc(100%/2-16px)] w-[calc(100%-16px)] p-4 h-[360px] border flex flex-col border-[#ECECEC] justify-center items-center rounded-xl hover:shadow-md">
+                    <div class="justify-center items-center flex">
+                        <div class=" bg-cover w-[100px]">
+                            <img :src="one.img" alt="">
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h1 class="text-center text-xl font-[700] mt-5">{{ one.name }}</h1>
-                    <p class="text-center mt-5 text-[#7E7E7E] text-md">
-                        There are many variations of passages of Lorem <br> 
-                        Ipsum available, but the majority have suffered <br>
-                        alteration in some form
-                    </p>
-                    <p class="text-[#3BB77E] hover:text-[#CB2356] text-center mt-5 mb-5">Read More</p>
-                </div>
+                    <div>
+                        <h1 class="text-center text-xl font-[700] mt-5">{{ one.name }}</h1>
+                        <p class="text-center mt-5 text-[#7E7E7E] text-md">
+                            There are many variations of passages of Lorem <br>
+                            Ipsum available, but the majority have suffered <br>
+                            alteration in some form
+                        </p>
+                        <p class="text-[#3BB77E] hover:text-[#CB2356] text-center mt-5 mb-5">Read More</p>
+                    </div>
             </div>
 
         </div>
