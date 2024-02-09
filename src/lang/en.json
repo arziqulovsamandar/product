@@ -167,5 +167,47 @@
       "pet_food": "Pet Foods",
       "vegetables": "Vegetables"
     }
+  },
+
+  "contact": {
+    "help": {
+      "title": "How can help you ?",
+      "subtitle": "Let us know how we can help you",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo",
+      "feedback": {
+        "title": "01. Visit Feedback",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+      },
+      "employers": {
+        "title": "02. Employer Services",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+      },
+      "billing": {
+        "title": "03. Billing Inquiries",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+      },
+      "general": {
+        "title": "04. General Inquiries",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+      }
+    },
+    "about": {
+      "title": "About Company",
+      "address": "Address 5171 W Campbell Ave undefined Kent, Utah 53127 United States",
+      "call": "Call Us",
+      "email": "Email",
+      "work_time": "Hours 10:00 - 18:00, Mon - Sat"
+    },
+    "form": {
+      "title": "Contact form",
+      "subtitle": "Drop Us a Line",
+      "warning": "Your email address will not be published. Required fields are marked *",
+      "ph_name": "First Name",
+      "ph_email": "Your Email",
+      "ph_subject": "Subject",
+      "ph_phone": "Your Phone",
+      "ph_message": "Message",
+      "btn_send": "Send Message"
+    }
   }
 }
