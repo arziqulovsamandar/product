@@ -2,15 +2,12 @@
     <div>
       <div class="max-w-[1400px] flex-wrap md:flex-nowrap w-full mx-auto flex py-5 2xs:py-[50px]">
         <div class="w-full md:w-1/3 p-4 text-center 2xs:text-start">
-          <div class="text-main-100 text-[28px] font-semibold mb-4 whitespace-nowrap">How can help you ?</div>
+          <div class="text-main-100 text-[28px] font-semibold mb-4 whitespace-nowrap">{{ t("contact.help.title") }}</div>
           <h3 class="pb-[27px] text-[32px] font-semibold text-fortitle-200">
-            Let us know how we can help you
+            {{ t("contact.help.subtitle") }}
           </h3>
-          <div class="mb-[20px] text-fortitle-100 text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </div>
-          <div class=" text-fortitle-100 text-[16px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          <div class="text-fortitle-100 text-[16px]">
+            {{ t("contact.help.text") }}
           </div>
         </div>
 
@@ -18,35 +15,35 @@
           <div class="flex flex-wrap">
             <div class="p-4 w-full 2xs:w-1/2 text-center 2xs:text-start">
               <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
-                01. Visit Feedback
+                {{ t("contact.help.feedback.title") }}
               </h2>
               <div class=" text-fortitle-100 text-[16px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                {{ t("contact.help.feedback.text") }}
               </div>
             </div>
             <div class="p-4 w-full 2xs:w-1/2 text-center 2xs:text-start">
               <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
-                02. Employer Services
+                {{ t("contact.help.employers.title") }}
               </h2>
               <div class=" text-fortitle-100 text-[16px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                {{ t("contact.help.employers.text") }}
               </div>
             </div>
 
             <div class="p-4 w-full 2xs:w-1/2 text-center 2xs:text-start">
               <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
-                03. Billing Inquiries
+                {{ t("contact.help.billing.title") }}
               </h2>
               <div class="text-fortitle-100 text-[16px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                {{ t("contact.help.billing.text") }}
               </div>
             </div>
             <div class="p-4 w-full 2xs:w-1/2 text-center 2xs:text-start">
               <h2 class="text-[20px] font-fortitle-200 pb-5 font-semibold">
-                04. General Inquiries
+                {{ t("contact.help.general.title") }}
               </h2>
               <div class="text-fortitle-100 text-[16px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                {{ t("contact.help.general.text") }}
               </div>
             </div>
         </div>
@@ -58,79 +55,79 @@
       <div class="w-full max-w-[1400px] mx-auto flex flex-wrap md:flex-nowrap py-5 2xs:py-[50px]">
         <div class="w-full md:w-1/3 p-4 flex flex-col justify-end">
           <h2 class="text-[24px] text-main-100 pb-[15px] font-semibold">
-            About Company
+            {{ t("contact.about.title") }}
           </h2>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-location-plus text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="text-fortitle-100 text-[14px]">Address 5171 W Campbell Ave undefined Kent, Utah 53127 United States</span>
+            <span class="text-fortitle-100 text-[14px]">{{ t("contact.about.address") }}</span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-headphone text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]"><div>Call Us &nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div>{{ t("contact.about.call") }}&nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-envelope text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">Email &nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">{{ t("contact.about.email") }}&nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-stopwatch text-main-100 mr-[5px] text-[20px]'></i>
-            <span class="text-fortitle-100 text-[14px]">Hours 10:00 - 18:00, Mon - Sat</span>
+            <span class="text-fortitle-100 text-[14px]">{{ t("contact.about.work_time") }}</span>
           </div>
           <button class="w-fit items-center rounded-md py-2 px-[18px] text-white text-[12px] mt-[20px] bg-main-100 hover:bg-main-200 flex">
             <i class='bx bx-user mr-1 text-[16px]'></i>
-            <div class="font-semibold">View Map</div>
+            <div class="font-semibold">{{ t("contact.about.btn") }}</div>
           </button>
         </div>
 
         <div class="w-full md:w-1/3 p-4 flex flex-col justify-end">
           <h2 class="text-[24px] text-main-100 pb-[15px] font-semibold">
-            About Company
+            {{ t("contact.about.title") }}
           </h2>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-location-plus text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="text-fortitle-100 text-[14px]">Address 5171 W Campbell Ave undefined Kent, Utah 53127 United States</span>
+            <span class="text-fortitle-100 text-[14px]">{{ t("contact.about.address") }}</span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-headphone text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]"><div>Call Us &nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div>{{ t("contact.about.call") }}&nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-envelope text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">Email &nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">{{ t("contact.about.email") }}&nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-stopwatch text-main-100 mr-[5px] text-[20px]'></i>
-            <span class="text-fortitle-100 text-[14px]">Hours 10:00 - 18:00, Mon - Sat</span>
+            <span class="text-fortitle-100 text-[14px]">{{ t("contact.about.work_time") }}</span>
           </div>
           <button class="w-fit items-center rounded-md py-2 px-[18px] text-white text-[12px] mt-[20px] bg-main-100 hover:bg-main-200 flex">
             <i class='bx bx-user mr-1 text-[16px]'></i>
-            <div class="font-semibold">View Map</div>
+            <div class="font-semibold">{{ t("contact.about.btn") }}</div>
           </button>
         </div>
 
         <div class="w-full md:w-1/3 p-4 flex flex-col justify-end">
           <h2 class="text-[24px] text-main-100 pb-[15px] font-semibold">
-            About Company
+            {{ t("contact.about.title") }}
           </h2>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-location-plus text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="text-fortitle-100 text-[14px]">Address 5171 W Campbell Ave undefined Kent, Utah 53127 United States</span>
+            <span class="text-fortitle-100 text-[14px]">{{ t("contact.about.address") }}</span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-headphone text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]"><div>Call Us &nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div>{{ t("contact.about.call") }}&nbsp</div><a href="/" class="text-main-100">(+91)-540-025-124553</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-envelope text-main-100 mr-[5px] text-[18px]'></i>
-            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">Email &nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
+            <span class="flex items-center text-fortitle-100 text-[14px]"><div class="flex items-center">{{ t("contact.about.email") }}&nbsp</div><a href="/" class="text-main-100">sale@Nest.com</a></span>
           </div>
           <div class="flex mb-[8px] items-center">
             <i class='bx bx-stopwatch text-main-100 mr-[5px] text-[20px]'></i>
-            <span class="text-fortitle-100 text-[14px]">Hours 10:00 - 18:00, Mon - Sat</span>
+            <span class="text-fortitle-100 text-[14px]">{{ t("contact.about.work_time") }}</span>
           </div>
           <button class="w-fit items-center rounded-md py-2 px-[18px] text-white text-[12px] mt-[20px] bg-main-100 hover:bg-main-200 flex">
             <i class='bx bx-user mr-1 text-[16px]'></i>
-            <div class="font-semibold">View Map</div>
+            <div class="font-semibold">{{ t("contact.about.btn") }}</div>
           </button>
         </div>
       </div>
