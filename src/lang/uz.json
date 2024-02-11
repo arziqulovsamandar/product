@@ -3,7 +3,14 @@
     "phone_number": "Telefon raqam",
     "kod": "Kodni olish",
     "sms_code": "Sms kod",
-    "confirmation": "Tasdiqlash"
+    "confirmation": "Tasdiqlash",
+    "phone": "Telefon raqamingizni kiriting",
+    "sms": "Biz sizga SMS orqali tasdiqlash kodini yuboramiz",
+    "signin": "Tizimga kirish",
+    "signup": "Ro'yxatdan o'tish",
+    "account": "Hisobingiz hali mavjud emasmi? Shu yerga bosing:",
+    "verifycode": "Tasdiqlash kodini kiriting",
+    "send": "Yuborish"
   },
   "product": {
     "about": "Biz haqimizda",
