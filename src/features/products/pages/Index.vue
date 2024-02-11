@@ -37,7 +37,7 @@
   />
 
   <h2 class="deals-of my-[30px] mx-[10px]">{{ t("index.trending") }}</h2>
-  <div class="flex flex-wrap px-[15px] gap-[12px]">
+  <div class="flex flex-wrap px-[15px] gap-[12px] max-w-[1610px] mx-auto">
     <singleProductCard/>
     <singleProductCard/>
     <singleProductCard/>
@@ -47,10 +47,15 @@
     <singleProductCard/>
   </div>
   <h2 class="deals-of my-[40px] mx-[10px]">{{ t("index.deals") }}</h2>
-  <Product />
-  <productCard />
+  <div class="flex max-w-[1610px] flex-wrap mx-auto gap-3 px-[15px]">
+    <Product />
+    <Product />
+    <Product />
+    <Product />
+  </div>
+  <productCard class="flex max-w-[1610px] mx-auto px-[15px] mt-[60px]" />
   <Banner
-    class="bg-[#D8F1E5] rounded-3xl md:px-[78px] m-[10px] md:py-[84px] p-[20px]"
+    class="mt-[60px] bg-[#D8F1E5] rounded-3xl max-w-[1610px] mx-auto md:px-[78px] m-[10px] md:py-[84px] p-[20px]"
     :title="t('banners.grid_banner.title')"
     :subtitle="t('banners.grid_banner.subtitle')"
     :linkText="t('banners.grid_banner.link')"

@@ -1,5 +1,5 @@
 <template>
-  <div class="card-main-container">
+  <div class="card-main-container max-w-[1610px] mx-auto">
     <div class="card-container">
       <div class="img-pd">
         <img
@@ -82,8 +82,8 @@ const { t } = useI18n();
 }
 
 .card-container {
-  width: 250px;
-  min-width: 200px;
+  width: 280px;
+  padding: 10px;
   margin: 10px;
   height: auto;
   display: flex;

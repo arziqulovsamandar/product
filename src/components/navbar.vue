@@ -23,7 +23,7 @@
           </a>
           <router-link to="/compare" class="hover:-mt-3 transition-all duration-300 px-[6px] items-center hidden 3xs:flex">
             <i class='bx bx-refresh text-[#213746] text-[40px] relative'>
-              <div class="bg-main-100 absolute top-[-1px] right-[-1px] text-white px-[6px] pb-[3px] font-sans pt-[3px] rounded-[50%] text-[12px]">3</div>
+              <div class="bg-main-100 absolute top-[3px] right-[-1px] text-white px-[6px] pb-[3px] font-sans pt-[3px] rounded-[50%] text-[12px]">3</div>
             </i>
             <h3 class="hidden md:block text-[17px] text-[#7e7e7e] font-normal ml-[2px]">{{ t("navbar.compare") }}</h3>
           </router-link>
