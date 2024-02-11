@@ -132,7 +132,7 @@ const categories = ref([]);
 
 onMounted(async () => {
   try {
-    const response = await fetch("http://34.136.49.137:4000/api/category/all");
+    const response = await fetch("http://34.16.201.71:5000/api/category/all");
     if (response.ok) {
       categories.value = await response.json();
     } else {

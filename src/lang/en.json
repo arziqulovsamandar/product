@@ -3,7 +3,14 @@
     "phone_number": "Phone number",
     "kod":"Get the code",
     "sms_code":"Sms c code",
-    "confirmation":"Confirmation"
+    "confirmation":"Confirmation",
+    "phone": "Enter your phone number to Login",
+    "sms": "We will send you a confirmation SMS code",
+    "signin": "Sign in",
+    "signup": "Sign up",
+    "account": "Don't have an account? Press here for:",
+    "verifycode":"Enter confirmation code",
+    "send":"Send"
   },
   "product":{
     "about":"About Us",
