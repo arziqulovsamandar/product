@@ -196,5 +196,79 @@
       "ph_message": "Ваше сообщение",
       "btn_send": "Отправить"
     }
+  },
+  "about": {
+    "carousel": {
+      "title":"Добро пожаловать в Nest",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate id est laborum. Ius ferri velit sanctus cu, sed at soleat accusata. Dictas prompta et Ut placerat legendos interpre.Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante Etiam sit amet orci eget. Quis commodo odio aenean sed adipiscing. Turpis massa tincidunt dui ut ornare lectus. Auctor elit sed vulputate mi sit amet. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate id est laborum."
+    },
+    "title": "Что Мы Предоставляем ?",
+    "cards": {
+      "card1": {
+        "title": "Лучшие цены & Предложения",
+        "text": "Существует множество вариаций отрывков из Lorem Ipsum, но большинство из них подверглись изменениям в той или иной форме",
+        "more": "Подробнее"
+      },
+      "card2": {
+        "title": "Широкий Ассортимент",
+        "text": "Существует множество вариаций отрывков из Lorem Ipsum, но большинство из них подверглись изменениям в той или иной форме",
+        "more": "Подробнее"
+      },
+      "card3": {
+        "title": "Бесплатная Доставка",
+        "text": "Существует множество вариаций отрывков из Lorem Ipsum, но большинство из них подверглись изменениям в той или иной форме",
+        "more": "Подробнее"
+      },
+      "card4": {
+        "title": "Легкий Возврат",
+        "text": "Существует множество вариаций отрывков из Lorem Ipsum, но большинство из них подверглись изменениям в той или иной форме",
+        "more": "Подробнее"
+      },
+      "card5": {
+        "title": "100% Удовлетворение",
+        "text": "Существует множество вариаций отрывков из Lorem Ipsum, но большинство из них подверглись изменениям в той или иной форме",
+        "more": "Подробнее"
+      },
+      "card6": {
+        "title": "Отличная Ежедневная Сделка",
+        "text": "Существует множество вариаций отрывков из Lorem Ipsum, но большинство из них подверглись изменениям в той или иной форме",
+        "more": "Подробнее"
+      }
+    },
+    "performance": {
+      "title": "Наше выступление",
+      "subtitle": "Ваш партнер по продуктовому решению для электронной коммерции",
+      "text": "Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. Pitatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+      "cards": {
+        "card1": {
+          "title": "Кто мы",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        },
+        "card2": {
+          "title": "Наша история",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        },
+        "card3": {
+          "title": "Наша миссия",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        }
+      }
+    },
+    "team": {
+      "title": "Наша Команда",
+      "subtitle": "Познакомьтесь с Нашей Командой Экспертов",
+      "text": "Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus. Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus.",
+      "btn": "Просмотреть Всех Участников",
+      "members": {
+        "member1": {
+          "name": "Х. Меринда",
+          "job": "CEO и соучредитель"
+        },
+        "member2": {
+          "name": "Дилан Спектер",
+          "job": "Главный Инженер"
+        }
+      }
+    }
   }
 }

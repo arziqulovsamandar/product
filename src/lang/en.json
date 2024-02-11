@@ -168,12 +168,11 @@
       "vegetables": "Vegetables"
     }
   },
-
   "contact": {
     "help": {
       "title": "How can help you ?",
       "subtitle": "Let us know how we can help you",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo",
       "feedback": {
         "title": "01. Visit Feedback",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
@@ -209,6 +208,80 @@
       "ph_phone": "Your Phone",
       "ph_message": "Message",
       "btn_send": "Send Message"
+    }
+  },
+  "about": {
+    "carousel": {
+      "title":"Welcome to Nest",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate id est laborum. Ius ferri velit sanctus cu, sed at soleat accusata. Dictas prompta et Ut placerat legendos interpre.Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante Etiam sit amet orci eget. Quis commodo odio aenean sed adipiscing. Turpis massa tincidunt dui ut ornare lectus. Auctor elit sed vulputate mi sit amet. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate id est laborum."
+    },
+    "title": "What We Provide ?",
+    "cards": {
+      "card1": {
+        "title": "Best Prices & Offers",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "more": "Read More"
+      },
+      "card2": {
+        "title": "Wide Assortiment",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "more": "Read More"
+      },
+      "card3": {
+        "title": "Free Delivery",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "more": "Read More"
+      },
+      "card4": {
+        "title": "Easy Returns",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "more": "Read More"
+      },
+      "card5": {
+        "title": "100% Satisfaction",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "more": "Read More"
+      },
+      "card6": {
+        "title": "Great Daily Deal",
+        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "more": "Read More"
+      }
+    },
+    "performance": {
+      "title": "Our performance",
+      "subtitle": "Your Partner for e-commerce grocery solution",
+      "text": "Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. Pitatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+      "cards": {
+        "card1": {
+          "title": "Who we are",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        },
+        "card2": {
+          "title": "Our history",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        },
+        "card3": {
+          "title": "Our mission",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        }
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet Our Expert Team",
+      "text": "Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus. Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus.",
+      "btn": "View All Members",
+      "members": {
+        "member1": {
+          "name": "H. Merinda",
+          "job": "CEO & Co-Founder"
+        },
+        "member2": {
+          "name": "Dilan Specter",
+          "job": "Head Engineer"
+        }
+      }
     }
   }
 }
