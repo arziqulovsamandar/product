@@ -18,6 +18,7 @@ export default {
         '2xs': '480px',
         xs: '560px',
         sm: '640px',
+        '2sm': '719px',
         md: '768px',
         '2md': '910px',
         lg: '1024px',

@@ -1,24 +1,23 @@
 <template>
-  <div>
+  <div class="card transition-all duration-300 lg:w-[calc(25%-9px)] sm:w-[calc(50%-9px)] w-[calc(100%-9px)] 2sm:mb-[86px] sm:mb-[120px] 3xs:mb-[95px] mb-[120px] rounded-[20px] relative flex justify-center">
     <img
-      class="product-img"
+      class="rounded-[20px] h-[335px] w-full object-cover"
       src="../../../assets/img/healthy-vegetables-wooden-table_1150-38014.avif"
       alt=""
     />
-  </div>
-  <div class="product-card-table">
-    <h3 class="text-fortitle-200">Organic Cage Grade A Large Eggs</h3>
-    <span class="text-main-100">By Hambger Hel</span>
-    <div class="price-card">
-      <h4 class="text-main-100">$21</h4>
-      <div class="cardbutton">
-        <div class="button1 text-main-100">
-          <img
-            src="../../../assets/img/icons8-cart-24.png"
-            alt=""
-            style="width: 20px; height: 20px"
-          />
-          <div class="add1">Add</div>
+    <div class="card-info transition-all duration-300 w-[95%] shadow-md absolute py-[25px] px-[30px] rounded-[20px] top-[75%] bg-white">
+      <h3 class="text-fortitle-200 font-bold text-[16px] mb-[11px] hover:text-main-100 cursor-pointer">Organic Cage Grade A Large Eggs</h3>
+      <span class="text-[14px] text-fortitle-100">By <a href="/" class="text-main-100">Hambger Hel</a></span>
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <h4 class="text-main-100 text-[18px] font-bold underline underline-offset-2">$21.00</h4>
+          <s class="text-[13px] ml-2 text-[#ADADAD] font-bold">$35.00</s>
+        </div>
+        <div class="mt-[12px]">
+          <div class="flex items-center justify-center transition-all duration-300 hover:bg-main-200 hover:text-white bg-green-100 px-[18px] py-[10px]  rounded-md text-main-100">
+            <i class='bx bx-cart text-[20px]' ></i>
+            <div class="font-bold pl-1">Add</div>
+          </div>
         </div>
       </div>
     </div>
@@ -26,55 +25,8 @@
 </template>
 <script setup lang="ts"></script>
 <style scoped>
-.product-img {
-  border-radius: 20px;
-  margin: 10px;
-  width: 300px;
-  height: 300px;
+.card:hover .card-info{
+  margin-top: -12px;
 }
-.product-card-table h3 {
-  font-size: 20px;
-}
-.product-card-table h4 {
-  margin: 5px;
-  font-weight: 800;
-}
-.product-card-table {
-  position: absolute;
-  margin: -100px 20px;
-  border-radius: 10px;
-  width: 280px;
-  height: 150px;
-  background-color: rgb(236, 249, 249); /* Qalinligi va rangi */
-  padding: 20px; /* Malumotlar orasidagi bo'shlik */
-  box-sizing: border-box; /* Padding kiritishda malumotlar ko'chirilganligi */
-}
-.price-card {
-  margin: 5px;
-  display: flex;
-  justify-content: space-between;
-}
-.button1 {
-  display: flex;
-  padding: 5px;
-  font-weight: 800;
-  background-color: rgb(230, 244, 204);
-  width: 70px;
-  height: 30px;
-  border-radius: 5px;
-}
-.cardbutton {
-  display: flex;
-}
-.add1 {
-  margin: 0px 0px;
-}
-.button1:hover {
-  transform: translateY(-5px); /* yoki kerakli qimirlash miqdori */
-  transition: transform 0.3s ease;
-}
-.product-card-table:hover {
-  transform: translateY(-5px); /* yoki kerakli qimirlash miqdori */
-  transition: transform 0.3s ease;
-}
+
 </style>

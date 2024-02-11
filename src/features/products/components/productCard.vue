@@ -1,95 +1,83 @@
 <template>
   <div>
-    <div class="top-seling">
-      <div class="top-seling-all">
-        <h2>{{ t('product_card.top_selling') }}</h2>
+    <div class="flex w-full gap-[20px] flex-wrap">
+      <div class="2lg:w-[calc(25%-15px)] xs:w-[calc(50%-15px)] w-[calc(100%-15px)]">
+        <h2 class="pb-3 text-[24px] text-fortitle-200 font-semibold">{{ t('product_card.top_selling') }}</h2>
         <hr />
         <div
-          style="display: flex"
-          class="effect1"
+          class="pt-[22px] flex"
         >
           <img
             src="../../../assets/img/strawberries-3359755_640.jpg"
             alt=""
-            class="top-selling-img"
+            class="w-[25%] aspect-square object-cover rounded-2xl"
           />
-          <div class="natural">
-            <h5 class="h5">{{ date.des }}</h5>
-            <img
-              class="rating"
-              :src=date.img
-              alt=""
-            />
-            <h6 class="text-main-100">$52.85</h6>
+          <div class="pl-[12px] mt-[10px]">
+            <h5 class="text-[16px] text-fortitle-200 leading-[1.1] font-semibold">{{ date.des }}</h5>
+            <div class="flex items-center mt-[6px]">
+              <h4 class="text-main-100 text-[16px] font-bold underline underline-offset-2">{{ date.price }}</h4>
+              <s class="text-[13px] ml-2 text-[#ADADAD] font-bold">$22.00</s>
+            </div>
           </div>
         </div>
       </div>
-      <div class="top-seling-all">
-        <h2>{{ t('index.trending') }}</h2>
+      <div class="2lg:w-[calc(25%-15px)] xs:w-[calc(50%-15px)] w-[calc(100%-15px)]">
+        <h2 class="pb-3 text-[24px] text-fortitle-200 font-semibold">{{ t('index.trending') }}</h2>
         <hr />
         <div
-          style="display: flex"
-          class="effect1"
+          class="pt-[22px] flex"
         >
           <img
             src="../../../assets/img/strawberries-3359755_640.jpg"
             alt=""
-            class="top-selling-img"
+            class="w-[25%] aspect-square object-cover rounded-2xl"
           />
-          <div class="natural">
-            <h5 class="h5">{{ date.des }}</h5>
-            <img
-              class="rating"
-              :src=date.img
-              alt=""
-            />
-            <h6 class="text-main-100">{{ date.price }}</h6>
+          <div class="pl-[12px] mt-[10px]">
+            <h5 class="text-[16px] text-fortitle-200 leading-[1.1] font-semibold">{{ date.des }}</h5>
+            <div class="flex items-center mt-[6px]">
+              <h4 class="text-main-100 text-[16px] font-bold underline underline-offset-2">{{ date.price }}</h4>
+              <s class="text-[13px] ml-2 text-[#ADADAD] font-bold">$22.00</s>
+            </div>
           </div>
         </div>
       </div>
-      <div class="top-seling-all">
-        <h2>{{ t('product_card.recently') }}</h2>
+      <div class="2lg:w-[calc(25%-15px)] xs:w-[calc(50%-15px)] w-[calc(100%-15px)]">
+        <h2 class="pb-3 text-[24px] text-fortitle-200 font-semibold">{{ t('product_card.recently') }}</h2>
         <hr />
         <div
-          style="display: flex"
-          class="effect1"
+          class="pt-[22px] flex"
         >
           <img
-          src="../../../assets/img/strawberries-3359755_640.jpg"
+            src="../../../assets/img/strawberries-3359755_640.jpg"
             alt=""
-            class="top-selling-img"
+            class="w-[25%] aspect-square object-cover rounded-2xl"
           />
-          <div class="natural">
-            <h5 class="h5">{{ date.des }}</h5>
-            <img
-              class="rating"
-              :src=date.img
-              alt=""
-            />
-            <h6 class="text-main-100">{{ date.price }}</h6>
+          <div class="pl-[12px] mt-[10px]">
+            <h5 class="text-[16px] text-fortitle-200 leading-[1.1] font-semibold">{{ date.des }}</h5>
+            <div class="flex items-center mt-[6px]">
+              <h4 class="text-main-100 text-[16px] font-bold underline underline-offset-2">{{ date.price }}</h4>
+              <s class="text-[13px] ml-2 text-[#ADADAD] font-bold">$22.00</s>
+            </div>
           </div>
         </div>
       </div>
-      <div class="top-seling-all">
-        <h2>{{ t('product_card.top_raded') }}</h2>
+      <div class="2lg:w-[calc(25%-15px)] xs:w-[calc(50%-15px)] w-[calc(100%-15px)]">
+        <h2 class="pb-3 text-[24px] text-fortitle-200 font-semibold">{{ t('product_card.top_raded') }}</h2>
         <hr />
         <div
-          style="display: flex"
-          class="effect1"
+          class="pt-[22px] flex"
         >
           <img
-          src="../../../assets/img/strawberries-3359755_640.jpg"
+            src="../../../assets/img/strawberries-3359755_640.jpg"
             alt=""
-            class="top-selling-img"
+            class="w-[25%] aspect-square object-cover rounded-2xl"
           />
-          <div class="natural">
-            <h5 class="h5">{{ date.des }}</h5>
-            <img
-              class="rating"
-              :src=date.img
-              alt=""
-            />
-            <h6 class="text-main-100">{{ date.price }}</h6>
+          <div class="pl-[12px] mt-[10px]">
+            <h5 class="text-[16px] text-fortitle-200 leading-[1.1] font-semibold">{{ date.des }}</h5>
+            <div class="flex items-center mt-[6px]">
+              <h4 class="text-main-100 text-[16px] font-bold underline underline-offset-2">{{ date.price }}</h4>
+              <s class="text-[13px] ml-2 text-[#ADADAD] font-bold">$22.00</s>
+            </div>
           </div>
         </div>
       </div>
