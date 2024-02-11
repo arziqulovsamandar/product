@@ -4,19 +4,12 @@
             <img src="https://themepanthers.com/wp/nest/d1/wp-content/uploads/2022/05/about-5.png" alt="">
         </div>
         <div class="justify-start items-center px-10 w-full xs:w-[50%]">
-            <p class="text-[24px] text-main-100 font-semibold">Our performance</p>
+            <p class="text-[24px] text-main-100 font-semibold">{{ t('about.performance.title') }}</p>
             <p class="text-[30px] font-semibold leading-8 mt-5">
-                Your Partner for <br>
-                e-commerce grocery solution
+                {{ t('about.performance.subtitle') }}
             </p>
             <p class="text-fortitle-100 mt-5">
-                Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque <br> 
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi <br> 
-                architecto
-            </p>
-            <p class="text-fortitle-100 mt-5">
-                Pitatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam <br>
-                voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                {{ t('about.performance.text') }}
             </p>
         </div>
     </div>
@@ -29,9 +22,7 @@
                     {{ item.name }}
                 </p>
                 <p class="text-[16px] text-fortitle-100 mt-3">
-                    Volutpat diam ut venenatis tellus in metus. Nec dui nunc <br>
-                    mattis enim ut tellus eros donec ac odio orci ultrices in. <br>
-                    ellus eros donec ac odio orci ultrices in.
+                    {{ item.text }}
                 </p>
             </div>
         </div>
@@ -41,20 +32,22 @@
 
 
 <script setup lang="ts">
-
+    import { useI18n } from "vue-i18n";
+    const { t } = useI18n();
     const minifor = [
         {
-            name:"Who we are",
+            name: t('about.performance.cards.card1.title'),
+            text: t('about.performance.cards.card1.text')
         },
         {
-            name:"Our history",
+            name: t('about.performance.cards.card2.title'),
+            text: t('about.performance.cards.card2.text')
         },
         {
-            name:"Our mission"
+            name: t('about.performance.cards.card3.title'),
+            text: t('about.performance.cards.card3.text')
         }
     ]
-   
-
 </script>
 
 <style scoped>

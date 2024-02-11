@@ -207,5 +207,79 @@
       "ph_message": "Sizning xabaringiz",
       "btn_send": "Jo'natish"
     }
+  },
+  "about": {
+    "carousel": {
+      "title":"Nestga xush kelibsiz",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate id est laborum. Ius ferri velit sanctus cu, sed at soleat accusata. Dictas prompta et Ut placerat legendos interpre.Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante Etiam sit amet orci eget. Quis commodo odio aenean sed adipiscing. Turpis massa tincidunt dui ut ornare lectus. Auctor elit sed vulputate mi sit amet. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate id est laborum."
+    },
+    "title": "Biz Nima Bilan Ta'minlaymiz ?",
+    "cards": {
+      "card1": {
+        "title": "Eng yaxshi narxlar & Takliflar",
+        "text": "Lorem Ipsumdan parchalarning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati u yoki bu shaklda o'zgartirilgan",
+        "more": "Ma'lumot"
+      },
+      "card2": {
+        "title": "Keng Assortiment",
+        "text": "Lorem Ipsumdan parchalarning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati u yoki bu shaklda o'zgartirilgan",
+        "more": "Ma'lumot"
+      },
+      "card3": {
+        "title": "Tekin Yetkazish",
+        "text": "Lorem Ipsumdan parchalarning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati u yoki bu shaklda o'zgartirilgan",
+        "more": "Ma'lumot"
+      },
+      "card4": {
+        "title": "Oson Qaytarish",
+        "text": "Lorem Ipsumdan parchalarning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati u yoki bu shaklda o'zgartirilgan",
+        "more": "Ma'lumot"
+      },
+      "card5": {
+        "title": "100% Qoniqish",
+        "text": "Lorem Ipsumdan parchalarning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati u yoki bu shaklda o'zgartirilgan",
+        "more": "Ma'lumot"
+      },
+      "card6": {
+        "title": "Ajoyib Kundalik Bitim",
+        "text": "Lorem Ipsumdan parchalarning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati u yoki bu shaklda o'zgartirilgan",
+        "more": "Ma'lumot"
+      }
+    },
+    "performance": {
+      "title": "Bizning Nutqimiz",
+      "subtitle": "Sizning elektron tijorat mahsulot yechimi bo'yicha hamkoringiz",
+      "text": "Ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. Pitatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.",
+      "cards": {
+        "card1": {
+          "title": "Biz kim",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        },
+        "card2": {
+          "title": "Bizning tariximiz",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        },
+        "card3": {
+          "title": "Bizning vazifamiz",
+          "text": "Volutpat diam ut venenatis tellus in metus. Nec dui nunc mattis enim ut tellus eros donec ac odio orci ultrices in. ellus eros donec ac odio orci ultrices in."
+        }
+      }
+    },
+    "team": {
+      "title": "Bizning Jamoamiz",
+      "subtitle": "Bizning Mutaxassislar Jamoasi Bilan Tanishing",
+      "text": "Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus. Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon sequata congue idsem. Maecenas malesuada faucibus finibus.",
+      "btn": "Barcha Ishtirokchilarni Ko'ring",
+      "members": {
+        "member1": {
+          "name": "H. Merinda",
+          "job": "Direktor hammuhandisi"
+        },
+        "member2": {
+          "name": "Dilan Spekter",
+          "job": "Bosh Muhandis"
+        }
+      }
+    }
   }
 }

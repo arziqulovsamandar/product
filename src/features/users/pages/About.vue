@@ -11,7 +11,7 @@
         backgroundImage="src/assets/img/grid-banner.png"
       />
     <card2/>
-    <footer/>
+    <Footer />
 </template>
 
 
@@ -25,7 +25,7 @@ import performance from "../components/About/performance.vue"
 import ourTeam from "../components/About/ourTeam.vue"
 import Banner from "../../../components/banner.vue"
 import card2 from "../../../components/card.vue"
-import footer from "../../../components/footer.vue"
+import Footer from "../../../components/footer.vue"
 
 </script>
 

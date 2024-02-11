@@ -18,7 +18,7 @@
                     </div>
 
                     <textarea class="border-slate-200 border-[1px] p-4 rounded-lg outline-none w-full h-[100px] 2xs:h-[200px] mt-5" v-model="Send.message" :placeholder="t('contact.form.ph_message')" name="" id="" cols="auto" rows="10"></textarea><br>
-                    <button @click="handleClick" class="text-white bg-[#3BB77E] p-4 w-full rounded-lg hover:bg-[#2AA76E] mt-5">{{ t('contact.form.ph_send') }}</button>
+                    <button @click="handleClick" class="text-white bg-[#3BB77E] p-4 w-full rounded-lg hover:bg-[#2AA76E] mt-5">{{ t('contact.form.btn_send') }}</button>
                     <button :hidden="see" class="text-white bg-[#3BB77E] p-4 w-full rounded-lg hover:bg-[#2AA76E] mt-5">One or more fields have an error. Please check and try again</button>
                 </div>
             </div>
