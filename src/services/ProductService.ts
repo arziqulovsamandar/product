@@ -23,7 +23,7 @@ export interface Product {
 
 export const fetchProducts = async (): Promise<Product[]> => {
   try {
-    const response: AxiosResponse<Product[]> = await productService.get('/api/product');
+    const response: AxiosResponse<Product[]> = await productService.get('/api/product/all');
     return response.data;
   } catch (error) {
     handleRequestError(error);
