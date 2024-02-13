@@ -1,6 +1,4 @@
 import axios, { AxiosError } from "axios";
-import jwt_decode from "jwt-decode";
-
 const baseURL = import.meta.env.VITE_BASE_URL;
 
 const loginService = axios.create({
@@ -39,7 +37,7 @@ export const submitOtp = async (otp: string): Promise<void> => {
   }
 };
 
-const checkAuthentication = (): boolean => {
+export const checkAuthentication = (): boolean => {
   const token = localStorage.getItem("accessToken");
   if (!token) return false;
   try {

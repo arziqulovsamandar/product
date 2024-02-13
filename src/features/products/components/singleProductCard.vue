@@ -201,6 +201,7 @@ const options2 = [
   { label: "Wishlist" },
 ];
 
+
 const exampleProp = {
   props: {
     data: {
@@ -240,10 +241,6 @@ onMounted(async () => {
   }
 });
 
-
-// onMounted(() => {
-//   count.value = props.data?.count || 1;
-// });
 </script>
 
 <style scoped>
