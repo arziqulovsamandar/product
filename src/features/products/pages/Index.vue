@@ -43,16 +43,17 @@
   <div v-else>
     <ProductList :products="prodcuts" />
   </div>
-  <!-- <div class="flex flex-wrap px-[15px] gap-[12px] max-w-[1610px] mx-auto">
-    <singleProductCard/>
-  </div> -->
+
   <h2 class="deals-of my-[40px] mx-[10px]">{{ t("index.deals") }}</h2>
-  <div class="flex max-w-[1610px] flex-wrap mx-auto gap-3 px-[15px]">
-    <Product />
-    <Product />
-    <Product />
-    <Product />
+  <div v-if="loading" class="relative text-center">
+    <Loading />
   </div>
+  <div v-else>
+    <DealsList :products="prodcuts" />
+  </div>
+  <!-- <div class="flex max-w-[1610px] flex-wrap mx-auto gap-3 px-[15px]">
+    <Product />
+  </div> -->
   <productCard class="flex max-w-[1610px] mx-auto px-[15px] mt-[60px]" />
   <Banner
     class="mt-[60px] bg-[#D8F1E5] rounded-3xl max-w-[1610px] mx-auto md:px-[78px] m-[10px] md:py-[84px] p-[20px]"
@@ -74,7 +75,7 @@ import { useProduct } from '../composables/useProduct';
 const { loading, prodcuts } = useProduct()
 import ProductList from '../components/productList.vue';
 import Card from "../../../components/card.vue";
-import Product from "../components/products.vue";
+import DealsList from '../components/dealsList.vue';
 import Banner from "../../../components/banner.vue";
 import productCard from "../components/productCard.vue";
 import { useI18n } from "vue-i18n";
