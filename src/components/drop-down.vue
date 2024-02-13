@@ -251,7 +251,7 @@ const { t } = useI18n();
 import { personData } from "../modules/interface";
 import { ref, onMounted } from "vue";
 
-const categories = ref<personData>();
+const categories = ref<personData[]>();
 
 onMounted(async () => {
   try {

@@ -5,25 +5,11 @@ const baseURL = import.meta.env.VITE_BASE_URL;
 const productService = axios.create({
   baseURL,
 });
+import { productData} from '../modules/interface'
 
-export interface Product {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  total_count: number;
-  mfg: string;
-  life: string;
-  qr_code: string;
-  value: string;
-  brand: string;
-  is_active: string;
-  unit_of_measure: string;
-}
-
-export const fetchProducts = async (): Promise<Product[]> => {
+export const fetchProducts = async (): Promise<productData[]> => {
   try {
-    const response: AxiosResponse<Product[]> = await productService.get(
+    const response: AxiosResponse<productData[]> = await productService.get(
       "/api/product/all",
     );
     return response.data;
