@@ -10,6 +10,6 @@ export function otp(payload: UserOtp) {
 
 export function verify(code:UserVerify){
   console.log(code);
-  
+
   return axiosAdmin.post(url + '/api/user/verify/', code)
 }
