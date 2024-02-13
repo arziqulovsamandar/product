@@ -37,15 +37,15 @@
   />
 
   <h2 class="deals-of my-[30px] mx-[10px]">{{ t("index.trending") }}</h2>
-  <div class="flex flex-wrap px-[15px] gap-[12px] max-w-[1610px] mx-auto">
-    <singleProductCard/>
-    <singleProductCard/>
-    <singleProductCard/>
-    <singleProductCard/>
-    <singleProductCard/>
-    <singleProductCard/>
-    <singleProductCard/>
+  <div v-if="loading" class="relative text-center">
+    <Loading />
   </div>
+  <div v-else>
+    <ProductList :products="prodcuts" />
+  </div>
+  <!-- <div class="flex flex-wrap px-[15px] gap-[12px] max-w-[1610px] mx-auto">
+    <singleProductCard/>
+  </div> -->
   <h2 class="deals-of my-[40px] mx-[10px]">{{ t("index.deals") }}</h2>
   <div class="flex max-w-[1610px] flex-wrap mx-auto gap-3 px-[15px]">
     <Product />
@@ -70,13 +70,15 @@
 </template>
 
 <script setup lang="ts">
+import { useProduct } from '../composables/useProduct';
+const { loading, prodcuts } = useProduct()
+import ProductList from '../components/productList.vue';
 import Card from "../../../components/card.vue";
 import Product from "../components/products.vue";
 import Banner from "../../../components/banner.vue";
 import productCard from "../components/productCard.vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
-import singleProductCard from "../components/singleProductCard.vue";
 import futter from "../../../components/footer.vue";
 </script>
 

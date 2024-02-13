@@ -1,39 +1,35 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia';
+import {
+  apifetchProducts,
+} from '../../../api/products';
+import { errorToast } from '../../../utils/toast';
 
-export const useProductStore = defineStore("productCart", {
-//   state: () => ({
-//     cartData: [],
-//     length: 0,
-//   }),
-//   actions: {
-//     // INCREMENT
-//     counterPlus(id, type) {
-//       let index = null;
-//       let selectArr = null;
+export const useProductStore = defineStore('product', {
+  state: () => ({
+    prodcuts: [],
+    singleProduct: {},
+    loading: false,
+  }),
+  actions: {
+    async getProducts() {
+      this.loading = true;
+      try {
+        const res = await apifetchProducts();
+        if (!res.data && res.status !== 200) {
+          return;
+        }
 
-//       let old = JSON.parse(globalThis?.localStorage?.getItem("myProduct"));
-//       if (this.cartData.length === 0 && old != null) {
-//         this.cartData = [...old];
-//       }
-//       this.cartData.forEach((item, i) => {
-//         if (item.id === id) {
-//           selectArr = item;
-//           index = i;
-//         }
-//       });
+        this.loading = false;
+        this.prodcuts = res.data;
+      } catch (error) {
+        if (error instanceof Error) {
 
-//       if (type === "plus") {
-//         selectArr.count += 1;
-//       } else {
-//         selectArr.count -= 1;
-//       }
-
-//       this.cartData.splice(index, 1, selectArr);
-//       this.saveProduct();
-//     },
-//   },
-//   getters: {},
+          errorToast(error.message);
+          return;
+        }
+      } finally {
+        this.loading = false;
+      }
+    },
+  }
 });
-import { createPinia } from "pinia";
-
-export default createPinia();
