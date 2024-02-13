@@ -1,4 +1,5 @@
-import axios, { AxiosError } from 'axios';
+import axios, { AxiosError } from "axios";
+import jwt_decode from "jwt-decode";
 
 const baseURL = import.meta.env.VITE_BASE_URL;
 
@@ -10,9 +11,19 @@ export interface SignInDto {
   phoneNumber: string;
 }
 
+const handleRequestError = (error: AxiosError | any): void => {
+  if (axios.isAxiosError(error)) {
+    console.error("Axios request failed:", error.message);
+    console.error("Status:", error.response?.status);
+    console.error("Data:", error.response?.data);
+  } else {
+    console.error("An error occurred while making the request:", error);
+  }
+};
+
 export const submitPhoneNumber = async (data: SignInDto): Promise<void> => {
   try {
-    await loginService.post('http://34.136.49.137:4000/api/user/otp', data);
+    await loginService.post("http://34.136.49.137:4000/api/user/otp", data);
   } catch (error) {
     handleRequestError(error);
     throw error;
@@ -21,27 +32,15 @@ export const submitPhoneNumber = async (data: SignInDto): Promise<void> => {
 
 export const submitOtp = async (otp: string): Promise<void> => {
   try {
-    await loginService.post('http://34.136.49.137:4000/api/user/otp', { otp });
+    await loginService.post("http://34.136.49.137:4000/api/user/otp", { otp });
   } catch (error) {
     handleRequestError(error);
     throw error;
   }
 };
 
-const handleRequestError = (error: AxiosError) => {
-  if (axios.isAxiosError(error)) {
-    console.error('Axios request failed:', error.message);
-    console.error('Status:', error.response?.status);
-    console.error('Data:', error.response?.data);
-  } else {
-    console.error('An error occurred while making the request:', error);
-  }
-};
-
-
-
 const checkAuthentication = (): boolean => {
-  const token = localStorage.getItem('accessToken');
+  const token = localStorage.getItem("accessToken");
   if (!token) return false;
   try {
     const decodedToken = jwt_decode(token);
@@ -49,7 +48,7 @@ const checkAuthentication = (): boolean => {
     if (decodedToken.exp < currentTime) return false;
     return true;
   } catch (error) {
-    console.error('Error decoding token:', error);
+    console.error("Error decoding token:", error);
     return false;
   }
 };

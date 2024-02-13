@@ -6,8 +6,6 @@ import Login from "../../../views/login.vue";
 import Compare from "../pages/Compare.vue";
 import SingleProduct from "../pages/SingleProduct.vue";
 import { HomeName } from "../../../constans/routes";
-import { checkAuthentication } from '../../../services/LoginService.ts';
-
 
 const routes = [
   {
@@ -42,18 +40,5 @@ const routes = [
     name: "login"
   }
 ];
-
-// router.beforeEach((to, from, next) => {
-//   if (to.meta.requiresAuth) {
-//     const isAuthenticated = checkAuthentication();
-//     if (!isAuthenticated) {
-//       next({ name: "login", query: { redirect: to.fullPath } });
-//     } else {
-//       next();
-//     }
-//   } else {
-//     next();
-//   }
-// });
 
 export default routes;

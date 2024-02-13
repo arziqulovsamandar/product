@@ -1,4 +1,4 @@
-import axios, { AxiosError, AxiosResponse } from 'axios';
+import axios, { AxiosError, AxiosResponse } from "axios";
 
 const baseURL = import.meta.env.VITE_BASE_URL;
 
@@ -23,9 +23,11 @@ export interface Product {
 
 export const fetchProducts = async (): Promise<Product[]> => {
   try {
-    const response: AxiosResponse<Product[]> = await productService.get('/api/product/all');
+    const response: AxiosResponse<Product[]> = await productService.get(
+      "/api/product/all",
+    );
     return response.data;
-  } catch (error) {
+  } catch (error: any) {
     handleRequestError(error);
     throw error;
   }
@@ -33,10 +35,10 @@ export const fetchProducts = async (): Promise<Product[]> => {
 
 const handleRequestError = (error: AxiosError) => {
   if (axios.isAxiosError(error)) {
-    console.error('Axios request failed:', error.message);
-    console.error('Status:', error.response?.status);
-    console.error('Data:', error.response?.data);
+    console.error("Axios request failed:", error.message);
+    console.error("Status:", error.response?.status);
+    console.error("Data:", error.response?.data);
   } else {
-    console.error('An error occurred while making the request:', error);
+    console.error("An error occurred while making the request:", error);
   }
 };

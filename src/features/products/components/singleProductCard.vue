@@ -201,13 +201,6 @@ const options2 = [
   { label: "Wishlist" },
 ];
 
-// const productCart = useProductStore();
-
-const props = defineProps({
-  data: Object,
-});
-
-
 const exampleProp = {
   props: {
     data: {
@@ -230,8 +223,6 @@ const exampleProp = {
   }
 }
 
-
-const count = ref(0);
 
 function addToCart() {
   // productCart.addToCart(props.data);
