@@ -10,6 +10,11 @@ export default {
         blue: { 100: '#F2F3F4', 200: '#253D4E' },
         yellow: { 100: '#FFD480', 200: '#FDC040' },
         gray: { 100: '#F1F1F1', 200: '#636363' },
+        primary: '#3BB77E',
+        orange: '#fcb900',
+        text: '#254588',
+        metalic: '#F4F6FA',
+        black: '#1F1E1B',
       },
 
       screens: {

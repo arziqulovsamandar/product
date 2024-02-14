@@ -26,6 +26,10 @@
     .banner-link:hover {
         @apply text-main-100 cursor-pointer translate-y-[-5px] transition-all duration-300;
     }
+
+    .color {
+        @apply hover:text-primary
+    }
 }
 
 
