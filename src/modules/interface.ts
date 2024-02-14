@@ -25,3 +25,8 @@ export interface productData {
   updatedAt: Date;
   value: string;
 }
+
+export interface cartObj {
+  id?: string;
+  price?: string;
+}
