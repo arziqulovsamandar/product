@@ -1,13 +1,14 @@
-import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./router";
+import { createApp } from "vue";
 import { createPinia } from "pinia";
-import "./assets/css/styles.css";
 import Toast from 'vue-toastification';
-import 'vue-toastification/dist/index.css';
+
+import router from "./router";
+import "./assets/css/styles.css";
 import i18n from "./plugins/i18n";
+import 'vue-toastification/dist/index.css';
+
 
 const store = createPinia();
 
 createApp(App).use(router).use(store).use(i18n).use(Toast).mount("#app");
-
