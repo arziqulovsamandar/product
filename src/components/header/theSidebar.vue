@@ -4,7 +4,7 @@
       <ul>
         <li>
           <img
-            src="../assets/img/icons8-home-24.png"
+            src="../../assets/img/icons8-home-24.png"
             alt=""
           /><router-link to="/">Home</router-link>
         </li>

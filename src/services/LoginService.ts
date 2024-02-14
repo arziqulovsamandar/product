@@ -1,4 +1,6 @@
 import axios, { AxiosError } from "axios";
+import decodeJwt from "../functions/tokenParser";
+
 const baseURL = import.meta.env.VITE_BASE_URL;
 
 const loginService = axios.create({
@@ -41,7 +43,7 @@ export const checkAuthentication = (): boolean => {
   const token = localStorage.getItem("accessToken");
   if (!token) return false;
   try {
-    const decodedToken = jwt_decode(token);
+    const decodedToken = decodeJwt(token);
     const currentTime = Math.floor(Date.now() / 1000);
     if (decodedToken.exp < currentTime) return false;
     return true;

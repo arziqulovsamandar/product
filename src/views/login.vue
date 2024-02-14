@@ -57,7 +57,7 @@
     >
       <div class="logo flex justify-center">
         <img
-          src="./assets/img/logo (1).svg"
+          src="../assets/img/logo.png"
           class="w-[40%]"
           alt=""
           srcset=""
